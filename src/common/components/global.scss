@@ -1,0 +1,46 @@
+$main-green: #4FB61E;
+$presset-green: #389D07;
+$default-color: transparent;
+$extra-green: #B8D7A9;
+$fff-color: #fff;
+$font: 'Roboto', sans-serif;
+$center-text: center;
+$black: #000;
+
+body {
+  font-family: $font;
+}
+
+button {
+  cursor: pointer;
+  text-align: $center-text;
+}
+
+// Wide-button, Wide-white-button
+.wideButton, .wideWhiteButton {
+  display: flex;
+  justify-content: $center-text;
+  align-items: $center-text;
+  width: 100%;
+}
+
+// Footer button icons
+ .footer_icon {
+  padding: 5px 6px;
+  cursor: pointer;
+    &:hover {
+      background: $extra-green;
+    }
+    button {
+      border: none;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+  }
+ }
+
+//  Container
+
+.container {
+  margin: 0 16px;
+}

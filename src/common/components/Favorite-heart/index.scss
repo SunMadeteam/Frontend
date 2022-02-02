@@ -1,0 +1,13 @@
+
+.favorite_heart {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    &:hover {
+      background: red;
+    }
+  }
+    
+}

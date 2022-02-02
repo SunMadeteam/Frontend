@@ -1,0 +1,15 @@
+@import './../global.scss';
+
+.hello_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: $font;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

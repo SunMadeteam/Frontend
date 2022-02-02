@@ -1,0 +1,12 @@
+@import './../global';
+@import './../Wide-white-button/index';
+
+.wideTransparentButton {
+  button {
+    border: 2px solid $main-green;
+    color: $black;
+    &:hover {
+      background-color: $main-green;
+    }
+  }
+}

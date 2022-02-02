@@ -1,0 +1,30 @@
+@import './../global';
+
+.wideButton {
+    button {
+      font-family: $font;
+      font-weight: 700;
+      line-height: 21px;
+      letter-spacing: 0.03em;
+
+      background-color: $main-green;
+      color: $fff-color;
+      text-align: center;
+      width: 379px;
+      height: 53px;
+      border-radius: 8px;
+      border: none;
+      &:hover {
+        background-color: $presset-green;
+      }
+    }
+    .default-btn {
+      background-color: $default-color;
+      color: $main-green;
+      border: 2px solid $main-green;
+      &:hover {
+        background-color: $default-color;
+      }
+    }
+   
+}

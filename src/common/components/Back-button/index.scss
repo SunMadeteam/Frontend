@@ -1,0 +1,18 @@
+@import './../global.scss';
+
+.back-button {
+  font-family: $font;
+  color: #797979;
+  font-weight: bold;
+  background: $fff-color;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px ;
+  border: none;
+  border: 2px solid #fff;
+  &:hover {
+   border: 2px solid #C4C4C4;
+   border-radius: 4px;
+  }
+}

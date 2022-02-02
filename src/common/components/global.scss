@@ -7,8 +7,16 @@ $font: 'Roboto', sans-serif;
 $center-text: center;
 $black: #000;
 
+* {box-sizing: border-box;}
+
 body {
   font-family: $font;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,a,p {
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -42,5 +50,9 @@ button {
 //  Container
 
 .container {
-  margin: 0 16px;
+  padding: 0 16px;
+}
+
+img {
+  width: 100%;
 }

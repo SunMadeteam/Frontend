@@ -1,13 +1,13 @@
 import './index.scss'
 import TitleEighteen from '../Title-eighteen';
-import imageGarden from `${categoryImage}`;
+// import imageGarden from './category_cart_garden.png'
 
 const CategoryCart = ({categoryTitle, categoryImage}) => {
   return (
     
       <div className="category_cart container">
         <a href="#">
-          <img src={imageGarden} alt="" />
+          <img src={categoryImage} alt="" />
         </a>
         <TitleEighteen title={categoryTitle} />
       </div>

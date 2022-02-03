@@ -1,21 +1,20 @@
-import Banner from "../Banner-main"
-import CategoryCart from "../Category-cart"
-import CategoryTitle from "../Category-title"
-import HelloText from "../Hello-text"
+import Banner from "../Banner-main";
+import CartegoryCartWrapper from "../Category-cart-wrapper";
+import CategoryTitle from "../Category-title";
+import HelloText from "../Hello-text";
 
 const MainPage = () => {
   return (
     <div>
       <HelloText />
       <Banner />
-      <CategoryTitle title="Категории"/>
-      <div style={{display: 'flex'}}>
-        <CategoryCart categoryTitle="Cад" categoryImage="./category_cart_garden.png" />
-        <CategoryCart categoryTitle="Дом" categoryImage="./category_cart_home.png" />
-      </div>
-      
+      <CartegoryCartWrapper />
+      <CategoryTitle title="Популярные" />
+      <CategoryTitle title="Уход" />
+      <CartegoryCartWrapper />
+
     </div>
   )
 }
 
-export default MainPage
+export default MainPage;

@@ -1,6 +1,5 @@
 import './index.scss'
 import TitleEighteen from '../Title-eighteen';
-// import imageGarden from './category_cart_garden.png'
 
 const CategoryCart = ({categoryTitle, categoryImage}) => {
   return (

@@ -1,15 +1,18 @@
 import './index.scss';
-import heart from "./favorite-heart.svg"
+import { useState } from 'react';
+import heart from "./favorite-heart.svg";
+import redHeart from "./red-heart.svg";
 
 const FavoriteHeart = () => {
-  const state = false;
+  const [state, setState] = useState(false);
 
-  const onFavorite = (state) => {
-    state = !state;
+  const onFavorite = () => {
+    setState(!state)
+    console.log('Presset!')
   }
   return (
     <div className='favorite_heart' onClick={onFavorite}>
-      <img src={heart} alt="" />
+      <img src={state ? redHeart : heart} alt="" />
     </div>
   )
 }

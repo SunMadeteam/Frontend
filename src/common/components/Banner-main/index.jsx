@@ -8,7 +8,7 @@ const Banner = () => {
       <div className="banner ">
         <img src={banner} alt="" />
       </div>
-        <div className='banner_overlay '>
+        <div className='banner_overlay container'>
           <img src={overlay} alt="" />
       </div>
       <p>Твой большой и <br /> зеленый уголок</p>

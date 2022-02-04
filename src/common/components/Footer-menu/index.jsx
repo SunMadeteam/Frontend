@@ -12,7 +12,6 @@ const FooterMenu = () => {
         <CatalogButton />
         <ShoppingButton />
         <PersonalButton />
-        
       </div>
     </div>
   )

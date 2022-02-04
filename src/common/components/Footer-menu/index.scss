@@ -1,5 +1,11 @@
 @import url('./../global.scss');
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  bottom: 0px;
+}
 .footer_menu {
   padding: 9px 26px 3px 26px;
   display: flex;

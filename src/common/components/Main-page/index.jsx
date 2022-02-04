@@ -11,8 +11,6 @@ const MainPage = () => {
       <CartegoryCartWrapper />
       <CategoryTitle title="Популярные" />
       <CategoryTitle title="Уход" />
-      <CartegoryCartWrapper />
-
     </div>
   )
 }

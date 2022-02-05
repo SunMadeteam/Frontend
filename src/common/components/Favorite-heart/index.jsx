@@ -8,7 +8,6 @@ const FavoriteHeart = () => {
 
   const onFavorite = () => {
     setState(!state)
-    console.log('Presset!')
   }
   return (
     <div className='favorite_heart' onClick={onFavorite}>

@@ -1,5 +1,15 @@
-
+@import './../global.scss';
 .care {
   display: flex;
   align-items: center;
+}
+
+.popular_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    // width: 8px;
+    // height: 16px;
+  }
 }

@@ -6,6 +6,7 @@ import CategoryTitle from "../Category-title";
 import HelloText from "../Hello-text";
 import careGround from './careGround.svg'
 import careNutrition from "./careNutrition.svg"
+import rightSign from './right-sign.svg'
 
 const MainPage = () => {
   return (
@@ -13,7 +14,11 @@ const MainPage = () => {
       <HelloText />
       <Banner />
       <CartegoryCartWrapper />
-      <CategoryTitle title="Популярные" />
+      <div className='popular_wrapper'>
+        <CategoryTitle title="Популярные" />
+        <div className="container" >  <img src={rightSign} alt='' /> </div>
+        
+      </div>
       <CategoryTitle title="Уход" />
       <div className="care">
         <CategoryCart categoryTitle="Почва" categoryImage={careGround} />

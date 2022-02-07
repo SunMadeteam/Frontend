@@ -10,6 +10,10 @@
 
   input {
     margin-bottom: 20px;
+    border: 2px solid #CECACE;
+    &:focus-visible {
+      border: 2px solid $main-green;
+    }
   }
 
   .wideTransparentButton {

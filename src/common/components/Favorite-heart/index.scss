@@ -5,9 +5,11 @@
   cursor: pointer;
   img {
     width: 100%;
-    &:hover {
-      background: red;
-    }
+    // &:hover {
+    //   background: url('./red-heart.svg');
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    // }
   }
     
 }

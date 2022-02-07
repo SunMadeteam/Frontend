@@ -3,5 +3,8 @@
 .shopping_btn {
   button {
     background-image: url('./shopping-icon.svg');
+    &:hover {
+      background-image: url('./bg-shopping-icon.svg');
+    }
   }
 }

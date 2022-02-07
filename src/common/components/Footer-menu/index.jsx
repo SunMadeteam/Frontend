@@ -6,11 +6,13 @@ import './index.scss';
 
 const FooterMenu = () => {
   return (
-    <div className='footer_menu'>
-      <HomeButton />
-      <CatalogButton />
-      <ShoppingButton />
-      <PersonalButton />
+    <div className='footer'>
+      <div className='footer_menu'>
+        <HomeButton />
+        <CatalogButton />
+        <ShoppingButton />
+        <PersonalButton />
+      </div>
     </div>
   )
 }

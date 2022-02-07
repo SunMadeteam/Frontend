@@ -1,0 +1,15 @@
+@import "./../global.scss";
+
+.search_input {
+  width: 100%;
+  input {
+    padding: 13px 0 13px 10px;
+    font-weight: bold;
+    color: $black;
+      &::placeholder {
+        opacity: 0.4;
+        color: $extra-gray;
+      }
+  }
+  
+}

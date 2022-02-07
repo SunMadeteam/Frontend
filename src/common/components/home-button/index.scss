@@ -2,5 +2,8 @@
 .home_btn {
   button {
     background-image: url('./home-icon.svg');
+    &:hover {
+      background-image: url('./bg-home-icon.svg');
+    }
   }
 }

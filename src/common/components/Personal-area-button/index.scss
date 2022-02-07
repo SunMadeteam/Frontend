@@ -3,5 +3,8 @@
 .personal_btn {
   button {
     background-image: url('./Personal-area-icon.svg');
+    &:hover {
+      background-image: url('./bg-Personal-area-icon.svg');
+    }
   }
 }

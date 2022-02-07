@@ -1,0 +1,9 @@
+@import './../global.scss';
+
+.all_product_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 16px;
+}

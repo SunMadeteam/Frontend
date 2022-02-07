@@ -2,6 +2,8 @@ import './index.scss'
 import Banner from "../Banner-main";
 import HelloText from "../Hello-text";
 import Sorting from '../Sorting';
+import AllProductCarts from './../All-product-carts/index';
+
 
 const MainPage = () => {
   return (
@@ -9,6 +11,11 @@ const MainPage = () => {
       <HelloText />
       <Banner />
       <Sorting />
+      <AllProductCarts />
+      <AllProductCarts />
+      <AllProductCarts />
+      <AllProductCarts />
+      <hr />
     </div>
   )
 }

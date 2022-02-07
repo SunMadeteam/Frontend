@@ -66,3 +66,16 @@ input {
   font-size: 18px;
   line-height: 21px;
 }
+
+// Flex
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+// Menu up
+
+hr {
+  margin-bottom: 100px;
+  border: 1px solid $fff-color;
+}

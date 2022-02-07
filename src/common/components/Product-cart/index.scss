@@ -1,0 +1,36 @@
+@import './../global.scss';
+
+.product_cart {
+  border: 1px solid #F2F2F2;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  .cart_img {
+    position: relative;
+    display: flex;
+    img {
+      width: 100%;
+    }
+    .favorite_heart {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .cart_body {
+    padding: 20px 8px;
+    font-weight: bold;
+    .title {
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 18px;
+    }
+    .price_wrap {
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+}

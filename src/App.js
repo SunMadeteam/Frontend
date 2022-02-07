@@ -1,7 +1,6 @@
 import {Routes, Route} from "react-router-dom"
-import Login from "./Login/Login"
-// import "./Login/Login.css"
-import HomePage from './HomePage/HomePage';
+import Login from "./Pages/Login/Login"
+import HomePage from './Pages/HomePage/HomePage';
 const App=()=> {
   return (
     <div className="container">

@@ -1,14 +1,14 @@
 import './index.scss'
 import Banner from "../Banner-main";
 import HelloText from "../Hello-text";
-import SearchInput from '../Search-input';
+import Sorting from '../Sorting';
 
 const MainPage = () => {
   return (
     <div className='container'>
       <HelloText />
       <Banner />
-      <SearchInput />
+      <Sorting />
     </div>
   )
 }

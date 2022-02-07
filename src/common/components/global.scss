@@ -2,6 +2,8 @@ $main-green: #4FB61E;
 $presset-green: #389D07;
 $default-color: transparent;
 $extra-green: #B8D7A9;
+$auxiliary-gray: #989797;
+$extra-gray: #C4C4C4;
 $fff-color: #fff;
 $font: 'Roboto', sans-serif;
 $center-text: center;
@@ -52,4 +54,15 @@ button {
 
 img {
   width: 100%;
+}
+
+// Input
+
+input {
+  border: 2px solid $main-green;
+  border-radius: 8px;
+  height: 46px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
 }

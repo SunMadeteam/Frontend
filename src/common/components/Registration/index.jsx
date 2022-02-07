@@ -1,4 +1,4 @@
-import './index.scss'
+import './index.scss';
 import BackButton from './../Back-button/index';
 import RegistrationTitle from '../Registration-title';
 import WideTransparentButton from '../Wide-transparent-button';

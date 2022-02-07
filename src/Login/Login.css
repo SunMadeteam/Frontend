@@ -1,69 +1,72 @@
-.registr_content{
+*{
+padding: 0px;
+margin: 0px;
+}
+.container{
+    width: auto;
+}
+.Auth_content{
+    height: 100%;
     width: 100%;
     max-width: 1440px;
-    margin: 0px auto;
-    text-align: center;
-    align-items: center;
 }
-.registr_form{
+.Auth_back{
+    background: url(./back.png) center;
+    height: 900px;
+    position: absolute;
+}
+.Auth_form{
     display: flex;
     justify-content:center;
     flex-direction: column;
     text-align: center;
     align-items: center;
-}
-.registr_input{
-    width: 400px;
-    height: 30px;
-    margin-bottom: 20px;
-    background: #FFFFFF;
-    border: 2px solid #CECACE;
-}
-.registr_button{
-    width: 200px;
-    height: 30px;
-    background: #4FB61E;
-    color: #FFFFFF;
-    font-weight: bold;
-} 
-h2{
-    font-size: 24px;
-    margin-bottom: 100px;
-}
-/* .registr_text{
-    display: flex;
-    text-align: center;
-    justify-content:space-between;
-}
-.registr_text{
-    font-size: 18px;
-}
+    height: 600px;
+    width: 550px;
+    background: #F8F6F4;
+    border-radius: 14px;
+    margin: 180px 0px 0px 760px;
 
-h3{
-    font-size: 18px;
-    opacity: 50%;
 }
-h2{
-    font-size: 24px;
-    margin-top: 100px;
-}
-.registr_input{
-    width: 379px;
-    height: 46px;
-    margin-bottom: 40px;
-    background: #FFFFFF;
-    border: 2px solid #CECACE;
+.Auth_input{
+    border: 2px solid #4FB61E;
     box-sizing: border-box;
     border-radius: 8px;
+    height: 50px;
+    width: 300px;
+    margin: 0px 0px 25px 0px;
+    padding: 0.5rem;
+    font-size: 18px;
 }
-
-.registr_button{
-    width: 377px;
-    height: 53px;
-
+.Auth_input_pass{
+    margin-bottom:125px
+}
+.Auth_label{
+    opacity: 50%;
+    margin-right: 240px;
+    margin-bottom: 4px;
+}
+.label_margin{
+    margin-top: 63px;
+}
+.Auth_button{
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
     background: #4FB61E;
     border-radius: 8px;
     font-size: 18px;
-    color: #FFFFFF;
+    letter-spacing: 0.03em;
+} 
+h2{
     font-weight: bold;
-} */
+    font-size: 36px;
+    line-height: 42px;
+    font-style: normal;
+}
+.Auth_eye{
+    position: relative;
+    bottom: 157px;
+    left: 128px;
+}

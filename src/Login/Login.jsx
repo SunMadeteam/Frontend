@@ -1,21 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Login.css"
+import {AiOutlineEye, AiOutlineEyeInvisible} from "react-icons/ai"
+import { useState } from "react";
 const Login =()=>   {
-    return (
-    <div className="registr_content">
-        <h2>Авторизация</h2>
-        <form className="registr_form">
-            <input className="registr_input" placeholder="Введите номер телефона"></input>
-            <input className="registr_input" placeholder="Введите Пароль"></input>
-            <button className="registr_button">ПРОДОЛЖИТЬ</button>
-        </form>
+    const [open, setOpen] = useState(false)
 
-        <p>
-            <Link to="/ForgotPassword">Забыли пароль?</Link>
-        </p>
-        <Link to="/">На главную страницу</Link>
-    </div>
+    const toggle=()=>{
+        setOpen(!open)
+    }   
+
+    return (
+        <div className="Auth_content Auth_back">
+            <div className="Auth">
+                <form className="Auth_form">
+                <h2>Привет!</h2>
+                    <label className="Auth_label label_margin">Логин</label>
+                        <input className="Auth_input Auth_input_login" placeholder="Evgeniy_01"></input>
+                    <label className="Auth_label">Пароль</label>
+                        <input className="Auth_input Auth_input_pass"
+                        placeholder="Ev010101"
+                        type={(open===true)?"password":"text"}></input>
+                        <div className="Auth_eye">
+                            {
+                                (open===false)?<AiOutlineEye onClick={toggle}/>:
+                                <AiOutlineEyeInvisible onClick={toggle}/>
+                            }
+                        </div>
+                    <button className="Auth_button">ПРОДОЛЖИТЬ</button>
+                    <p> <Link to="/">На главную страницу</Link> </p>
+                </form>
+            </div>
+        </div>
     )
 }
 

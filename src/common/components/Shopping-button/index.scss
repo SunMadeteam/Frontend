@@ -2,9 +2,9 @@
 
 .shopping_btn {
   button {
-    background-image: url('./shopping-icon.svg');
+    background-image: url('./img/shopping-icon.svg');
     &:hover {
-      background-image: url('./bg-shopping-icon.svg');
+      background-image: url('./img/bg-shopping-icon.svg');
     }
   }
 }

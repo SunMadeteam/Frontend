@@ -1,8 +1,8 @@
 import './index.scss';
 import CategoryTitle from './../Category-title/index';
 import CategoryCart from '../Category-cart';
-import categoryGarden from '../Category-cart/category_cart_garden.png';
-import categoryHome from '../Category-cart/category_cart_home.png'
+import categoryGarden from '../Category-cart/img/category_cart_garden.png';
+import categoryHome from '../Category-cart/img/category_cart_home.png'
 
 const CartegoryCartWrapper = () => {
   return (

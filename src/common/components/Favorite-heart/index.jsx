@@ -1,8 +1,8 @@
 import './index.scss';
 import { useState } from 'react';
-import heart from "./favorite-heart.svg";
+import heart from "./img/favorite-heart.svg";
 // import blackHeart from "./black-heart.svg";
-import redheart from "./red-heart.svg";
+import redheart from "./img/red-heart.svg";
 
 const FavoriteHeart = () => {
   const [state, setState] = useState(false);

@@ -1,9 +1,9 @@
 @import url('./../global.scss');
 .catalog_cart_btn {
   button {
-    background-image: url('./catalog-button.svg');
+    background-image: url('./img/catalog-button.svg');
     &:hover{
-      background-image: url('./bg-catalog-button.svg');
+      background-image: url('./img/bg-catalog-button.svg');
     }
   }
 }

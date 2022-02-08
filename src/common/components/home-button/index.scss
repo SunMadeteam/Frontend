@@ -1,9 +1,9 @@
 @import url('./../global.scss');
 .home_btn {
   button {
-    background-image: url('./home-icon.svg');
+    background-image: url('./img/home-icon.svg');
     &:hover {
-      background-image: url('./bg-home-icon.svg');
+      background-image: url('./img/bg-home-icon.svg');
     }
   }
 }

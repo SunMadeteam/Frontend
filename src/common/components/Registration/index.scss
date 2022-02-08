@@ -1,0 +1,24 @@
+@import './../global.scss';
+
+.registration, .registration_code {
+  height: 100vh;
+
+  .back-button {
+    margin-top: 45px;
+    margin-bottom: 69px;
+  }
+
+  input {
+    margin-bottom: 20px;
+    border: 2px solid #CECACE;
+    &:focus-visible {
+      border: 2px solid $main-green;
+    }
+  }
+  
+
+  .wideTransparentButton {
+    margin-top: 10px;
+    color: $main-green !important;
+  }
+}

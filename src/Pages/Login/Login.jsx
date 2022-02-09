@@ -33,7 +33,7 @@ const Login =()=>   {
                             }
                         </div>
                     <button className="Auth_button">ПРОДОЛЖИТЬ</button>
-                    <p> <Link to="/">На главную страницу</Link> </p>
+                    <p> <Link to="/"></Link> </p>
                 </form>
             </div>
         </div>

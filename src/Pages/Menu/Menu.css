@@ -1,0 +1,31 @@
+.menu_flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+}
+.menu_buttons{
+    background-color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    width: 298px;
+    height: 60px;
+    border-color:#FFFFFF;
+    font-weight: bold;
+    border: none;
+    width: 280px;
+    text-align: left;
+}
+.menu_wrapper{
+    width: 300px;
+    border: 2px solid #4FB61E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 860px;
+    margin-right: 20px;
+}
+p{
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+}

@@ -1,0 +1,19 @@
+.search_input{
+    width: 841px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 2px solid #4FB61E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 20px 0px 0px 0px ;
+}
+.search_icons{
+    position: relative;
+    bottom: 30px;
+    right: 403px;
+    color: #4FB61E;
+}
+input::placeholder{
+    position: relative;
+    left: 30px;
+}

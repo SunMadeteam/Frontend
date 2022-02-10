@@ -1,6 +1,22 @@
 .main{
-    margin: auto 0;
+    margin: auto 0px;
     align-items: center;
     text-align: center;
-    font-size: 50px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+
+}
+.home_content{
+    border: 2px solid #4FB61E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 1080px;
+    height: 860px;
+   
+}
+.header{
+    display: flex;
+    justify-content: space-around;
 }

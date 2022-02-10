@@ -1,0 +1,13 @@
+.orders_btn{
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #ffffff;
+    height: 59px;
+    width: 135px;
+    margin:20px 10px 0px 20px;
+    line-height: 21px;
+}
+.orders{
+    display: flex;
+}

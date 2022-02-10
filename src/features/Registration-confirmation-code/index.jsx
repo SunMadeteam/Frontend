@@ -1,8 +1,8 @@
-import BackButton from "../Back-button";
-import RegistrationTitle from "../Registration-title";
-import RegistrationValidationInputs from "../Registration-validation-inputs";
-import WideTransparentButton from "../Wide-transparent-button";
-import WideWhiteButton from "../Wide-white-button";
+import BackButton from "../../common/components/Back-button";
+import RegistrationTitle from "../../common/components/Registration-title";
+import RegistrationValidationInputs from "../../common/components/Registration-validation-inputs";
+import WideTransparentButton from "../../common/components/Wide-transparent-button";
+import WideWhiteButton from "../../common/components/Wide-white-button";
 import "./index.scss";
 
 const RegistrationConfirmationCode = () => {

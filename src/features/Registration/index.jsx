@@ -1,7 +1,7 @@
 import './index.scss';
-import BackButton from './../Back-button/index';
-import RegistrationTitle from '../Registration-title';
-import WideTransparentButton from '../Wide-transparent-button';
+import BackButton from '../../common/components/Back-button';
+import RegistrationTitle from '../../common/components/Registration-title';
+import WideTransparentButton from '../../common/components/Wide-transparent-button';
 
 const Registration = () => {
   return (

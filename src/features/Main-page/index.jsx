@@ -1,8 +1,8 @@
 import './index.scss'
-import Banner from "../Banner-main";
-import HelloText from "../Hello-text";
-import Sorting from '../Sorting';
-import AllProductCarts from './../All-product-carts/index';
+import Banner from "../../common/components/Banner-main";
+import HelloText from "../../common/components/Hello-text";
+import Sorting from '../../common/components/Sorting';
+import AllProductCarts from '../../common/components/All-product-carts';
 
 
 const MainPage = () => {

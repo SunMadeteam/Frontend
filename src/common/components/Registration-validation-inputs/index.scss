@@ -1,0 +1,15 @@
+.registration_validation_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 64px 84px 100px 84px;
+
+  input {
+    width: 55px;
+    background: #FFFDFC;
+    border-radius: 8px;
+    height: 40px;
+    border: 1px solid #CECACE;
+  }
+}

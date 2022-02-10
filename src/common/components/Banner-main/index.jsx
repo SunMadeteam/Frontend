@@ -1,6 +1,6 @@
 import './index.scss';
-import banner from './banner-photo.png'
-import overlay from './gradient-black.png'
+import banner from './img/banner-photo.png'
+import overlay from './img/gradient-black.png'
 
 const Banner = () => {
   return (

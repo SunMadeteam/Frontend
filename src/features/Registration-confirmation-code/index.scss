@@ -1,0 +1,19 @@
+@import '../../common/components/global';
+
+.registration_confirmation_code {
+  height: 100vh;
+
+  .back-button {
+    margin-top: 45px;
+    margin-bottom: 69px;
+  }
+
+  p {
+    text-align: center;
+    color: $auxiliary-gray;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 10px;
+  }
+}

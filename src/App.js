@@ -1,14 +1,18 @@
 
 import FooterMenu from './common/components/Footer-menu';
-import MainPage from './common/components/Main-page';
-import FilterButton from './common/components/Filter-button/index';
+import MainPage from './features/Main-page';
+import Registration from './features/Registration';
+import RegistrationConfirmationCode from './features/Registration-confirmation-code';
 
 
 function App() {
   return (
     <div>
       <MainPage />
-       <FooterMenu />
+      <FooterMenu />
+      <Registration />
+      <RegistrationConfirmationCode />
+      <hr/>
     </div>
   );
 }

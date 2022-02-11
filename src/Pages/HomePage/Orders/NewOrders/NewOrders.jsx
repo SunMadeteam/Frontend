@@ -1,13 +1,13 @@
 import React from 'react'
 import { OrderInfo } from './OrderInfo/OrderInfo'
 import { OrdersCheck } from './OrdersCheck/OrdersCheck'
-const Orders = () => {
+const NewOrders = () => {
   return (
-    <div className='orders_none'>
+    <div>
         <OrdersCheck/>
         <OrderInfo/>
     </div>
   )
 }
 
-export default Orders
+export default NewOrders

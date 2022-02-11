@@ -5,7 +5,7 @@ export const Menu = () => {
     <div className='menu_wrapper'>
         <p>SunMade</p>
         <div className='menu_flex'>
-            <button className='menu_buttons'>Заказы</button>
+            <button className='menu_buttons color'>Заказы</button>
             <button className='menu_buttons'>Товары</button>
             <button className='menu_buttons'>Статистика</button>
             <button className='menu_buttons'>Сотрудники</button>

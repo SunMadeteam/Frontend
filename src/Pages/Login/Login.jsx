@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Login.css"
 import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
@@ -32,8 +32,7 @@ const Login =()=>   {
                                 <AiOutlineEye onClick={toggle}/>
                             }
                         </div>
-                    <button className="Auth_button">ПРОДОЛЖИТЬ</button>
-                    <p> <Link to="/"></Link> </p>
+                    <button className="Auth_button"> <NavLink to="/">ПРОДОЛЖИТЬ</NavLink> </button>
                 </form>
             </div>
         </div>

@@ -3,6 +3,7 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
+    font-weight: normal;
 }
 .check_box{
     color:#4FB61E;
@@ -18,6 +19,7 @@
 .check_id{
     width: 101px;
     height: 50px;
+
 }
 .check_time{
     width: 70px;

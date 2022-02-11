@@ -1,14 +1,13 @@
 import React from 'react'
 import "./OrdersBtn.css"
-import { Link, Routes } from 'react-router-dom'
+import { NavLink, Routes } from 'react-router-dom'
 export const OrdersBtn = () => {
   return (
     <div className='orders'>
-            <button className="orders_btn"><Link to="/NewOrder">Новые заказы</Link></button>
-            <button className="orders_btn"><Link to="/ProcessedOrders">Обработанные</Link></button>
-            <button className="orders_btn">Завершенные</button>
-            <button className="orders_btn">Отмененные</button>
+            <button className="orders_btn"><NavLink to="/NewOrders">Новые заказы</NavLink></button>
+            <button className="orders_btn"><NavLink to="/ProcessedOrders">Обработанные</NavLink></button>
+            <button className="orders_btn"><NavLink to="/CompletedOrders">Завершенные</NavLink></button>
+            <button className="orders_btn"><NavLink to="/CanceledOrders">Отмененные</NavLink></button>
     </div>
-    
   )
 }

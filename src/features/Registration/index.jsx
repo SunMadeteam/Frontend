@@ -1,7 +1,7 @@
 import './index.scss';
 import BackButton from '../../common/components/Back-button';
 import RegistrationTitle from '../../common/components/Registration-title';
-import WideTransparentButton from '../../common/components/Wide-transparent-button';
+import WideWhiteButton from '../../common/components/Wide-white-button';
 
 const Registration = () => {
   return (
@@ -12,7 +12,9 @@ const Registration = () => {
       underTitle = "Для входа в избранное и лич. кабинет вам необходимо зарегистрироваться"/>
       <input placeholder='Имя*' type='text' />
       <input placeholder='Номер*' type='number' />
-      <WideTransparentButton number="ПРОДОЛЖИТЬ" />
+      <input placeholder='Пароль*' type='password' />
+      <WideWhiteButton word="ПРОДОЛЖИТЬ"/>
+  
     </div>
   )
 }

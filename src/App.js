@@ -13,6 +13,7 @@ function App() {
       <Registration />
       <RegistrationConfirmationCode />
       <hr/>
+      
     </div>
   );
 }

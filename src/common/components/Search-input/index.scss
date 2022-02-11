@@ -5,11 +5,15 @@
   input {
     padding: 13px 0 13px 10px;
     font-weight: bold;
+    border: 2px solid $main-green;
     color: $black;
       &::placeholder {
         opacity: 0.4;
         color: $extra-gray;
       }
+      &:focus-visible {
+        outline: none;
+        border: 2px solid $main-green;
+      }
   }
-  
 }

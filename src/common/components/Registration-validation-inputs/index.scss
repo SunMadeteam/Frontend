@@ -1,3 +1,5 @@
+
+
 .registration_validation_inputs {
   display: flex;
   align-items: center;
@@ -11,5 +13,10 @@
     border-radius: 8px;
     height: 40px;
     border: 1px solid #CECACE;
+    padding: 12px 18px;
+    &:focus-visible {
+      border: 2px solid #4FB61E;
+      outline: none;
+    }
   }
 }

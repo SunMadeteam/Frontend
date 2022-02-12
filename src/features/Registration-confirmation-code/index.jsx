@@ -1,7 +1,6 @@
 import BackButton from "../../common/components/Back-button";
 import RegistrationTitle from "../../common/components/Registration-title";
 import RegistrationValidationInputs from "../../common/components/Registration-validation-inputs";
-import WideTransparentButton from "../../common/components/Wide-transparent-button";
 import WideWhiteButton from "../../common/components/Wide-white-button";
 import "./index.scss";
 
@@ -13,7 +12,7 @@ const RegistrationConfirmationCode = () => {
       title = "Код подтверждения"
       underTitle = "Код был отправлен на: 0700 123 456"/>
       <RegistrationValidationInputs />
-      <WideTransparentButton number="ПРОДОЛЖИТЬ" />
+      <WideWhiteButton word="ПРОДОЛЖИТЬ" />
       <WideWhiteButton word="ОТПРАВИТЬ ПОВТОРНО" />
       <p>59 сек</p>
     </div>

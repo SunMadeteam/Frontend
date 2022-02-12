@@ -32,7 +32,7 @@ const Login =()=>   {
                                 <AiOutlineEye onClick={toggle}/>
                             }
                         </div>
-                    <button className="Auth_button"> <NavLink to="/">ПРОДОЛЖИТЬ</NavLink> </button>
+                    <button className="Auth_button"> <NavLink to="/NewOrders">ПРОДОЛЖИТЬ</NavLink> </button>
                 </form>
             </div>
         </div>

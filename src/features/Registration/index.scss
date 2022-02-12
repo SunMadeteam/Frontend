@@ -1,5 +1,19 @@
 @import '../../common/components/global';
 
+.registration {
+  input {
+    padding: 13px 0 12px 10px;
+    &:focus-visible {
+      outline: none;
+      border: 2px solid $main-green;
+    }
+  }
+  .wideWhiteButton {
+    button {
+      margin-top: 40px;
+    }
+  }
+}
 .registration, .registration_code {
   height: 100vh;
 

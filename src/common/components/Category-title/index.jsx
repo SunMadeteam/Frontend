@@ -2,7 +2,7 @@ import './index.scss'
 
 const CategoryTitle = ({title}) => {
   return (
-    <div className='category_title container'>
+    <div className='category_title '>
       {title}
     </div>
   )

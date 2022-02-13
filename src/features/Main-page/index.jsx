@@ -17,7 +17,6 @@ const MainPage = () => {
       <AllProductCarts />
       <AllProductCarts />
       <hr />
-      <hr />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './OrderInfo.css'
+import './OrderInfo.scss'
 import {BsThreeDotsVertical} from 'react-icons/bs'
 export const OrderInfo = () => {
   return (
@@ -9,22 +9,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>1</h3>
+                <h4>1</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -36,22 +36,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>2</h3>
+                <h4>2</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -63,22 +63,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>3</h3>
+                <h4>3</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -90,22 +90,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>4</h3>
+                <h4>4</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -117,22 +117,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>5</h3>
+                <h4>5</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -144,22 +144,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>6</h3>
+                <h4>6</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -171,22 +171,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>7</h3>
+                <h4>7</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -198,22 +198,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>8</h3>
+                <h4>8</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -225,22 +225,22 @@ export const OrderInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>9</h3>
+                <h4>9</h4>
             </div>
             <div className='check_id'>
-                <h3>1321321</h3>
+                <h4>1321321</h4>
             </div>
             <div className='check_time'>
-                <h3>15:33</h3>
+                <h4>15:33</h4>
             </div>
             <div className='check_number'>
-                <h3>+996505555555</h3>
+                <h4>+996505555555</h4>
             </div>
             <div className='check_name'>
-                <h3>Бегимай</h3>
+                <h4>Бегимай</h4>
             </div>
             <div className='check_adres'>
-                <h3>Советская\Ахунбавева</h3>
+                <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>

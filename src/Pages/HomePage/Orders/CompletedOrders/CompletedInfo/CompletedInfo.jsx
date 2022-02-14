@@ -9,22 +9,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>1</h3>
+                <h4>1</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -36,22 +36,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>2</h3>
+                <h4>2</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -63,22 +63,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>3</h3>
+                <h4>3</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -90,22 +90,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>4</h3>
+                <h4>4</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -117,22 +117,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>5</h3>
+                <h4>5</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -144,22 +144,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>6</h3>
+                <h4>6</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -171,22 +171,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>7</h3>
+                <h4>7</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -198,22 +198,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>8</h3>
+                <h4>8</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -225,22 +225,22 @@ export const CompletedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>9</h3>
+                <h4>9</h4>
             </div>
             <div className='check_id'>
-                <h3>9432021</h3>
+                <h4>9432021</h4>
             </div>
             <div className='check_time'>
-                <h3>19:00</h3>
+                <h4>19:00</h4>
             </div>
             <div className='check_number'>
-                <h3>+996709323323</h3>
+                <h4>+996709323323</h4>
             </div>
             <div className='check_name'>
-                <h3>Шуламита</h3>
+                <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h3>Политех</h3>
+                <h4>Политех</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>

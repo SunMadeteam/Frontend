@@ -9,22 +9,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>1</h3>
+                <h4>1</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -36,22 +36,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>2</h3>
+                <h4>2</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -63,22 +63,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>3</h3>
+                <h4>3</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -90,22 +90,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>4</h3>
+                <h4>4</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -117,22 +117,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>5</h3>
+                <h4>5</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -144,22 +144,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>6</h3>
+                <h4>6</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -171,22 +171,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>7</h3>
+                <h4>7</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -198,22 +198,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>8</h3>
+                <h4>8</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>
@@ -225,22 +225,22 @@ const ProcessedInfo = () => {
                 <input type="checkbox"/>
             </div>
             <div className='check_№'>
-                <h3>9</h3>
+                <h4>9</h4>
             </div>
             <div className='check_id'>
-                <h3>435346546</h3>
+                <h4>435346546</h4>
             </div>
             <div className='check_time'>
-                <h3>12:42</h3>
+                <h4>12:42</h4>
             </div>
             <div className='check_number'>
-                <h3>+996555333333</h3>
+                <h4>+996555333333</h4>
             </div>
             <div className='check_name'>
-                <h3>Карина</h3>
+                <h4>Карина</h4>
             </div>
             <div className='check_adres'>
-                <h3>Гагарина 33</h3>
+                <h4>Гагарина 33</h4>
             </div>
             <div className='check_dot'>
                 <BsThreeDotsVertical/>

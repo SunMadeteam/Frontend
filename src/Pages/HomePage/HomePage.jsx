@@ -1,7 +1,7 @@
 import { Route,Routes } from "react-router-dom"
 import { Menu } from "../Menu/Menu"
 import AddBtn from "./AddBtn/AddBtn"
-import "./HomePage.css"
+import "./HomePage.scss"
 import { SearchInput } from "./SearchInput/SearchInput"
 import UserBtn from "./UserBtn/UserBtn"
 import NewOrders from "./Orders/NewOrders/NewOrders"
@@ -9,6 +9,7 @@ import { OrdersBtn } from "./OrdersBtn/OrdersBtn"
 import ProcessedOrders from './Orders/ProcessedOrders/ProcessedOrders'
 import CompletedOrders from "./Orders/CompletedOrders/CompletedOrders"
 import CanceledOrders from "./Orders/CanceledOrders/CanceledOrders"
+
 const HomePage =()=>{
     return(
         <div className="main">

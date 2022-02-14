@@ -1,12 +1,5 @@
-// @import url('./../global.scss');
-// .user_btn{
-// button{
-//         background-image: url('./User_img.svg')
-// }
-// }
-
 .user_btn{
-        border: 2px solid #4FB61E;
+        border: 2px solid var(--color-green);
         box-sizing: border-box;
         border-radius: 8px;
         width: 45px;

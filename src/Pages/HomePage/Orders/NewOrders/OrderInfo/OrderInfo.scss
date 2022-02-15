@@ -17,10 +17,35 @@ h4{
     margin-top: 15px;
     text-align: center;
     font-style: normal;
+    input{
+        width: 24px;
+        height: 24px;
+    }
+    // span{
+    //     height: 24;
+    //     width: 24;
+    //     border: 1px solid red;
+    //     display: inline-block;
+    //     position: relative;
+    //     background-color: var(--color-green);
+    //     border-radius: 26px;
+    //     pad: 3px;
+    // }
+    // [type=checkbox]:checked + span::before{
+    //     content: '\2714';
+    //     position: absolute;
+    //     top:5px;
+    //     left:0;
+    //     font-size: 23px;
+    //     color: var(--color-green);
+    // }
 }
 .check_№{
     width: 40px;
     height: 50px;
+    h4{
+        margin-left: 10px;
+    }
 }
 .check_id{
     width: 101px;
@@ -48,5 +73,14 @@ h4{
     height: 50px;
     margin-top:15px;
     color: var(--color-green);
+    text-align: right;
+    svg{
+        width: 25px;
+        height: 25px;
 }
+}
+
+// .dot_info{
+
+// }
 

@@ -1,12 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './OrderInfo.scss'
 import {BsThreeDotsVertical} from 'react-icons/bs'
 export const OrderInfo = () => {
+//   const [open, setOpen] = useState(false)
+
+//   const toggle=()=>{
+//       setOpen(!open)
+// }   
+
+// {
+//     (open===false)?<button className='check_dot' onClick={toggle}><BsThreeDotsVertical/></button>:
+//     <button className='dot_info' onClick={toggle}>
+//         <h3>Добавить</h3>
+//         <p>Товары</p>
+//     </button>
+//     }
   return (
     <div>
         <div className='order_info'>
             <div className='check_box'>
                 <input type="checkbox"/>
+                <span></span>
             </div>
             <div className='check_№'>
                 <h4>1</h4>
@@ -27,7 +41,7 @@ export const OrderInfo = () => {
                 <h4>Советская\Ахунбавева</h4>
             </div>
             <div className='check_dot'>
-                <BsThreeDotsVertical/>
+            <BsThreeDotsVertical/>
             </div>
          </div>
 
@@ -249,3 +263,5 @@ export const OrderInfo = () => {
     </div>
   )
 }
+
+export default OrderInfo()

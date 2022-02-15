@@ -9,7 +9,7 @@ const Login =()=>   {
 
     const toggle=()=>{
         setOpen(!open)
-    }   
+}   
 
     return (
         <div className="Auth_content Auth_back">

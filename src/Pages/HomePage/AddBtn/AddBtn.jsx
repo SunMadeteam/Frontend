@@ -1,9 +1,24 @@
 import React from 'react'
-import './AddBtn.css'
+import './AddBtn.scss'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 const AddBtn = () => {
-  return (
+  const [open, setOpen] = useState(false)
+
+  const toggle=()=>{
+      setOpen(!open)
+}   
+
+return (    
     <div>
-         <button className='add_btn'>Добавить</button>
+      {
+         (open===false)?<button className='add_btn' onClick={toggle}>Добавить</button>:
+         <button className='add_info' onClick={toggle}>
+            <h3>Добавить</h3>
+            <p><NavLink to="/">Товары</NavLink></p>
+            <p><NavLink to="/">Сотрудники</NavLink></p>
+         </button>
+      }
     </div>
   )
 }

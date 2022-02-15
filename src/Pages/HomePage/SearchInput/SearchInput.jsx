@@ -1,5 +1,5 @@
 import React from 'react'
-import './SearchInput.css'
+import './SearchInput.scss'
 import {BsSearch} from 'react-icons/bs'
 export const SearchInput = () => {
   return (

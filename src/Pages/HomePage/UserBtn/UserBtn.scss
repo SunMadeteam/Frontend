@@ -6,4 +6,37 @@
         height: 45px;
         background: #ffffff;
         margin-top: 20px;
+        svg{
+                width: 25px;
+                height: 25px;
+        }
+}
+.user_info{
+       background-color: #ffffff;
+       border: 2px solid var(--color-green);
+       box-sizing: border-box;
+       border-radius: 8px;
+       width: 200px;
+       height: 200px;
+       text-align: left;
+       position: absolute;
+       top: 100px;
+       left: 1220px;
+       svg{
+               width: 25px;
+               height: 25px;
+               position: relative;
+               left: 169px;
+       }
+       h3{
+        margin-bottom: 32px;
+        margin-left: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    p{
+        margin-bottom: 32px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
 }

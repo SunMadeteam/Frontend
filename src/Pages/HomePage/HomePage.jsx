@@ -8,7 +8,6 @@ import NewOrders from "./Orders/NewOrders/NewOrders"
 import { OrdersBtn } from "./OrdersBtn/OrdersBtn"
 import ProcessedOrders from './Orders/ProcessedOrders/ProcessedOrders'
 import CompletedOrders from "./Orders/CompletedOrders/CompletedOrders"
-import CanceledOrders from "./Orders/CanceledOrders/CanceledOrders"
 
 const HomePage =()=>{
     return(
@@ -25,7 +24,6 @@ const HomePage =()=>{
                     <Route path="/NewOrders" element={<NewOrders/>}/>
                     <Route path="/ProcessedOrders" element={<ProcessedOrders/>}/>
                     <Route path="/CompletedOrders" element={<CompletedOrders/>}/>
-                    <Route path="/CanceledOrders" element={<CanceledOrders/>}/>
                 </Routes>
              </div>
         </div>

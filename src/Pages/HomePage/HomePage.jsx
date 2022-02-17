@@ -4,10 +4,8 @@ import AddBtn from "./AddBtn/AddBtn"
 import "./HomePage.scss"
 import { SearchInput } from "./SearchInput/SearchInput"
 import UserBtn from "./UserBtn/UserBtn"
-import NewOrders from "./Orders/NewOrders/NewOrders"
-import { OrdersBtn } from "./OrdersBtn/OrdersBtn"
-import ProcessedOrders from './Orders/ProcessedOrders/ProcessedOrders'
-import CompletedOrders from "./Orders/CompletedOrders/CompletedOrders"
+import OrdersRoute from "./Orders/OrdersRoute"
+import { GoodsRoute } from "./Goods/GoodsRoute"
 
 const HomePage =()=>{
     return(
@@ -19,11 +17,9 @@ const HomePage =()=>{
                     <AddBtn/>
                     <UserBtn/>
                  </div>
-                <OrdersBtn/>
                 <Routes>
-                    <Route path="/NewOrders" element={<NewOrders/>}/>
-                    <Route path="/ProcessedOrders" element={<ProcessedOrders/>}/>
-                    <Route path="/CompletedOrders" element={<CompletedOrders/>}/>
+                    <Route path="/OrdersRoute/*" element={<OrdersRoute/>}/>
+                    <Route path="/GoodsRoute/*" element={<GoodsRoute/>}/>
                 </Routes>
              </div>
         </div>

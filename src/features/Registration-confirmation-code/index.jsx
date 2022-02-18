@@ -4,7 +4,6 @@ import RegistrationTitle from "../../common/components/Registration-title";
 import InputCode from "../../common/components/Input-code";
 import WideWhiteButton from "../../common/components/Wide-white-button";
 import "./index.scss";
-import './index.css';
 
 const RegistrationConfirmationCode = () => {
 

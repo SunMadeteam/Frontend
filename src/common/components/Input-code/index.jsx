@@ -1,20 +1,6 @@
 import React, { useState, useRef } from "react";
 import './index.scss';
 
-// const InputCode = () => {
-  
-  
-//   return (
-//     <div className="registration_validation_inputs">
-//       <input name='first_input' type='number' required />
-//       <input name='second_input' type='number'required />
-//       <input name='third_input' type='number' required/>
-//       <input name='fourth_input' type='number' required/>
-//     </div>
-//   )
-// }
-
-// export default InputCode;
 
 const InputCode = ({ length, loading, onComplete }) => {
   const [code, setCode] = useState([...Array(length)].map(() => ""));

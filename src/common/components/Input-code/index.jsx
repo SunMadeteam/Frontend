@@ -21,8 +21,12 @@ const InputCode = ({ length, loading, onComplete }) => {
     }
   };
 
+  const KEYS_CODE = {
+    BACKSPACE: 8
+    }
+
   const onKeyUp = (e, slot) => {
-    if (e.keyCode === 8 && !code[slot] && slot !== 0) {
+    if (e.keyCode === KEYS_CODE.BACKSPACE && !code[slot] && slot !== 0) {
       const newCode = [...code];
       newCode[slot - 1] = "";
       setCode(newCode);

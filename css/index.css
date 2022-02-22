@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+}
+
+.wideButton, .wideWhiteButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.footer_icon {
+  padding: 5px 6px;
+  cursor: pointer;
+}
+
+.footer_icon button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  border-radius: 8px;
+  height: 46px;
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+hr {
+  margin-bottom: 100px;
+  border: 1px solid #fff;
+}
+
+.wideWhiteButton button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  color: #4FB61E;
+  width: 379px;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  border: 2px solid #4FB61E;
+}
+
+.wideWhiteButton .default-btn {
+  background-color: transparent;
+  color: #4FB61E;
+  border: 2px solid #4FB61E;
+}
+
+.wideWhiteButton .default-btn:hover {
+  background-color: transparent;
+}
+/*# sourceMappingURL=index.css.map */

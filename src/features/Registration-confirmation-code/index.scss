@@ -1,4 +1,6 @@
 @import '../../common/components/global';
+@import '../../common/helpers/mixins';
+@import '../../common/helpers/variables';
 
 .registration_confirmation_code {
   height: 100vh;
@@ -12,8 +14,7 @@
     text-align: center;
     color: $auxiliary-gray;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px, 19px);
     margin-top: 10px;
   }
   .wideWhiteButton {

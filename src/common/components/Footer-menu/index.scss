@@ -1,5 +1,6 @@
 @import url('./../global.scss');
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .footer {
   position: fixed;
   bottom: 0;
@@ -10,6 +11,5 @@
 }
 .footer_menu {
   padding: 9px 26px 3px 26px;
-  display: flex;
-  justify-content: space-between;
+  @include flex($justify:space-between);
 }

@@ -1,8 +1,6 @@
-
+@import './../../helpers/mixins.scss';
 .sorting_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex($justify:space-between);
   gap: 10px;
   margin-bottom: 20px;
 }

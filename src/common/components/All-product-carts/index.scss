@@ -1,9 +1,9 @@
 @import './../global.scss';
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 
 .all_product_cart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex($justify:space-between);
   gap: 4px;
   margin-bottom: 16px;
 }

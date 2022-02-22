@@ -1,4 +1,6 @@
 @import './../global.scss';
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 
 .banner_container {
   position: relative;
@@ -12,7 +14,6 @@
       height: auto;
       object-fit: cover;	
       border-radius: 8px;
-      
     }
   }
   .banner_overlay {
@@ -29,9 +30,7 @@
     position: absolute;
     bottom: 0;
     color: $fff-color;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
+    @include font(24px, 28.8px);
     padding-left: 20px;
     padding-bottom: 20px;
   }

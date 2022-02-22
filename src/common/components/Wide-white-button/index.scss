@@ -1,5 +1,6 @@
 @import './../global';
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .wideWhiteButton {
     button {
       font-family: $font;

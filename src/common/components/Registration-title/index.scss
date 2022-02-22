@@ -1,18 +1,16 @@
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .registration_title {
   text-align: center;
   &::placeholder {
     padding: 13px 0 13px 10px;
   }
   h2 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+    @include font(30px, 35px);
     margin-bottom: 20px;
   }
   p {
-    font-size: 16px;
-    line-height: 19px;
+    @include font(16px, 19px);
     margin-bottom: 45px;
   }
 }

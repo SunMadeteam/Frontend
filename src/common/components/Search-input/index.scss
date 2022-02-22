@@ -1,5 +1,6 @@
 @import "./../global.scss";
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .search_input {
   width: 100%;
   input {

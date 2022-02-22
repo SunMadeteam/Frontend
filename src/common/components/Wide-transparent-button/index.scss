@@ -1,5 +1,7 @@
 @import './../global';
 @import './../Wide-white-button/index';
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 
 .wideTransparentButton {
   button {

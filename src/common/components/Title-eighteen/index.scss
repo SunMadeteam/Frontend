@@ -1,8 +1,6 @@
 @import './../global.scss';
-
+@import './../../helpers/mixins.scss';
 .title_eighteen {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
+  @include font(18px, 21px);
   letter-spacing: 0em;
 }

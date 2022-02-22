@@ -1,17 +1,14 @@
 @import './../global.scss';
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .hello_text {
   margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex($justify:space-between);
   padding-top: 15px;
   padding-bottom: 34px;
   p {
     font-family: $font;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 35px;
+    @include font(30px, 35px);
     letter-spacing: 0em;
     text-align: left;
   }

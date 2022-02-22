@@ -1,5 +1,6 @@
 @import './../global.scss';
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .plus_mines {
   button {
     width: 30px;
@@ -8,9 +9,7 @@
     border-radius: 8px;
     outline: none;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
      p {
       font-size: 30px;
       text-align: center;

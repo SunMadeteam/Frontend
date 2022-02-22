@@ -1,10 +1,10 @@
 @import './../global';
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .wideButton {
     button {
       font-family: $font;
-      font-weight: 700;
-      line-height: 21px;
+      @include font(18px, 21px);
       letter-spacing: 0.03em;
 
       background-color: $main-green;

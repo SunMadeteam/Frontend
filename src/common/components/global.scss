@@ -1,13 +1,6 @@
-$main-green: #4FB61E;
-$presset-green: #389D07;
-$default-color: transparent;
-$extra-green: #B8D7A9;
-$auxiliary-gray: #989797;
-$extra-gray: #C4C4C4;
-$fff-color: #fff;
-$font: 'Roboto', sans-serif;
-$center-text: center;
-$black: #000;
+@import '../../common/helpers/mixins';
+@import '../../common/helpers/variables';
+
 
 * {box-sizing: border-box;}
 
@@ -28,9 +21,7 @@ button {
 
 // Wide-button, Wide-white-button
 .wideButton, .wideWhiteButton {
-  display: flex;
-  justify-content: $center-text;
-  align-items: $center-text;
+  @include flex();
   width: 100%;
 }
 
@@ -62,8 +53,9 @@ input {
   border-radius: 8px;
   height: 46px;
   width: 100%;
-  font-size: 18px;
-  line-height: 21px;
+  @include font(18px, 21px);
+  //font-size: 18px;
+  //line-height: 21px;
 }
 
 // Flex

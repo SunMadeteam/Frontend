@@ -1,5 +1,6 @@
 @import './../global.scss';
-
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
 .filter_btn {
   button{
     background-image: url('./img/filter-icon.svg');

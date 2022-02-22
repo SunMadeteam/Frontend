@@ -1,8 +1,7 @@
-
+@import './../../helpers/mixins.scss';
 .category_cart_wrapper {
   margin-bottom: 31px;
   .category_wrap {
-    display: flex;
-    align-items: center;
+    @include flex();
   }
 }

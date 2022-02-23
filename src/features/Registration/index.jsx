@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 import BackButton from '../../common/components/Back-button';
 import RegistrationTitle from '../../common/components/Registration-title';
@@ -6,7 +7,7 @@ import WideWhiteButton from '../../common/components/Wide-white-button';
 const Registration = () => {
   return (
     <div className='registration container'>
-     <BackButton />
+     <Link to='/'> {<BackButton />} </Link>
      <RegistrationTitle 
       title = "Регистрация"
       underTitle = "Для входа в избранное и лич. кабинет вам необходимо зарегистрироваться"/>

@@ -7,6 +7,7 @@ import Authorization from './features/Authorization';
 import Catalogs from './features/Catalogs';
 import Catalog from './features/Catalog';
 import Shopping from './features/Shopping';
+import CartDescription from './features/Cart-description/index';
 
 
 function App() {
@@ -20,9 +21,11 @@ function App() {
         <Route path='/catalogs' element={<Catalogs />} />
         <Route path='/catalogs/catalogs' element={<Catalog />} />
         <Route path='/shopping' element={<Shopping />} />
+        <Route path='/cart-description' element={<CartDescription />} />
       </Routes>
       <FooterMenu />
       <hr />      
+      
     </div>
   );
 }

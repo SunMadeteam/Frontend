@@ -5,7 +5,7 @@
   margin-top: 16px;
   @include flex($justify:space-between);
   padding-top: 15px;
-  padding-bottom: 34px;
+  padding-bottom: 24px;
   p {
     font-family: $font;
     @include font(30px, 35px);

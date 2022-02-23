@@ -1,0 +1,25 @@
+@import url('./../global.scss');
+@import './../../helpers/mixins.scss';
+@import './../../helpers/variables.scss';
+
+.catalog_block {
+  margin-bottom: 20px;
+  position: relative;
+  
+  img {
+    width: 100%;
+    border-radius: 8px;
+    background: url('./shadow.png');    
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    display: block;
+  }
+  p {
+    position: absolute;
+    color: $fff-color;
+    @include font(24px, 28px);
+    top: 10px;
+    left: 10px;
+  }
+}

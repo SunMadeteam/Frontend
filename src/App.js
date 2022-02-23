@@ -4,7 +4,8 @@ import MainPage from './features/Main-page';
 import Registration from './features/Registration';
 import RegistrationConfirmationCode from './features/Registration-confirmation-code';
 import Authorization from './features/Authorization';
-import Catalog from './features/Catalogs';
+import Catalogs from './features/Catalogs';
+import Catalog from './features/Catalog';
 import Shopping from './features/Shopping';
 
 
@@ -16,7 +17,8 @@ function App() {
         <Route path='/personal' element={<Registration/>} />
         <Route path='confirmation' element={<RegistrationConfirmationCode />} />
         <Route path='/auth' element={<Authorization/>} />
-        <Route path='/catalogs' element={<Catalog />} />
+        <Route path='/catalogs' element={<Catalogs />} />
+        <Route path='/catalogs/catalogs' element={<Catalog />} />
         <Route path='/shopping' element={<Shopping />} />
       </Routes>
       <FooterMenu />

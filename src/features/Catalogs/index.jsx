@@ -9,7 +9,7 @@ import nutrition from './img/nutrition.png';
 import accessories from './img/accessories.png';
 import './index.scss';
 
-const Catalog = () => {
+const Catalogs = () => {
   return (
     <div className='container'>
       <HelloText />
@@ -23,4 +23,4 @@ const Catalog = () => {
   )
 }
 
-export default Catalog;
+export default Catalogs;

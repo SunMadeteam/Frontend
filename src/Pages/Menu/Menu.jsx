@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import "./Menu.css"
+import "./Menu.scss"
 export const Menu = () => {
   return (
     <div className='menu_wrapper'>
@@ -8,10 +8,10 @@ export const Menu = () => {
         <div className='menu_flex'>
             <button className='menu_buttons color'><NavLink to="/OrdersRoute/NewOrders">Заказы</NavLink></button>
             <button className='menu_buttons'><NavLink to="/GoodsRoute">Товары</NavLink></button>
-            <button className='menu_buttons'>Статистика</button>
-            <button className='menu_buttons'>Сотрудники</button>
+            <button className='menu_buttons'><NavLink to="/StatisticsRoute">Статистика</NavLink></button>
+            <button className='menu_buttons'><NavLink to="/StaffRoute">Сотрудники</NavLink></button>
             <button className='menu_buttons'>Пользователи</button>
-            <button className='menu_buttons'>О нас</button>
+            <button className='menu_buttons'><NavLink to="/AboutUsRoute">О нас</NavLink></button>
         </div>
     </div>
   )

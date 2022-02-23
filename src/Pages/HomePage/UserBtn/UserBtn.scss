@@ -15,23 +15,23 @@
        border: 2px solid var(--color-green);
        box-sizing: border-box;
        border-radius: 8px;
-       width: 200px;
-       height: 200px;
+       width: 180px;
+       height: 170px;
        text-align: left;
        position: absolute;
-       top: 100px;
-       left: 1220px;
+       left: 1240px;
        svg{
                width: 25px;
                height: 25px;
                position: relative;
-               left: 169px;
+               left: 40px;
+               top: 3px;
        }
        h3{
         margin-bottom: 32px;
         margin-left: 20px;
         font-size: 18px;
-        margin-top: 10px;
+        margin-top: 3px;
     }
     p{
         margin-bottom: 32px;

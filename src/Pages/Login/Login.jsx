@@ -4,18 +4,27 @@ import "./Login.css"
 import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { ShowIcon } from "../../Store/Actions/Action";
+
 const Login =()=>   {
     const [open, setOpen] = useState(false)
 
     const toggle=()=>{
         setOpen(!open)
 }   
-
+    
+    const dispatch=useDispatch()
+    const eye=useSelector(state => state.Show.eye)
+    // console.log(eye)
+    // console.log(counter)
+    let counter = eye
     return (
         <div className="Auth_content Auth_back">
             <div className="Auth">
                 <form className="Auth_form">
-                <h2 className="hello">Привет!</h2>
+                <h2 className="hello" onClick={()=>dispatch(ShowIcon())}>Привет! {counter}</h2>
                     <label className="Auth_label label_margin">Логин</label>
                         <input className="Auth_input Auth_input_login" 
                         placeholder="Введите логин"/>
@@ -25,7 +34,6 @@ const Login =()=>   {
                         <input className="Auth_input Auth_input_pass"
                         placeholder="Введите пароль"
                         type={(open===false)?"password":"text"}/>
-
                         <div className="Auth_eye">
                             {
                                 (open===false)?<RiEyeCloseLine onClick={toggle}/>:

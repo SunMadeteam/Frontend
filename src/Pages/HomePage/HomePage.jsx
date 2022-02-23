@@ -6,6 +6,9 @@ import { SearchInput } from "./SearchInput/SearchInput"
 import UserBtn from "./UserBtn/UserBtn"
 import OrdersRoute from "./Orders/OrdersRoute"
 import { GoodsRoute } from "./Goods/GoodsRoute"
+import { StatisticsRoute } from "./Statistics/StatisticsRoute"
+import { StaffRoute } from "./Staff/StaffRoute"
+import { AboutUsRoute } from "./AboutUs/AboutUsRoute"
 
 const HomePage =()=>{
     return(
@@ -20,6 +23,9 @@ const HomePage =()=>{
                 <Routes>
                     <Route path="/OrdersRoute/*" element={<OrdersRoute/>}/>
                     <Route path="/GoodsRoute/*" element={<GoodsRoute/>}/>
+                    <Route path="/StatisticsRoute/*" element={<StatisticsRoute/>}/>
+                    <Route path="/StaffRoute/*" element={<StaffRoute/>}/>
+                    <Route path="/AboutUsRoute/*" element={<AboutUsRoute/>}/>
                 </Routes>
              </div>
         </div>

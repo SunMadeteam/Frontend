@@ -16,6 +16,7 @@ return (
          <button className='add_info' onClick={toggle}>
             <h3>Добавить</h3>
             <p><NavLink to="/">Товары</NavLink></p>
+            <p><NavLink to="/">Категорию</NavLink></p>
             <p><NavLink to="/">Сотрудники</NavLink></p>
          </button>
       }

@@ -12,8 +12,8 @@ const UserBtn = () => {
       {
       (open===false)?<button className='user_btn' onClick={toggle}><BsPerson/></button>:
          <button className='user_info' onClick={toggle}>
-            <BsPerson/>
-            <h3>Каныкей</h3>
+            
+            <h3>Каныкей <BsPerson/></h3>
             <p>+996 000 123 456</p>
             <p>Выйти</p>
          </button>

@@ -6,7 +6,7 @@ export const CompletedInfo = () => {
         <div>
         <div className='order_info'>
             <div className='check_box'>
-                <input type="checkbox"/>
+                <input type="checkbox" />
             </div>
             <div className='check_№'>
                 <h4>1</h4>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CatalogButton from '../Catalog-button';
 import HomeButton from '../home-button';
 import PersonalButton from '../Personal-area-button';
@@ -8,10 +9,10 @@ const FooterMenu = () => {
   return (
     <div className='footer'>
       <div className='footer_menu'>
-        <HomeButton />
-        <CatalogButton />
-        <ShoppingButton />
-        <PersonalButton />
+        <Link to='/'> {<HomeButton />} </Link>
+        <Link to='/catalogs'> {<CatalogButton />} </Link>
+        <Link to='/shopping'> {<ShoppingButton />} </Link>
+        <Link to='/personal'> {<PersonalButton />} </Link>
       </div>
     </div>
   )

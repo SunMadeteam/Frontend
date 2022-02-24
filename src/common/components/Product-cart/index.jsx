@@ -3,15 +3,15 @@ import './index.scss';
 import sagovnik from './img/sagovnik.svg';
 import PlusMinus from './../Plus-minus-button/index';
 
-const ProductCart = () => {
+const ProductCart = ({title, img}) => {
   return (
     <div className='product_cart'>
       <div className='cart_img'>
-        <img src={sagovnik} alt="" />
+        <img src={img} alt="" />
         <FavoriteHeart />
       </div>
       <div className='cart_body'>
-        <p className='title'>Саговник</p>
+        <p className='title'>{title}</p>
         <div className='price_wrap flex'>
           <p>3500 с</p>
           <PlusMinus plusOrMinus="+" />

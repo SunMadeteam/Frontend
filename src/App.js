@@ -18,7 +18,7 @@ function App() {
         <Route path='confirmation' element={<RegistrationConfirmationCode />} />
         <Route path='/auth' element={<Authorization/>} />
         <Route path='/catalogs' element={<Catalogs />} />
-        <Route path='/catalogs/catalogs' element={<Catalog />} />
+        <Route path='/catalog/:catalogName' element={<Catalog />} />
         <Route path='/shopping' element={<Shopping />} />
       </Routes>
       <FooterMenu />

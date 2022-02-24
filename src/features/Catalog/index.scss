@@ -1,6 +1,13 @@
+.catalog-wrap {
+    .header {
+        padding-bottom: 40px;
+        position: relative;
+    }
+}
+
 .catalog-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-columns: 1fr 50%;
     grid-gap: 15px;
     justify-content: center;
 }

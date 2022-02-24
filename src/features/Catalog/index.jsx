@@ -2,6 +2,8 @@ import './index.scss';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import ProductCart from './../../common/components/Product-cart/index';
+import Header from './../../common/components/Header/index';
+
 
 
 const Catalog = (props) => {
@@ -25,19 +27,21 @@ const Catalog = (props) => {
   };
 
   return (
-    <div className='catalog-wrapper'>
+    <div className='catalog-wrap'>
+    <Header />
+      <div className='catalog-wrapper container'>
+      {
+        catalogeMore ?
+        catalogeMore.map( catalog=>{
+          return(
+            <ProductCart title={catalog.strMeal} img={catalog.strMealThumb} key={catalog.idMeal}/>
+          )
+        }
 
-    {
-      catalogeMore ?
-      catalogeMore.map( catalog=>{
-        return(
-          <ProductCart title={catalog.strMeal} img={catalog.strMealThumb} key={catalog.idMeal}/>
-        )
+        ):<div>oops</div>
       }
 
-      ):<div>oops</div>
-    }
-
+      </div>
     </div>
   )
 }

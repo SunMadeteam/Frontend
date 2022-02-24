@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import HelloText from '../../common/components/Hello-text';
-import garden from './img/garden.png';
-import home from './img/home.png';
-import present from './img/present.png';
-import ground from './img/ground.png';
-import nutrition from './img/nutrition.png';
-import accessories from './img/accessories.png';
 import './index.scss';
 import CatalogBlock from './../../common/components/Catalog-block/index';
 

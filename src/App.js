@@ -4,10 +4,10 @@ import MainPage from './features/Main-page';
 import Registration from './features/Registration';
 import RegistrationConfirmationCode from './features/Registration-confirmation-code';
 import Authorization from './features/Authorization';
-import Catalogs from './features/Catalogs';
-import Catalog from './features/Catalog';
 import Shopping from './features/Shopping';
-import CartDescription from './features/Cart-description/index';
+import Catalog from './features/Catalog/index';
+import Catalogs from './features/Catalogs/index';
+
 
 
 function App() {
@@ -18,14 +18,12 @@ function App() {
         <Route path='/personal' element={<Registration/>} />
         <Route path='confirmation' element={<RegistrationConfirmationCode />} />
         <Route path='/auth' element={<Authorization/>} />
-        <Route path='/catalogs' element={<Catalogs />} />
-        <Route path='/catalogs/catalogs' element={<Catalog />} />
         <Route path='/shopping' element={<Shopping />} />
-        <Route path='/cart-description' element={<CartDescription />} />
+        <Route path='/catalogs' element={<Catalogs />} />
+        <Route path='/catalog/:catalogName' element={<Catalog />} />
       </Routes>
       <FooterMenu />
       <hr />      
-      
     </div>
   );
 }

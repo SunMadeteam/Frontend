@@ -1,0 +1,19 @@
+@import './../../helpers/mixins.scss';
+
+body {
+  position: relative;
+}
+
+.header {
+  @include flex($justify:space-between);
+  width: 100%;
+  position: absolute;
+  top: 23px;
+  img {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    object-fit: cover;
+    display: block;
+  }
+}

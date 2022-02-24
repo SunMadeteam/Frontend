@@ -1,6 +1,5 @@
 import FavoriteHeart from '../Favorite-heart';
 import './index.scss';
-import sagovnik from './img/sagovnik.svg';
 import PlusMinus from './../Plus-minus-button/index';
 
 const ProductCart = ({title, img}) => {

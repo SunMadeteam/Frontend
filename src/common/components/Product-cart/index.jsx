@@ -1,12 +1,16 @@
 import FavoriteHeart from '../Favorite-heart';
 import './index.scss';
 import PlusMinus from './../Plus-minus-button/index';
+import { Link } from 'react-router-dom';
 
 const ProductCart = ({title, img}) => {
   return (
     <div className='product_cart'>
+      
       <div className='cart_img'>
-        <img src={img} alt="" />
+      <Link to ={'/cartDescription/' + title}>
+         <img src={img} alt="" /> 
+      </Link>
         <FavoriteHeart />
       </div>
       <div className='cart_body'>

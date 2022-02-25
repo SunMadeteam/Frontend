@@ -7,6 +7,7 @@ import Authorization from './features/Authorization';
 import Shopping from './features/Shopping';
 import Catalog from './features/Catalog/index';
 import Catalogs from './features/Catalogs/index';
+import CartDescription from './features/Cart-description/index';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/shopping' element={<Shopping />} />
         <Route path='/catalogs' element={<Catalogs />} />
         <Route path='/catalog/:catalogName' element={<Catalog />} />
+        <Route path='/cartDescription/:flowersName' element={<CartDescription />} />
       </Routes>
       <FooterMenu />
       <hr />      

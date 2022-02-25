@@ -23,11 +23,11 @@ const Catalogs = () => {
     <div className='container'>
       <HelloText />
       {catalog ?
-
         catalog.map((catalog, index) => {
           return (
-            <Link to={'/catalog/' + catalog.strCategory} key = {catalog.idCategory}> {<CatalogBlock text={catalog.strCategory} img={catalog.strCategoryThumb} />} </Link>
-
+            <Link to={'/catalog/' + catalog.strCategory} key={catalog.idCategory}>
+              <CatalogBlock text={catalog.strCategory} img={catalog.strCategoryThumb} />
+            </Link>
           )
         })
         :

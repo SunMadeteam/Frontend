@@ -8,4 +8,4 @@ const Adresses = () => {
   )
 }
 
-export const Adresses;
+export default Adresses;

@@ -1,5 +1,4 @@
-import monstera from './img/Monstera.png'
-import './index.scss'
+import './index.scss';
 import TitleEighteen from './../../common/components/Title-eighteen/index';
 import WideButton from '../../common/components/Wide-white-button';
 import Header from './../../common/components/Header/index';

@@ -1,0 +1,17 @@
+@import '../../common/components/global';
+@import '../../common/helpers/mixins';
+@import '../../common/helpers/variables';
+
+.about {
+  .header {
+    position: relative;
+    margin-top: 23px;
+    margin-bottom: 27px;
+  }
+
+  .about-body {
+    h2 {
+      @include font(24px, 28px)
+    }
+  }
+}

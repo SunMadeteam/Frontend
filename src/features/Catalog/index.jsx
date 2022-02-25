@@ -1,6 +1,6 @@
 import './index.scss';
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import ProductCart from './../../common/components/Product-cart/index';
 import Header from './../../common/components/Header/index';
 
@@ -16,8 +16,6 @@ const Catalog = (props) => {
   useEffect(() => {
     getDetail(catalogName);
   }, []);
-
-
   const getDetail = async (catalogName) => {
     const req = await fetch(url_catalog_name + catalogName);
     const res = await req.json();
@@ -25,6 +23,8 @@ const Catalog = (props) => {
     console.log(res.meals);
 
   };
+
+  
 
   return (
     <div className='catalog-wrap'>
@@ -34,13 +34,11 @@ const Catalog = (props) => {
         catalogeMore ?
         catalogeMore.map( catalog=>{
           return(
-            <ProductCart title={catalog.strMeal} img={catalog.strMealThumb} key={catalog.idMeal}/>
+           <ProductCart title={catalog.strMeal} img={catalog.strMealThumb} key={catalog.idMeal}/>
           )
         }
-
         ):<div>oops</div>
       }
-
       </div>
     </div>
   )

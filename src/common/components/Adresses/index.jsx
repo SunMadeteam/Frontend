@@ -3,9 +3,9 @@ import './index.scss';
 const Adresses = () => {
   return (
     <div className='adresses'>
-
+      <h1>Adresses</h1>
     </div>
   )
 }
 
-export const Adresses;
+export default Adresses;

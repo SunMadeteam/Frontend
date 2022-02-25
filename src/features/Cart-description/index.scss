@@ -13,7 +13,16 @@
   .price {
     @include font(24px, 28px)
   }
-  span{
-  color: $auxiliary-gray;
+  span {
+    color: $auxiliary-gray;
+    font-weight: 500 !important;
+    @include font(18px, 21px);
+    margin: 20px 0;
+    @include flex(block)
   }
-}
+  .big_description {
+    @include font (18px, 21px);
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 24px;
+  }

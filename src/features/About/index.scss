@@ -1,0 +1,25 @@
+@import '../../common/components/global';
+@import '../../common/helpers/mixins';
+@import '../../common/helpers/variables';
+
+.about {
+  .header {
+    position: relative;
+  }
+
+  .about-body {
+    h2 {
+      @include font(30px, 36px);
+      padding-top: 54px;
+      padding-bottom: 30px;
+    }
+    .contacts {
+      @include font(24px, 28px);
+      margin-bottom: 10px;
+    }
+    .wideButton {
+      margin-top: 20px;
+      margin-bottom: 72px;
+    }
+  }
+}

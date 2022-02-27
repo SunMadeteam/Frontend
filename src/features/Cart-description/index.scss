@@ -12,18 +12,17 @@
   }
   .price {
     @include font(24px, 28px);
-    margin-bottom: 15px;
+    
   }
-  .title-descripton{
-    margin-bottom: 15px;
-  }
-  span{
-  color: $auxiliary-gray;
-  font-size: 18px;
-  display: block;
-  margin-bottom: 15px;
+  span {
+    color: $auxiliary-gray;
+    font-weight: 500 !important;
+    @include font(18px, 21px);
+    margin: 20px 0;
+    @include flex(block)
   }
   .big_description{
     margin-bottom: 15px;
   }
+ 
 }

@@ -1,0 +1,14 @@
+@import './../../helpers/variables.scss';
+@import './../../helpers/mixins.scss';
+
+.social-media {
+  .social_wrap {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
+    border-bottom: 2px solid $extra-green;
+    padding-bottom: 19px;
+    padding-top: 19px;
+  }
+
+}

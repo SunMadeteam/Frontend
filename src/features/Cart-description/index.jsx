@@ -1,5 +1,4 @@
-
-import './index.scss'
+import './index.scss';
 import TitleEighteen from './../../common/components/Title-eighteen/index';
 import WideButton from '../../common/components/Wide-white-button';
 import Header from './../../common/components/Header/index';
@@ -14,14 +13,11 @@ const CartDescription = () => {
 
   useEffect(() => {
     getFlowersDescription(flowersName);
-    console.log(flowersName);
   }, []);
   const getFlowersDescription = async (flowersName) => {
     const req = await fetch(URL_FLOWER_DESCRIPTION + flowersName);
     const res = await req.json();
     setFlower(res.meals[0]);
-    console.log(res.meals);
-
   };
 
   return (
@@ -39,7 +35,7 @@ const CartDescription = () => {
         <span>Описание</span>
         <TitleEighteen title="Сложность ухода - легкий" />
         <p className='big_description'>
-        {flower.strInstructions ? flower.strInstructions.substring(0,200) + '...':'описание отсутствует'}
+          {flower.strInstructions ? flower.strInstructions.substring(0,200) + '...':'описание отсутствует'}
         </p>
         <WideButton word="КУПИТЬ" />
       </div>

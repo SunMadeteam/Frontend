@@ -1,0 +1,28 @@
+@import './../../common/helpers/mixins.scss';
+@import './../../common/helpers/variables.scss';
+
+.header_cart {
+  padding-top: 12px;
+}
+
+.description {
+  .title {
+    @include font(34px, 39px);
+    margin-bottom: 15px;  
+  }
+  .price {
+    @include font(24px, 28px);
+    
+  }
+  span {
+    color: $auxiliary-gray;
+    font-weight: 500 !important;
+    @include font(18px, 21px);
+    margin: 20px 0;
+    @include flex(block)
+  }
+  .big_description{
+    margin-bottom: 15px;
+  }
+ 
+}

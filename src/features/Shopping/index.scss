@@ -1,0 +1,51 @@
+@import './../../common/helpers/mixins.scss';
+@import './../../common/helpers/variables.scss';
+
+.shopping{
+    margin-top: 70px;
+    .shopping__top{
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .clear{
+        background: transparent;
+        border: none;
+        outline: none;
+        color:$extra-gray;
+        @include font(18px, 19px);
+        
+    }
+    .price {
+        @include font(16px, 28px);
+        
+    }
+    .shopping__subtitle{
+        @include font(18px, 20px);
+        div{
+            @include font(16px, 19px);
+            margin-top: 7px;
+            color: $main-green;
+            
+        }
+    }
+    .shopping__subtitle-normal{
+        font-weight: normal;
+        
+    }
+    .shopping__subtitle-mar-bottom{
+        margin-bottom: 10px;
+    }
+    .shopping__cart-summ{
+        @include font(19px, 28px);
+    }
+    .shopping__block{
+    justify-content: space-between;
+    }
+    .price_big{
+        font-size: 24px;
+    }
+    .shopping__block_mb{
+        margin-bottom: 30px;
+    }
+    
+}

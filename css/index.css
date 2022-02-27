@@ -49,6 +49,8 @@ button {
 
 img {
   width: 100%;
+  background-repeat: no-repeat;
+
 }
 
 input {

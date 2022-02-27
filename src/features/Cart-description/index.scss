@@ -11,7 +11,8 @@
     margin-bottom: 15px;  
   }
   .price {
-    @include font(24px, 28px)
+    @include font(24px, 28px);
+    
   }
   span {
     color: $auxiliary-gray;
@@ -20,10 +21,8 @@
     margin: 20px 0;
     @include flex(block)
   }
-  .big_description {
-    @include font (18px, 21px);
-    font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 24px;
+  .big_description{
+    margin-bottom: 15px;
   }
+ 
 }

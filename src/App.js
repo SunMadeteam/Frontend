@@ -9,6 +9,8 @@ import Catalog from './features/Catalog/index';
 import Catalogs from './features/Catalogs/index';
 import About from './features/About';
 import CartDescription from './features/Cart-description/index';
+import  Ordering  from './features/Ordering/Ordering';
+
 import PersonalArea from './features/Personal-area';
 
 
@@ -25,6 +27,7 @@ function App() {
         <Route path='/catalog/:catalogName' element={<Catalog />} />
         <Route path='/cartDescription/:flowersName' element={<CartDescription />} />
         <Route path='/about' element={<About />} />
+        <Route path='/ordering' element={<Ordering />} />
         <Route path='/personal-area' element={<PersonalArea />} />
       </Routes>
       <FooterMenu />

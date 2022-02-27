@@ -1,3 +1,15 @@
 .ordering{
-    
+    .input{
+        border: 2px solid #C4C4C4;
+        margin: 10px auto;
+    }
+    .input_green{
+        border: 2px solid #4FB61E;
+    }
+    .input_error{
+        border: 2px solid #fc3908;
+    }
+    .errorTelefone{
+        color: #fc3908;
+    }
 }

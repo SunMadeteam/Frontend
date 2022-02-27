@@ -11,6 +11,8 @@ import About from './features/About';
 import CartDescription from './features/Cart-description/index';
 import  Ordering  from './features/Ordering/Ordering';
 
+import PersonalArea from './features/Personal-area';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path='/cartDescription/:flowersName' element={<CartDescription />} />
         <Route path='/about' element={<About />} />
         <Route path='/ordering' element={<Ordering />} />
+        <Route path='/personal-area' element={<PersonalArea />} />
       </Routes>
       <FooterMenu />
       <hr />      

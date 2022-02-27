@@ -3,6 +3,7 @@ import Hr from '../../common/components/Hr/Hr';
 import ShoppingCart from '../../common/components/Shopping-cart/ShoppingCart';
 import './index.scss';
 import WideButton from './../../common/components/Wide-button/index';
+import { Link } from 'react-router-dom';
 
 const Shopping = () => {
   return (
@@ -42,7 +43,7 @@ const Shopping = () => {
           <div className="shopping__subtitle">Итого:</div>
           <div className="price price_big">11660 с</div>
         </div>
-        <WideButton word='ОФОРМИТЬ ЗАКАЗ'/>
+        <Link to={'/ordering'}><WideButton word='ОФОРМИТЬ ЗАКАЗ'/></Link>
       </div>
     </div>
   )

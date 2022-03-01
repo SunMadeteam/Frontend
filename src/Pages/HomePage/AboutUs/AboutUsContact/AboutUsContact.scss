@@ -1,0 +1,147 @@
+.contact{
+display: flex;
+flex-wrap: wrap;
+}
+.contact_whatsapp{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin:0px 20px 20px 20px;
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: var(--color-green);
+    }
+    h3{
+        margin-right: 340px;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 15px;
+        margin-right: 280px;
+    }
+}
+.contact_telegram{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: var(--color-green);
+    }
+    h3{
+        margin-right: 340px;
+        font-weight: 600;
+    }
+    p{
+        margin-top: 15px;
+        margin-right: 280px;
+    }
+}
+.contact_instagram{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin:0px 20px 20px 20px;
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: var(--color-green);
+    }
+    h3{
+        margin-right: 320px;
+        font-weight: 600;
+    }
+}
+
+.contact_phone{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: var(--color-green);
+    }
+    h3{
+        margin-right: 250px;
+        font-weight: 600;
+    }
+}
+.adress{
+    display: flex;
+}
+.adress_btn{
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #ffffff;
+    height: 59px;
+    width: 80px;
+    margin:25px 0px 0px 5px;
+    line-height: 21px;
+}
+
+.adress_branch{
+    width: 510px;
+    height: 89px;
+    padding: 11px;
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    margin: 0px 20px 20px 20px;
+    div{
+        display: flex;
+        justify-content: space-between
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        color: var(--color-green);
+    }
+    h3{
+        margin-right: 250px;
+        font-weight: 600;
+    }
+}
+.img_adress{
+    width: 508px;
+    height: 307px;
+    background-image: url(./adress.png);
+}

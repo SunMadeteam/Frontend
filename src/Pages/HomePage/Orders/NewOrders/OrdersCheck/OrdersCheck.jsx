@@ -1,17 +1,10 @@
 import React from 'react'
-import {AiOutlineCheck} from 'react-icons/ai'
 import './OrdersCheck.scss'
 export const OrdersCheck = () => {
   return (
     <div className='order_check'>
-        <div className='check_color'>
-            <AiOutlineCheck/>
-        </div>
         <div className='check_№'>
             <h3>№</h3>
-        </div>
-        <div className='check_id'>
-            <h3>id</h3>
         </div>
         <div className='check_time'>
             <h3>Время</h3>

@@ -1,0 +1,30 @@
+.window_delete{
+    width: 190px;
+    border: 2px solid #4FB61E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
+    top: 226px;
+    right: 28px;
+        button{
+        width: 80px;
+        height: 21px;
+        margin-top: 25px;
+        background-color: #fff;
+        border: none;
+        color: var(--color-green);
+        font-weight: 700;
+        }
+        .button_no{
+            background-color: var(--color-green);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        span{
+            font-size: 14px;
+            margin-left: 10px;
+        }
+}

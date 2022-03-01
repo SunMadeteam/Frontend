@@ -7,11 +7,10 @@ export const Menu = () => {
         <p className='logo'>SunMade</p>
         <div className='menu_flex'>
             <button className='menu_buttons color'><NavLink to="/OrdersRoute/NewOrders">Заказы</NavLink></button>
-            <button className='menu_buttons'><NavLink to="/GoodsRoute">Товары</NavLink></button>
+            <button className='menu_buttons'><NavLink to="/GoodsRoute/GoodsAll">Товары</NavLink></button>
             <button className='menu_buttons'><NavLink to="/StatisticsRoute">Статистика</NavLink></button>
-            <button className='menu_buttons'><NavLink to="/StaffRoute">Сотрудники</NavLink></button>
-            <button className='menu_buttons'>Пользователи</button>
-            <button className='menu_buttons'><NavLink to="/AboutUsRoute">О нас</NavLink></button>
+            <button className='menu_buttons'><NavLink to="/StaffRoute/StaffCourier">Сотрудники</NavLink></button>
+            <button className='menu_buttons'><NavLink to="/AboutUsRoute/AboutUsContact">О нас</NavLink></button>
         </div>
     </div>
   )

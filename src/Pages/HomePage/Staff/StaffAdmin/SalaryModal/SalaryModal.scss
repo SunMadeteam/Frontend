@@ -1,0 +1,24 @@
+.salary_flex{
+    display: flex;
+    margin-top: 40px;
+    h3{
+        margin-right: 180px;
+    }
+    svg{
+        color: var(--color-green);
+    }
+}
+.salary_flex1{
+    display: flex;
+    margin-top: 24px;
+    p{
+        width: 160px;
+        text-align: left;
+        margin-right: 85px;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+}

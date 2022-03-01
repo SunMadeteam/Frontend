@@ -7,9 +7,6 @@ export const ProcessedCheck = () => {
         <div className='check_№'>
             <h3>№</h3>
         </div>
-        <div className='check_id'>
-            <h3>id</h3>
-        </div>
         <div className='check_time'>
             <h3>Время</h3>
         </div>

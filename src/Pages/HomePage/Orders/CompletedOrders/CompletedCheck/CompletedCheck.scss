@@ -1,0 +1,15 @@
+.filter_icon{
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--color-green);
+    position: absolute;
+    top: 112px;
+    right:13px;
+    svg{
+        width: 24px;
+        height: 24px;
+        color: var(--color-green);
+    }
+}

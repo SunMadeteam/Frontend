@@ -1,0 +1,159 @@
+.admin_all{
+    display: flex;
+    border-bottom: 2px solid #B8D7A9;
+    height: 50px;
+    text-align: left;
+    .info_checkbox{
+        margin-left: 10px;
+        margin-top: 15px;
+        input{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+.admin_info{
+    display: flex;
+    border-bottom: 2px solid #B8D7A9;
+    height: 50px;
+    text-align: left;
+    .info_color{
+        color:var(--color-green);
+        width: 40px;
+        height: 50px;
+        text-align:center;
+        svg{
+            width: 25px;
+            height: 25px;
+    }
+    }
+    .info_№{
+        width: 40px;
+        height: 50px;
+        h4{
+            margin-left:10px ;
+        }
+    }
+    .info_name{
+        width: 250px;
+        height: 50px;
+        h4{
+            margin-left:10px ;
+        }
+    }
+    .info_number{
+        width: 166px;
+        height: 50px;
+        margin-right: 40px;
+        h4{
+            margin-left:10px ;
+        }
+    }
+    .info_salary{
+        width: 166px;
+        height: 50px;
+        h4{
+            margin-left:10px ;
+        }
+    }
+    .info_order{
+        width: 166px;
+        height: 50px;
+        h4{
+            margin-left:10px ;
+        }
+    }
+    .info_status{
+        width: 166px;
+        height: 50px;
+    }
+    input{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    h3{
+        font-size: 18px;
+    }
+}
+
+
+.staff_modal{
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    .status{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        h3{
+            margin-right: 190px;
+        }
+        input{
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+.modal_form{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.modal_input{
+    border: 2px solid var(--color-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 50px;
+    width: 300px;
+    margin: 0px 0px 25px 0px;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+.modal_input_pass{
+    margin-bottom:91px
+}
+.modal_label{
+    opacity: 50%;
+    margin-right: 230px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+.label_margin{
+    margin-top: 28px;
+    margin-right: 288px;
+}
+.modal_button{
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    background: var(--color-green);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-top: 80px;
+} 
+.hello{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    font-style: normal;
+}
+.modal_eye{
+    position: relative;
+    bottom: 60px;
+    left: 128px;
+    color:var(--color-green);
+    width: 5rem;
+}

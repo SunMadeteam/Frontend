@@ -1,0 +1,24 @@
+.edit_flex{
+    display: flex;
+    margin:0px auto 11px 34px;
+    h3{
+        margin-right: 160px;
+    }
+    svg{
+        color: var(--color-green);
+        margin-right: 30px;
+    }
+}
+.edit_flex1{
+    display: flex;
+    margin:0px auto 0px 14px;
+    p{
+        width: 170px;
+        text-align: left;
+        margin-right: 85px;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+    }
+}

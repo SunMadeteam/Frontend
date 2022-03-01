@@ -1,16 +1,18 @@
-import React from 'react'
-import {AiOutlineCheck} from 'react-icons/ai'
+import React,{useState} from 'react'
+import {BsFilterRight} from 'react-icons/bs'
+import { CompletedFilter } from '../CompletedFilter/CompletedFilter'
+import './CompletedCheck.scss'
 export const CompletedCheck = () => {
+    const [open, setOpen] = useState(false)
+
+    const toggle=()=>{
+        setOpen(!open)
+  }   
+
   return (
     <div className='order_check'>
-        <div className='check_color'>
-            <AiOutlineCheck/>
-        </div>
         <div className='check_№'>
             <h3>№</h3>
-        </div>
-        <div className='check_id'>
-            <h3>id</h3>
         </div>
         <div className='check_time'>
             <h3>Время</h3>
@@ -24,6 +26,12 @@ export const CompletedCheck = () => {
         <div className='check_adres'>
             <h3>Адрес</h3>
         </div>
+        {
+        (open===false)? 
+        <div className='filter_icon' onClick={toggle}><BsFilterRight/></div>
+            :
+        <div onClick={toggle}><CompletedFilter/></div>
+        }
     </div>
   )
 }

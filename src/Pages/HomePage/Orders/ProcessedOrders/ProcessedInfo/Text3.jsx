@@ -21,9 +21,6 @@ export const Text3 = () => {
         <div className='check_adres'>
             <h4>Гагарина 33</h4>
         </div>
-        <div className='check_dot'>
-            <BsThreeDotsVertical/>
-        </div>
  </div>
   )
 }

@@ -24,7 +24,7 @@ const Login =()=>   {
         <div className="Auth_content Auth_back">
             <div className="Auth">
                 <form className="Auth_form">
-                <h2 className="hello" onClick={()=>dispatch(ShowIcon())}>Привет! {counter}</h2>
+                <h2 className="hello">Привет!</h2>
                     <label className="Auth_label label_margin">Логин</label>
                         <input className="Auth_input Auth_input_login" 
                         placeholder="Введите логин"/>

@@ -11,37 +11,6 @@ h4{
     font-weight: normal;
     font-size: 18px;
 }
-
-.check_box{
-    color:var(--color-green);
-    width: 40px;
-    height: 50px;
-    margin-top: 15px;
-    text-align: center;
-    font-style: normal;
-    input{
-        width: 24px;
-        height: 24px;
-    }
-    // span{
-    //     height: 24;
-    //     width: 24;
-    //     border: 1px solid red;
-    //     display: inline-block;
-    //     position: relative;
-    //     background-color: var(--color-green);
-    //     border-radius: 26px;
-    //     pad: 3px;
-    // }
-    // [type=checkbox]:checked + span::before{
-    //     content: '\2714';
-    //     position: absolute;
-    //     top:5px;
-    //     left:0;
-    //     font-size: 23px;
-    //     color: var(--color-green);
-    // }
-}
 .check_№{
     width: 40px;
     height: 50px;
@@ -70,19 +39,121 @@ h4{
     width: 370px;
     height: 50px;
 }
-.check_dot{
-    width: 50px;
-    height: 50px;
-    margin-top:15px;
-    color: var(--color-green);
-    text-align: right;
-    svg{
-        width: 25px;
-        height: 25px;
+.check_delete{
+    margin-top: 15px;
 }
+.modal_text{
+    display: flex;
+    margin-bottom: 29px;
+    h3{
+        margin-right: 19.5px;
+    }
+    p{
+        margin-right: 49px;
+    }
 }
-
-// .dot_info{
-
-// }
-
+.modal_text__number{
+    display: flex;
+    margin-bottom: 15px;
+    h3{
+        margin-left: 40px;
+        margin-right: 29px;
+        font-weight: 400;
+    }
+}
+.modal_adress{
+    display: flex;
+    flex-direction: row;
+    p{
+        margin-left: 40px;
+        margin-top: 14px;
+        margin-right: 23px;
+    }
+    input{
+        border: 2px solid var(--color-green);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 572px;
+        height: 50px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    input::placeholder{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .pencil{
+        position: relative;
+        right:30px;
+        top:15px;
+        color: var(--color-green);
+    }
+}
+.goods_flex{
+    display: flex;
+    margin-top: 34px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 13px;
+    .goods_№{
+        width: 40px;
+    }
+    .goods_photo{
+        width: 80px;
+        margin-right: 10px;
+    }
+    .goods_title{
+        width: 180px;
+        margin-right: 10px;
+    }
+    .goods_number{
+        width: 120px;
+        margin-right: 10px;
+    }
+    .goods_sum{
+        width: 120px;
+        margin-right: 10px;
+    }
+    .goods_total{
+        width: 120px;
+    }
+}
+.modal_goods{
+    border-top: 1px solid #B8D7A9;
+    margin-top: 20px;
+}
+.goods_content{
+    display: flex;
+    .img_1{
+        background-image: url(./order1.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .img_2{
+        background-image: url(./order2.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .img_3{
+        background-image: url(./order3.png);
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 18px;
+    }
+    .content_№{
+        margin-left: 11.5px;
+    }
+    .content_title{
+        width: 180px;
+        text-align: left;
+        margin-right: 7px;
+    }
+    .content_number{
+        margin-right: 118px;
+    }
+}

@@ -1,0 +1,33 @@
+.delete_icon{
+    svg{
+        color: var(--color-green);
+    }
+}
+.delete_cont{
+    padding: 5px;
+    width: 180px;
+    height: 65px;
+    border:2px solid var(--color-green);
+    border-radius: 8px;
+    font-size: 14px;
+    position: absolute;
+    right: 0px;
+    background-color: #fff;
+    align-items: center;
+    text-align: center;
+    button{
+        width: 80px;
+        height: 21px;
+        margin-top: 25px;
+        background-color: #fff;
+        border: none;
+        color: var(--color-green);
+        font-weight: 700;
+    }
+    .button_no{
+        background-color: var(--color-green);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 8px;
+    }
+}

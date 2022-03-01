@@ -1,0 +1,100 @@
+.goods_info1{
+    display: flex;
+    border-bottom: 2px solid #B8D7A9;
+    text-align: left;
+    font-style: normal;
+    .info_delete{
+        margin-top: 15px;
+        margin-left: 150px;
+    }
+}
+.goods_info{
+    display: flex;
+    text-align: left;
+    font-style: normal;
+    .info_№{
+        width: 40px;
+        height: 50px;
+        h4{
+            margin-left: 14.5px;
+        }
+    }
+    .info_img{
+        width: 84px;
+        height: 80px;
+        background-image: url(./goods_img2.png);
+        margin-right: 26px;
+    }
+    .info_title{
+        width: 200px;
+        height: 50px;
+    }
+    .info_data{
+        width: 111px;
+        height: 50px;
+    }
+    .info_category{
+        width: 200px;
+        height: 50px;
+    }
+    .info_description{
+        width: 200px;
+        height: 50px;
+    }
+    h4{
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+}
+
+.goods_modal{
+    display: flex;
+    flex-direction: column;
+    .goods_img{
+        background-image: url(./goods_img.png);
+        width: 186px;
+        height: 175px;
+        margin: 0 auto;
+        border: 2px solid var(--color-green);
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .goods_input{
+        width: 290px;
+        height: 50px;
+        border-radius: 8px;
+        border:2px solid var(--color-green);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    .goods_label{
+        opacity: 50%;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 45px;
+        margin-bottom: 5px;
+    }
+    .label_margin{
+        margin-left: 94px;
+    }
+    form{
+        margin-top: 48px;
+    }
+    input::placeholder{
+        font-weight: 900;
+    }
+    
+}
+.goods_description{
+        width: 290px;
+        height: 190px;
+        border: 2px solid var(--color-green);
+        border-radius: 8px;
+        margin: 0 auto;
+        padding: 10px;
+}

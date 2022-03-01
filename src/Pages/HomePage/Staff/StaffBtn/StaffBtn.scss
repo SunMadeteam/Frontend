@@ -1,0 +1,37 @@
+.staff{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.staff_btn{
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #ffffff;
+    height: 59px;
+    width: 85px;
+    margin:0px 10px 0px 0px;
+    line-height: 21px;
+}
+.staff_route{
+    display: flex;
+    margin-top: 20px;
+}
+.staff_active{
+    border: 1px solid #B8D7A9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    p{
+        margin-top: 2px;
+    }
+}
+.staff_status{
+    display: flex;
+    margin-top: 17px;
+}

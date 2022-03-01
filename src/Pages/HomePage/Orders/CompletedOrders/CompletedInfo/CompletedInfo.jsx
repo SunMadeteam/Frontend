@@ -1,19 +1,15 @@
 import React from 'react'
-import {BsThreeDotsVertical} from 'react-icons/bs'
+import "./CompletedInfo.scss"
+import { OrderDelete } from '../../NewOrders/OrderDelete/OrderDelete'
+import {RiDeleteBin6Line} from 'react-icons/ri'
+
 export const CompletedInfo = () => {
   return (
-    <div>
-        <div>
+    <div className='all'>
         <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox" />
-            </div>
             <div className='check_№'>
                 <h4>1</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -26,21 +22,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>2</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -53,21 +41,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>3</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -80,21 +60,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>4</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -107,21 +79,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>5</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -134,21 +98,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>6</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -161,21 +117,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>7</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -188,21 +136,13 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>8</h4>
             </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
-            </div>
             <div className='check_time'>
                 <h4>19:00</h4>
             </div>
@@ -215,20 +155,12 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
 
          <div className='order_info'>
-            <div className='check_box'>
-                <input type="checkbox"/>
-            </div>
             <div className='check_№'>
                 <h4>9</h4>
-            </div>
-            <div className='check_id'>
-                <h4>9432021</h4>
             </div>
             <div className='check_time'>
                 <h4>19:00</h4>
@@ -242,11 +174,8 @@ export const CompletedInfo = () => {
             <div className='check_adres'>
                 <h4>Политех</h4>
             </div>
-            <div className='check_dot'>
-                <BsThreeDotsVertical/>
-            </div>
+            <div className='check_delete'><OrderDelete/></div>
          </div>
-    </div>
     </div>
   )
 }

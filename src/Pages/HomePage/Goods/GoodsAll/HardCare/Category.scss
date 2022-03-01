@@ -1,0 +1,26 @@
+.category_flex{
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-around;
+    h3{
+       margin-right: 100px;
+    }
+    svg{
+        color: var(--color-green);
+    }
+    
+}
+.category_flex1{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-around;
+    p{
+        width: 170px;
+        text-align: left;
+        margin-right: 25px;
+    }
+    input{
+        width: 24px;
+        height: 24px;
+    }
+}

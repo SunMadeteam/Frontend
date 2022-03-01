@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import Header from '../../common/components/Header';
 
 import './index.scss'
-import Input from './../../common/components/Input/Input';
+
 import WideWhiteButton from '../../common/components/Wide-white-button';
 
 const Ordering = () => {
   const [name, setName] = useState('')
   const [telefone, setTelefone] = useState('')
   const [addres, setAdress] = useState('')
+  const [errorAddres, setErrorAddres] = useState('Адрес не может быть пустым')
+  const [addresDirty, setAddresDirty] = useState(false)
   const [nameDirty, setNameDirty] = useState(false)
   const [telefoneDirty, setTelefoneDirty] = useState(false)
   const [errorName, setErrorName] = useState('Имя не может быть пустым')
@@ -16,12 +18,12 @@ const Ordering = () => {
   const [formValid, setFormValid] = useState(false)
 
   useEffect(() => {
-    if (errorName || errorTel) {
+    if (errorName || errorTel || errorAddres) {
       setFormValid(false)
     } else {
       setFormValid(true)
     }
-  }, [errorName, errorTel])
+  }, [errorName, errorTel,errorAddres])
 
  
   const blurToggle = (e) => {
@@ -30,8 +32,9 @@ const Ordering = () => {
     }
     else if (e.target.name === 'telefone') {
       setTelefoneDirty(true)
+    }else if(e.target.name === 'addres'){
+      setAddresDirty(true)
     }
-
   }
 
   const changeName = (e) => {
@@ -42,19 +45,19 @@ const Ordering = () => {
       setErrorName('')
     }
   }
-  const changeAdres = (e) => {
-    setName(e.target.value)
+
+  const changeAddres = (e) => {
+    setAdress(e.target.value)
     if (!e.target.value) {
-      setErrorName('Имя не может быть пустым')
+      setErrorAddres('Адрес не может быть пустым')
     } else {
-      setErrorName('')
+      setErrorAddres('')
     }
   }
+
   const changeTelefone = (e) => {
     setTelefone(e.target.value)
-    console.log(e.target.value);
     const regKG = /^\+\s?996\s?\d{3}\s?\d{3}\s?\d{3}$/g
-
     if (!e.target.value) {
       setErrorTelefone('Введите номер телефона')
 
@@ -66,12 +69,12 @@ const Ordering = () => {
       setErrorTelefone('')
     }
   }
+
   return (
     <div className=' '>
       <Header position={true} />
       <div className="container ordering">
         {(errorName && nameDirty) && <div className='errorTelefone' >{errorName}</div>}
-
         <input
           type='text'
           placeholder='Имя'
@@ -79,7 +82,7 @@ const Ordering = () => {
           value={name}
           onChange={(e) => changeName(e)}
           onBlur={(e) => blurToggle(e)}
-          className={(errorTel && telefoneDirty) ?'input input_error ': (!errorName ) ? 'input input_green' : 'input'}
+          className={(errorName && nameDirty) ?'input input_error ': (!errorName ) ? 'input input_green' : 'input'}
         />
 
         {(errorTel && telefoneDirty) && <div className='errorTelefone'>{errorTel}</div>}
@@ -92,15 +95,20 @@ const Ordering = () => {
           onBlur={(e) => blurToggle(e)}
           className={errorTel && telefoneDirty?'input input_error ': !errorTel ? 'input input_green': 'input'}
         />
-        <input type="text"
-          value={addres}
-          className='input'
-          placeholder='Адрес'
-          onChange={changeAdres}
 
+        {(errorAddres && addresDirty) && <div className='errorTelefone'>{errorAddres}</div>}
+
+        <input 
+          value={addres}
+          name='addres'
+          className={(errorAddres && addresDirty) ?'input input_error ': (!errorAddres ) ? 'input input_green' : 'input'}
+          placeholder='Адрес'
+          onBlur={(e) => blurToggle(e)}
+          onChange={(e)=>changeAddres(e)}
         />
 
-<WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} />
+        <WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} />
+      
       </div>
     </div>
   )

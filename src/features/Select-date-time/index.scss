@@ -1,0 +1,35 @@
+.select-date-time {
+    input{
+        margin-bottom: 50px;
+        border: 2px solid #CECACE;
+        color:#CECACE;
+    }
+    .select-date-time__time {
+        width: 70%;
+        margin-bottom: 50px;
+
+        input,
+        span {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 0;
+            color: #797979;
+
+        }
+
+        span {
+            width: 10px;
+            font-size: 20px;
+            justify-content: center;
+            
+        }
+
+        ;
+
+    }
+
+}

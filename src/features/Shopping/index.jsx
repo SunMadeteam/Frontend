@@ -35,7 +35,7 @@ const Shopping = () => {
           <div className="price">800 с</div>
         </div>
         <div className="flex shopping__block">
-          <div className="shopping__subtitle shopping__subtitle-normal">Выбрать дату и время</div>
+          <Link to = {'/selectDate'}><div className="shopping__subtitle shopping__subtitle-normal">Выбрать дату и время</div></Link>
           <div className="">19 янаря 11:00</div>
         </div>
         <Hr/>

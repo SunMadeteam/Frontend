@@ -106,6 +106,7 @@ const Ordering = () => {
           onBlur={(e) => blurToggle(e)}
           onChange={(e)=>changeAddres(e)}
         />
+        <div className='ordering__payment'>Опата наличными при получении</div>
 
         <WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} />
       

@@ -1,0 +1,31 @@
+@import './../../common/helpers/mixins.scss';
+@import './../../common/helpers/variables.scss';
+
+.personal_area {
+  .hello_text {
+    margin-bottom: 17px;
+  }
+
+  .personal_buttons {
+    margin-top: 51px;
+    margin-bottom: 35px;
+    .history {
+      @include font(18px, 21px);
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      p {
+        width: 80%;
+      }
+      div {
+        width: 15%;
+        text-align: center;
+      }
+      img {
+        width: 5%;
+      }
+  }
+}
+}

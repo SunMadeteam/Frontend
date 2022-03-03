@@ -3,6 +3,7 @@ import Hr from '../../common/components/Hr/Hr';
 import ShoppingCart from '../../common/components/Shopping-cart/ShoppingCart';
 import './index.scss';
 import WideButton from './../../common/components/Wide-button/index';
+import { Link } from 'react-router-dom';
 
 const Shopping = () => {
   return (
@@ -34,7 +35,7 @@ const Shopping = () => {
           <div className="price">800 с</div>
         </div>
         <div className="flex shopping__block">
-          <div className="shopping__subtitle shopping__subtitle-normal">Выбрать дату и время</div>
+          <Link to = {'/selectDate'}><div className="shopping__subtitle shopping__subtitle-normal">Выбрать дату и время</div></Link>
           <div className="">19 янаря 11:00</div>
         </div>
         <Hr/>
@@ -42,7 +43,7 @@ const Shopping = () => {
           <div className="shopping__subtitle">Итого:</div>
           <div className="price price_big">11660 с</div>
         </div>
-        <WideButton word='ОФОРМИТЬ ЗАКАЗ'/>
+        <Link to={'/ordering'}><WideButton word='ОФОРМИТЬ ЗАКАЗ'/></Link>
       </div>
     </div>
   )

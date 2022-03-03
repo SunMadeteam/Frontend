@@ -1,12 +1,12 @@
 import './index.scss';
 
-const WideWhiteButton = ({word}) => {
-  const state = true;
-  
+const WideWhiteButton = ({word , disabled}) => {
+  // const state = true;
+
     return (
       <>
-        <div className="wideWhiteButton">
-          <button className={!state ? 'default-btn' : ''}> {word} </button>
+        <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
+          <button  disabled={disabled}> {word} </button>
         </div>
       </>
     

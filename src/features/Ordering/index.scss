@@ -1,0 +1,29 @@
+.ordering{
+    
+    .input{
+        border: 2px solid #C4C4C4;
+        margin: 10px auto;
+    }
+    .input_green{
+        border: 2px solid #4FB61E;
+    }
+    .input_error{
+        border: 2px solid #fc3908;
+    }
+    .errorTelefone{
+        color: #fc3908;
+    }
+    .btnaza{
+        border:1px solid black;
+        width: 100px;
+        height: 59px;
+        background: #4FB61E;
+        color:red;
+    }
+    .btnaza:hover{
+        background: #000;
+    }
+    .ordering__payment{
+        margin-bottom: 200px;
+    }
+}

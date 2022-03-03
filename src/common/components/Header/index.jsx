@@ -1,12 +1,12 @@
 import './index.scss';
 import back from  './img/back.svg';
-import FavoriteHeart from '../Favorite-heart';
+import BlackHeart from './../Black-heart/index';
 
-const Header = () => {
+const Header = ({position}) => {
   return (
-    <div className='header container'>
+    <div className={position?'header container header_position ':'header container '}>
       <img src={back} alt="" />
-      <FavoriteHeart />
+      <BlackHeart />
     </div>
   )
 }

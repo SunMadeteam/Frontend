@@ -10,3 +10,11 @@
 	align-items: $align;
 	justify-content: $justify;
 }
+@mixin flex($display:flex, $align:center, $justify:center) {
+	display: $display;
+	align-items: $align;
+	justify-content: $justify;
+}
+@mixin header($position) {
+   position: $position;
+}

@@ -1,9 +1,9 @@
 import './index.scss';
 import { useState } from 'react';
 import heart from "./img/favorite-heart.svg";
-import redheart from "./img/red-heart.svg";
+import blackHeart from "./img/black-heart.svg";
 
-const FavoriteHeart = () => {
+const BlackHeart = () => {
   const [state, setState] = useState(false);
 
   const onFavorite = () => {
@@ -11,9 +11,9 @@ const FavoriteHeart = () => {
   }
   return (
     <div className='favorite_heart' onClick={onFavorite}>
-      <img src={state ? redheart : heart} alt="" />
+      <img src={state ? blackHeart : heart} alt="" />
     </div>
   )
 }
 
-export default FavoriteHeart;
+export default BlackHeart;

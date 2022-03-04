@@ -1,10 +1,13 @@
 import React from 'react'
 import {AiOutlineWhatsApp,AiOutlineInstagram} from 'react-icons/ai'
-import {BsTelegram,BsTelephone} from 'react-icons/bs'
+import {BsTelephone} from 'react-icons/bs'
+import {RiTelegramLine} from 'react-icons/ri'
 import {ImPencil} from 'react-icons/im'
+import {IoLocationOutline} from 'react-icons/io5'
 import './AboutUsContact.scss'
 import { NavLink } from 'react-router-dom'
 export const AboutUsContact = () => {
+    const setSecondActive=({isActive})=>isActive?'secondActive_btn__link':'second_btn__link';
   return (
     <div>
         <div className='contact'>
@@ -19,7 +22,7 @@ export const AboutUsContact = () => {
 
                 <div className='contact_telegram'>
                     <div>
-                        <BsTelegram/>
+                        <RiTelegramLine/>
                         <h3>Telegram</h3>
                         <ImPencil/>
                     </div>
@@ -42,28 +45,30 @@ export const AboutUsContact = () => {
                 </div>
             </div>
         </div>
-        <div className="adress_btn"><NavLink to="/AboutUsRoute/AboutUsContact">Адрес</NavLink></div>
+
+       <div className='about_us'><NavLink to="/AboutUsRoute/AboutUsContact" className={setSecondActive}><p>Адреса</p></NavLink></div>
+
         <div className='adress'>
             <div>
                 <div className='adress_branch'>
                     <div>
-                        <BsTelephone/>
+                        <IoLocationOutline/>
                         <h3>г. Бишкек, Байтик Батыра 49.</h3>
                         <ImPencil/>
                     </div>
                 </div>
                 <div className='adress_branch'>
                     <div>
-                        <BsTelephone/>
+                        <IoLocationOutline/>
                         <h3>г. Бишкек, Манаса 47.</h3>
                         <ImPencil/>
                     </div>
                 </div>
                 <div className='adress_branch'>
                     <div>
-                        <BsTelephone/>
+                        <IoLocationOutline/>
                         <h3>г. Бишкек, проспект чуй 147/1.</h3>
-                        <ImPencil/>
+                        <ImPencil/> 
                     </div>
                 </div>
             </div>

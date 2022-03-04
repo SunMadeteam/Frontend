@@ -11,7 +11,7 @@ const toggle=()=>{
   return (
     <div>
         {
-           (open===false)? <p onClick={toggle}>Удалить</p>
+           (open===false)? <div onClick={toggle}><p >Удалить</p></div>
            :
             <div className='window_delete'>
                 <WindowEdit/>

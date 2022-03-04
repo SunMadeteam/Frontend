@@ -105,16 +105,7 @@ flex-wrap: wrap;
 }
 .adress{
     display: flex;
-}
-.adress_btn{
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    background: #ffffff;
-    height: 59px;
-    width: 80px;
-    margin:25px 0px 0px 5px;
-    line-height: 21px;
+    flex-direction: row;
 }
 
 .adress_branch{
@@ -131,13 +122,15 @@ flex-wrap: wrap;
         justify-content: space-between
     }
     svg{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         color: var(--color-green);
     }
     h3{
-        margin-right: 250px;
+        width: 300px;
+        text-align: left;
         font-weight: 600;
+        margin-right: 90px;
     }
 }
 .img_adress{

@@ -3,6 +3,10 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
+    margin-top: 14px;
+    h3{
+        margin-top: 15px;
+    }
     .check_color{
         color:var(--color-green);
         width: 40px;
@@ -34,10 +38,6 @@
         height: 50px;
     }
     .check_order{
-        width: 166px;
-        height: 50px;
-    }
-    .check_status{
         width: 166px;
         height: 50px;
     }

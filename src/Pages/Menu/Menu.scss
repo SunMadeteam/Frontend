@@ -9,18 +9,33 @@
     margin-top: 20px;
     font-family: "Roboto";
 }
-.menu_buttons{
-    background-color: #FFFFFF;
+.menu_link{
     font-size: 18px;
-    line-height: 21px;
-    width: 298px;
+    width: 300px;
     height: 60px;
-    border-color:#FFFFFF;
     font-weight: bold;
     border: none;
-    width: 280px;
     text-align: left;
-    padding-left: 10px;
+    align-items: center;
+    color:black;
+    p{
+        margin-left: 10px;
+        margin-top: 17px;
+    }
+}
+.active_menu__link{
+    font-size: 18px;
+    width: 297px;
+    height: 60px;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    background-color: #B8D7A9;
+    color:black;
+    p{
+        margin-left: 10px;
+        margin-top: 17px;
+    }
 }
 .menu_wrapper{
     width: 300px;
@@ -30,7 +45,6 @@
     min-height: 1105px;
     height: 100%;
     margin-right: 20px;
-   
 }
 .color{
     background-color: #B8D7A9;

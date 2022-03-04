@@ -18,9 +18,6 @@ export const FloristCheck = () => {
         <div className='check_order'>
             <h3>Заказ/мес</h3>
         </div>
-        <div className='check_status'>
-            <h3>Статус</h3>
-        </div>
     </div>
   )
 }

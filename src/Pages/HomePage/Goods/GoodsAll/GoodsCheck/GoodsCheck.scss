@@ -3,6 +3,10 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
+    margin-top: 14px;
+    h3{
+        margin-top: 15px;
+    }
     .check_color{
         color:var(--color-green);
         width: 40px;
@@ -51,6 +55,6 @@
         border: 2px solid var(--color-green);
         position: absolute;
         top: 112px;
-        right: 32.5px;
+        right: 29px;
     }
 }

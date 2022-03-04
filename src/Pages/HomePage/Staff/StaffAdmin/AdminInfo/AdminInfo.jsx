@@ -35,7 +35,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>00</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -57,7 +56,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -79,7 +77,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -101,7 +98,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -123,7 +119,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -145,7 +140,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -167,7 +161,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -189,7 +182,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -211,7 +203,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>10</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
     <ModalAdd active={modalActive} setActive={setModalActive}>

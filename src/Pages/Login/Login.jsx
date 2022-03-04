@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Login.css"
+import "./Login.scss"
 import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
 import { useState } from "react";

@@ -2,9 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './GoodsBtn.scss'
 export const GoodsBtn = () => {
+  const setSecondActive=({isActive})=>isActive?'secondActive_btn__link':'second_btn__link';
   return (
     <div className='goods'>
-       <div className="goods_btn"><NavLink to="/GoodsRoute/GoodsAll">Все растения</NavLink></div>
+       <NavLink to="/GoodsRoute/GoodsAll" className={setSecondActive}><p>Все растения</p></NavLink>
     </div>
   )
 }

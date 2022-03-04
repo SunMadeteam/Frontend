@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import './CourierInfo.scss'
 import { ModalAdd } from '../../../AddBtn/ModalAdd/ModalAdd'
 import { ThreeDots } from '../../StaffFlorist/ThreeDots/ThreeDots'
@@ -7,6 +7,8 @@ import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
 import { BranchModal } from '../../StaffAdmin/BranchModal/BranchModal'
 import { SalaryModal } from '../../StaffAdmin/SalaryModal/SalaryModal'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchStaff } from '../../../../../Store/AsyncAction/loginAsync'
 
 export const CourierInfo = () => {
     const [eyeOpen, setEyeOpen] = useState(false)
@@ -15,7 +17,14 @@ export const CourierInfo = () => {
         setEyeOpen(!eyeOpen)
     } 
 const [modalActive, setModalActive] = useState(false)
-    return (
+const dispatch = useDispatch()
+const staff = useSelector(state => state.Staff.staff)
+// dispatch(fetchStaff())
+useEffect(()=>{
+    dispatch(fetchStaff())
+},[])
+console.log(fetchStaff())
+return (
       <div>
         <div className='courier_all'>
           <div className='courier_info' onClick={()=>setModalActive(true)}>
@@ -35,7 +44,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -57,7 +65,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -79,7 +86,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -101,7 +107,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -123,7 +128,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -145,7 +149,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -167,7 +170,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -189,7 +191,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
   
@@ -211,7 +212,6 @@ const [modalActive, setModalActive] = useState(false)
                   <h4>98</h4>
               </div>
               </div>
-             <div className='info_checkbox'><input type="checkbox"></input></div>
               <ThreeDots/>
         </div>    
             <ModalAdd active={modalActive} setActive={setModalActive}>

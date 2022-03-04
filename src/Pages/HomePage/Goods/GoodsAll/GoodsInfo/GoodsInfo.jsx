@@ -217,6 +217,7 @@ const [modalActive, setModalActive] = useState(false)
                 </div>
                 <Care/>
                 <Category/>
+                <button className="goods_button"> СОХРАНИТЬ </button>
             </div>  
          </ModalAdd>
     </div>

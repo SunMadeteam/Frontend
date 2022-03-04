@@ -10,14 +10,14 @@
 .search_icons{
     position: relative;
     bottom: 35px;
-    right: 403px;
+    right: 400px;
     color: var(--color-green);
     svg{
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
 }
 }
 .search_input::placeholder{
     position: relative;
-    left: 30px;
+    left: 36px;
 }

@@ -172,7 +172,7 @@ export const CompletedInfo = () => {
                 <h4>Шуламита</h4>
             </div>
             <div className='check_adres'>
-                <h4>Политех</h4>
+                <h4>Политех dsadsadasdasdsadsadasds2s</h4>
             </div>
             <div className='check_delete'><OrderDelete/></div>
          </div>

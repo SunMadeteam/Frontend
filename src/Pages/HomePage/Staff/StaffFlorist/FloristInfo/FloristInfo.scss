@@ -3,14 +3,6 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
-    .info_checkbox{
-        margin-left: 10px;
-        margin-top: 15px;
-        input{
-            width: 20px;
-            height: 20px;
-        }
-    }
 }
 .florist_info{
     display: flex;
@@ -62,11 +54,6 @@
         h4{
             margin-left:10px ;
         }
-    }
-    .info_status{
-        width: 166px;
-        height: 50px;
-        margin-right: 100px;
     }
 
     h3{

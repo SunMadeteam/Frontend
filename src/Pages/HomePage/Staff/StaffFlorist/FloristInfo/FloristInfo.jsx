@@ -35,7 +35,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
     <div className='florist_all'>
@@ -56,7 +55,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -78,7 +76,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -100,7 +97,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -122,7 +118,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -145,7 +140,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -167,7 +161,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <ThreeDots/>
     </div>
 
@@ -189,7 +182,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 
@@ -211,7 +203,6 @@ export const FloristInfo = () => {
               <h4>36</h4>
           </div>
       </div>   
-      <div className='info_checkbox'><input type="checkbox"></input></div>
           <div className='three_dots'><ThreeDots/></div>
     </div>
 

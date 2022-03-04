@@ -26,7 +26,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball'></div>
+            <div className='ball'>1</div>
          </div>
          <div className='flex' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -44,7 +44,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball'></div>
+            <div className='ball'>1</div>
           </div>
 
           <div className='flex' onClick={()=>setModalActive(true)}>
@@ -63,7 +63,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball'></div>
+            <div className='ball'>1</div>
         </div>
         <ModalClient active={modalActive} setActive={setModalActive}>
                 <div className='modal_text'>

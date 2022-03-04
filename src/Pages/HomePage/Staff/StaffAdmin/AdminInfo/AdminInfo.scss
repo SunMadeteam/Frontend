@@ -3,14 +3,7 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
-    .info_checkbox{
-        margin-left: 10px;
-        margin-top: 15px;
-        input{
-            width: 20px;
-            height: 20px;
-        }
-    }
+
 }
 .admin_info{
     display: flex;
@@ -108,6 +101,10 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    .label_margin{
+        margin-top: 28px;
+        margin-right: 350px;
+    }
 }
 .modal_input{
     border: 2px solid var(--color-green);
@@ -128,21 +125,17 @@
     margin-bottom: 4px;
     font-size: 14px;
 }
-.label_margin{
-    margin-top: 28px;
-    margin-right: 288px;
-}
+
 .modal_button{
     color: #FFFFFF;
-    font-weight: bold;
     width: 300px;
     height: 50px;
     background: var(--color-green);
     border-radius: 8px;
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: 0.03em;
     margin-top: 80px;
+    margin-bottom: 10px;
 } 
 .hello{
     font-weight: bold;

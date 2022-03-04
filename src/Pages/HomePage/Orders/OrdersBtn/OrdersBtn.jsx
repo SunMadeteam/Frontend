@@ -1,12 +1,14 @@
 import React from 'react'
-import "./OrdersBtn.css"
+import "./OrdersBtn.scss"
 import { NavLink } from 'react-router-dom'
 export const OrdersBtn = () => {
+  const setActive=({isActive})=>isActive?'active_btn__link':'btn_link';
+  const setSecondActive=({isActive})=>isActive?'secondActive_btn__link':'second_btn__link';
   return (
     <div className='orders'>
-        <div className="orders_btn"><NavLink to="/OrdersRoute/NewOrders">Новые заказы</NavLink></div>
-        <div className="orders_btn"><NavLink to="/OrdersRoute/ProcessedOrders">Обработанные</NavLink></div>
-        <div className="orders_btn"><NavLink to="/OrdersRoute/CompletedOrders">Завершенные</NavLink></div>
+        <NavLink to="/OrdersRoute/NewOrders" className={setSecondActive}><p>Новые заказы</p></NavLink>
+        <NavLink to="/OrdersRoute/ProcessedOrders" className={setActive}><p>Обработанные</p></NavLink>
+        <NavLink to="/OrdersRoute/CompletedOrders" className={setActive}><p>Завершенные</p></NavLink>
     </div>
   )
 }

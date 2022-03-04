@@ -3,8 +3,12 @@
     border-bottom: 2px solid #B8D7A9;
     height: 50px;
     text-align: left;
-    
+    margin-top: 14px;
+    h3{
+        margin-top: 15px;
+    }
 }
+
 .check_color{
     color:var(--color-green);
     width: 40px;
@@ -21,12 +25,14 @@
     margin-right: 10px;
     h3{
         margin-left:10px ;
+        margin-top: 15px;
     }
 }
 .check_time{
     width: 70px;
     height: 50px;
     margin-right: 20px;
+    
 }
 .check_number{
     width: 166px;

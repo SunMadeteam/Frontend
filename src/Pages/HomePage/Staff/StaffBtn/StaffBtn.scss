@@ -3,19 +3,35 @@
     justify-content: space-between;
     margin-right: 20px;
 }
-.staff_btn{
+.secondActive_btn__link{
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        height: 47px;
+        margin-right: 25px;
+        margin-left: 20px;
+        text-align: center;
+        border-bottom: 3px solid var(--color-green);
+        color: black;
+        p{
+            margin-top: 15px;
+        }
+}
+.second_btn__link{
     font-size: 18px;
     font-weight: bold;
     border: none;
-    background: #ffffff;
-    height: 59px;
-    width: 85px;
-    margin:0px 10px 0px 0px;
-    line-height: 21px;
+    height: 47px;
+    margin-right: 25px;
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+    p{
+        margin-top: 15px;
+    }
 }
 .staff_route{
     display: flex;
-    margin-top: 20px;
 }
 .staff_active{
     border: 1px solid #B8D7A9;
@@ -27,6 +43,7 @@
     align-items: center;
     font-size: 16px;
     font-weight: 500;
+    margin-left: 10px;
     p{
         margin-top: 2px;
     }

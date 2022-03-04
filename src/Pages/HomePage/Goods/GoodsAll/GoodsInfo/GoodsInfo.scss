@@ -5,7 +5,6 @@
     font-style: normal;
     .info_delete{
         margin-top: 15px;
-        margin-left: 150px;
     }
 }
 .goods_info{
@@ -40,6 +39,7 @@
     .info_description{
         width: 200px;
         height: 50px;
+        margin-right: 180px;
     }
     h4{
         margin-top: 15px;
@@ -81,6 +81,7 @@
     }
     .label_margin{
         margin-left: 94px;
+        width: 120px;
     }
     form{
         margin-top: 48px;
@@ -89,6 +90,16 @@
         font-weight: 900;
     }
     
+}
+.goods_button{
+    color: #FFFFFF;
+    width: 300px;
+    height: 50px;
+    background: var(--color-green);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 80px;
 }
 .goods_description{
         width: 290px;

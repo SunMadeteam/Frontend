@@ -1,4 +1,4 @@
-import { SIGN_IN } from "../../const"
+import { GET_STAFF } from "../../const"
 
 
 const initialState = {
@@ -7,7 +7,7 @@ const initialState = {
 
 export const getStaffReducer = (state=initialState, action) => {
   switch (action.type){
-    case SIGN_IN:
+    case GET_STAFF:
       return{...state, staff: action.payload}
     default: return state
   }

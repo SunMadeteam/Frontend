@@ -7,11 +7,14 @@ import Header from './../../common/components/Header/index';
 
 
 const Catalog = (props) => {
-  const url_catalog_name = 'https://www.themealdb.com/api/json/v1/1/filter.php?c='
+  const url_catalog_name = 'https://sunmadebackend.herokuapp.com/category/'
 
   const [catalogeMore, setCatalog] = useState('');
 
   const catalogName = useLocation().pathname.substring(9)
+
+
+
 
   useEffect(() => {
     getDetail(catalogName);
@@ -19,8 +22,8 @@ const Catalog = (props) => {
   const getDetail = async (catalogName) => {
     const req = await fetch(url_catalog_name + catalogName);
     const res = await req.json();
-    setCatalog(res.meals);
-    console.log(res.meals);
+    setCatalog(res.products);
+    console.log(res.products);
 
   };
 
@@ -34,7 +37,7 @@ const Catalog = (props) => {
         catalogeMore ?
         catalogeMore.map( catalog=>{
           return(
-           <ProductCart title={catalog.strMeal} img={catalog.strMealThumb} key={catalog.idMeal}/>
+           <ProductCart title={catalog.name} image={catalog.image} price={catalog.price} key={catalog.id} productId={catalog.id}/>
           )
         }
         ):<div>oops</div>

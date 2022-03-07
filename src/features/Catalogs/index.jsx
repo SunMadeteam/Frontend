@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import HelloText from '../../common/components/Hello-text';
 import './index.scss';
 import CatalogBlock from './../../common/components/Catalog-block/index';
+import garden from './img/garden.png'
 
 
 
 const Catalogs = () => {
-  const URL_CATALOG = 'https://www.themealdb.com/api/json/v1/1/categories.php'
+  const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
   const [catalog, setCatalog] = useState('')
 
   useEffect(() => {
@@ -17,6 +18,7 @@ const Catalogs = () => {
   const getCatalog = async () => {
     const req = await fetch(URL_CATALOG)
     const resp = await req.json()
+    console.log(resp.categories);
     setCatalog(resp.categories)
   }
   return (
@@ -25,8 +27,8 @@ const Catalogs = () => {
       {catalog ?
         catalog.map((catalog, index) => {
           return (
-            <Link to={'/catalog/' + catalog.strCategory} key={catalog.idCategory}>
-              <CatalogBlock text={catalog.strCategory} img={catalog.strCategoryThumb} />
+            <Link to={'/catalog/' + catalog.id} key={catalog.id}>
+              <CatalogBlock text={catalog.name} img={garden}/>
             </Link>
           )
         })

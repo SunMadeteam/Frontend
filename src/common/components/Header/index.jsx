@@ -4,7 +4,7 @@ import BlackHeart from './../Black-heart/index';
 
 const Header = ({position}) => {
   return (
-    <div className={position?'header container header_position ':'header container '}>
+    <div className={position?'container header  header_position ':'container header  '}>
       <img src={back} alt="" />
       <BlackHeart />
     </div>

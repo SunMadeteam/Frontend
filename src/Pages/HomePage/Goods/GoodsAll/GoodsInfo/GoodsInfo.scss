@@ -7,6 +7,9 @@
         margin-top: 15px;
     }
 }
+.goods_info1:nth-child(even){
+    background-color: var(--color-two);
+}
 .goods_info{
     display: flex;
     text-align: left;

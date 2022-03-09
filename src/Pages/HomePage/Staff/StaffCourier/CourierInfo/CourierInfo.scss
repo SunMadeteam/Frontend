@@ -4,6 +4,9 @@
     height: 50px;
     text-align: left;
 }
+.courier_all:nth-child(even){
+    background-color: var(--color-two);
+}
 .courier_info{
     display: flex;
     border-bottom: 2px solid #B8D7A9;

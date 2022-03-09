@@ -14,7 +14,7 @@ export const StaffBtn = () => {
       </div>
       <div className='staff_status'>
           <div className='staff_active'><p>Активен</p></div>
-          <div className='staff_active'><p>Не активен</p></div>
+          <div className='staff_unactive'><p>Не активен</p></div>
       </div>
     </div>
   )

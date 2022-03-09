@@ -46,7 +46,10 @@ export const AboutUsContact = () => {
             </div>
         </div>
 
-       <div className='about_us'><NavLink to="/AboutUsRoute/AboutUsContact" className={setSecondActive}><p>Адреса</p></NavLink></div>
+       <div className='about_us'>
+           <NavLink to="/AboutUsRoute/AboutUsContact" className={setSecondActive}><p>Адреса</p></NavLink>
+           <div className='plus'></div>
+        </div>
 
         <div className='adress'>
             <div>

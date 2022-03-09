@@ -216,7 +216,7 @@ return (
         </div>    
             <ModalAdd active={modalActive} setActive={setModalActive}>
             <div className='staff_modal'>
-            <h2>Добавить сотрудника</h2>
+            <h2>Данные сотрудника</h2>
             <form className='modal_form'> 
                 <label className="modal_label label_margin">Имя</label>
                     <input className="modal_input modal_input_login" 
@@ -243,7 +243,6 @@ return (
                   <input type="checkbox"></input>
              </div>
              <BranchModal/>
-             <SalaryModal/>
                 <button className="modal_button"> ДОБАВИТЬ </button>
             </form>
         </div>  

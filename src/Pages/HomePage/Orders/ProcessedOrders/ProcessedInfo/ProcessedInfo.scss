@@ -9,57 +9,69 @@
     height: 50px;
     text-align: left;
     font-style: normal;
+    .check_adres{
+        margin-right: 148px;
+    }
+    .ball{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background-color: #FFCC69;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
 }
-.flex{
-    border-top: #fff;
-    border-left: #fff;
-    border-right: #fff;
-    width: 100%;
-    display: flex;
-    height: 50px;
-    text-align: left;
-    font-style: normal;
-    border-bottom: 1px solid var(--color-green);
+.processed_info:nth-child(even){
+    background-color: var(--color-two);
 }
-.ball{
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    background-color: #FFCC69;
-    margin-top: 15px;
-    text-align: center;
-    align-items: center;
-}
-.modal_goods{
+
+.modal_goods__processed{
     border-bottom: 1px solid var(--color-green);
     margin-bottom: 30px;
+    border-top: 1px solid var(--color-green);
+    margin-top: 20px;
 }
 .goods_margin{
     margin-bottom: 20px;
 }
+.modal_total__processed{
+    font-weight: bold;
+    text-align: right;
+    margin-right: 48px;
+    margin-bottom: 34px;
+}
 .kur{
+    font-weight: 400;
     .kur_status{
         display: flex;
         justify-content: space-between;
-        padding-left: 50px;
+        text-align: left;
+        padding-left: 10px;
         padding-right: 20px;
         margin-bottom: 29px;
-        div{
-            width: 115px;
-            height: 30px;
-            background: #FFCC69;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            font-weight: bold;  
+        p{
+            margin-top: 15px;
         }
+    }
+    .kur_accept{
+        width: 115px;
+        height: 30px;
+        background: #FFCC69;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold; 
+        margin-top: 30px;
     }
     .kur_name{
         display: flex;
-        padding-left: 50px;
+        padding-left: 10px;
         margin-bottom: 29px;
         h3{
             margin-right: 49px;
@@ -67,7 +79,9 @@
     }
     .kur_number{
         display: flex;
-        padding-left: 50px;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 10px;
         margin-bottom: 29px;
         h3{
             margin-right: 29px;
@@ -75,10 +89,18 @@
     }
     .kur_adress{
         display: flex;
-        padding-left: 50px;
+        padding-left: 10px;
+        text-align: left;
+        flex-direction: column;
         h3{
             margin-right: 33px;
         }
+    }
+    label{
+        font-size: 14px;
+        opacity: 50%;
+        text-align: left;
+        margin-bottom: 20px;
     }
 }
 // .proc_info{

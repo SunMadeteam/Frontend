@@ -23,6 +23,7 @@ export const PostLogin = (formData) =>{
     .then(res => {
       localStorage.setItem('token', res.data.token)
       dispatch({type: SIGN_IN, payload:res.data.token})
+      
     })
     .catch(err => console.log(err.response.data))
   }

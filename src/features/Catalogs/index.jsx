@@ -18,7 +18,6 @@ const Catalogs = () => {
   const getCatalog = async () => {
     const req = await fetch(URL_CATALOG)
     const resp = await req.json()
-    console.log(resp.categories);
     setCatalog(resp.categories)
   }
   return (

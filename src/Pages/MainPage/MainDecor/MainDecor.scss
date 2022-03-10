@@ -1,0 +1,30 @@
+.decor_img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.decor_img_first{
+    background-image: url(./first_img.svg);
+    width: 380px;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.decor_img_second{
+    background-image: url(./second_img.svg);
+    width: 380px;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.decor_img_third{
+    background-image: url(./third_img.svg);
+    width: 380px;
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

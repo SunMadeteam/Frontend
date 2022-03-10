@@ -4,7 +4,7 @@ import "./Menu.scss"
 export const Menu = () => {
   const location=useLocation()
   const linkActiveClassName = (navLink) => {
-    const currentParentPath = location.pathname.split('/')[1]
+    const currentParentPath = location.pathname.split('/')[2]
     const isParentLinkActive = currentParentPath === navLink
 
     if (isParentLinkActive) return `active_menu__link`
@@ -15,12 +15,13 @@ export const Menu = () => {
     <div className='menu_wrapper'>
         <p className='logo'>SunMade</p>
         <div className='menu_flex'>
-            <NavLink to="/OrdersRoute/NewOrders" className={linkActiveClassName('OrdersRoute')}><p>Заказы</p></NavLink>
-            <NavLink to="/GoodsRoute/GoodsAll" className={linkActiveClassName('GoodsRoute')}><p>Товары</p></NavLink>
-            <NavLink to="/StatisticsRoute" className={linkActiveClassName('StatisticsRoute')}><p>Статистика</p></NavLink>
-            <NavLink to="/StaffRoute/StaffCourier" className={linkActiveClassName('StaffRoute')}><p>Сотрудники</p></NavLink>
-            <NavLink to="/AboutUsRoute/AboutUsContact" className={linkActiveClassName('AboutUsRoute')}><p>О нас</p></NavLink>
+            <NavLink to="/HomePage/OrdersRoute/NewOrders" className={linkActiveClassName('OrdersRoute')}><p>Заказы</p></NavLink>
+            <NavLink to="/HomePage/GoodsRoute/GoodsAll" className={linkActiveClassName('GoodsRoute')}><p>Товары</p></NavLink>
+            <NavLink to="/HomePage/StatisticsRoute" className={linkActiveClassName('StatisticsRoute')}><p>Статистика</p></NavLink>
+            <NavLink to="/HomePage/StaffRoute/StaffCourier" className={linkActiveClassName('StaffRoute')}><p>Сотрудники</p></NavLink>
+            <NavLink to="/HomePage/AboutUsRoute/AboutUsContact" className={linkActiveClassName('AboutUsRoute')}><p>О нас</p></NavLink>
         </div>
+        <NavLink to="/">Главная страница</NavLink>
     </div>
   )
 }

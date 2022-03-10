@@ -1,0 +1,24 @@
+.main_mission{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.mission_text{
+    h2{
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+    p{
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+}
+.mission_img{
+    background-image: url(./mission_img.svg);
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

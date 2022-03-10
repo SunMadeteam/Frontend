@@ -8,9 +8,9 @@ export const StaffBtn = () => {
   return (
     <div className='staff'>
       <div className='staff_route'>
-          <NavLink to="/StaffRoute/StaffCourier" className={setSecondActive}><p>Курьер</p></NavLink>
-          <NavLink to="/StaffRoute/StaffFlorist" className={setActive}><p>Флорист</p></NavLink>
-          <NavLink to="/StaffRoute/StaffAdmin" className={setActive}><p>Админ</p></NavLink>
+          <NavLink to="/HomePage/StaffRoute/StaffCourier" className={setSecondActive}><p>Курьер</p></NavLink>
+          <NavLink to="/HomePage/StaffRoute/StaffFlorist" className={setActive}><p>Флорист</p></NavLink>
+          <NavLink to="/HomePage/StaffRoute/StaffAdmin" className={setActive}><p>Админ</p></NavLink>
       </div>
       <div className='staff_status'>
           <div className='staff_active'><p>Активен</p></div>

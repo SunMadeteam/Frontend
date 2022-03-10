@@ -6,9 +6,9 @@ export const OrdersBtn = () => {
   const setSecondActive=({isActive})=>isActive?'secondActive_btn__link':'second_btn__link';
   return (
     <div className='orders'>
-        <NavLink to="/OrdersRoute/NewOrders" className={setSecondActive}><p>Новые заказы</p></NavLink>
-        <NavLink to="/OrdersRoute/ProcessedOrders" className={setActive}><p>Обработанные</p></NavLink>
-        <NavLink to="/OrdersRoute/CompletedOrders" className={setActive}><p>Завершенные</p></NavLink>
+        <NavLink to="/HomePage/OrdersRoute/NewOrders" className={setSecondActive}><p>Новые заказы</p></NavLink>
+        <NavLink to="/HomePage/OrdersRoute/ProcessedOrders" className={setActive}><p>Обработанные</p></NavLink>
+        <NavLink to="/HomePage/OrdersRoute/CompletedOrders" className={setActive}><p>Завершенные</p></NavLink>
     </div>
   )
 }

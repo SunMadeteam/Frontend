@@ -1,0 +1,100 @@
+.footer_back{
+    background-image: url(./footer_back__img.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 652px;
+    position: absolute;
+}
+.footer_text{
+    text-align: right;
+    margin-right: 85px;
+    margin-top: 50px;
+    h2{
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .footer_text__flex{
+        width: 900px;
+        margin-left: 475px;
+        text-align: end;
+        display: flex;
+        justify-content: space-around;
+        font-size: 28px;
+        color: #fff;
+        font-weight: 400;
+        text-align: left;
+    }
+    .footer_adress{
+        display: flex;
+        p{
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .footer_location__img{
+        background-image: url(./footer_location__img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 22px;
+        margin-top: 8px;
+    }
+    .footer_contact{
+        display: flex;
+        p{
+            margin-left: 20px;
+            margin-bottom: 26px;
+        }
+    }
+    .footer_whatsapp__img{
+        background-image: url(./footer_whatsapp__img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
+        margin-top: 5px;
+    }
+    .footer_instagram__img{
+        background-image: url(./footer_instagram__img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17.6px;
+        height: 17.6px;
+        margin-top: 7px;    
+    }
+    .footer_telegram__img{
+        background-image: url(./footer_telegram__img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17.6px;
+        height: 14.77px;
+        margin-top: 7px;
+    }
+    .footer_phone__img{
+        background-image: url(./footer_phone__img.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17.6px;
+        height: 17.6px;
+        margin-top: 7px;
+    }
+    .footer_box__link{
+        width: 260px;
+        height: 50px;
+        text-align: center;
+        align-items: center;
+        background: var(--color-green);
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        p{
+            color: #fff;
+        }
+    }
+}

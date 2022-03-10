@@ -5,10 +5,10 @@ import CompletedOrders from './CompletedOrders/CompletedOrders'
 import {Route,Routes, useNavigate} from 'react-router-dom'
 import { OrdersBtn } from './OrdersBtn/OrdersBtn'
 const OrdersRoute = () => {
-  const navigate = useNavigate()
-  useEffect(() => {
-    navigate('/OrdersRoute/NewOrders')
-  }, [])
+  // const navigate = useNavigate()
+  // // useEffect(() => {
+  // //   navigate('/OrdersRoute/NewOrders')
+  // // }, [])
   return (
     <div>
         <OrdersBtn/>

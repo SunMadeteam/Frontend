@@ -25,7 +25,7 @@ const CartDescription = () => {
     <div>
       <div>
         <img 
-        source={flower.image}
+        src={flower.image}
          alt="" />
         <div className='header_cart'>
           <Header />

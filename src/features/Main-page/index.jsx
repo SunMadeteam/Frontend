@@ -12,9 +12,6 @@ const MainPage = () => {
       <Banner />
       <CategoryTitle title="Популярные" />
       <AllProductCarts />
-      <AllProductCarts />
-      <AllProductCarts />
-      <AllProductCarts />
       <hr />
     </div>
   )

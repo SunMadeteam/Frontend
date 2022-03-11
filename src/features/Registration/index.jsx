@@ -78,15 +78,15 @@ const Registration = () => {
   }
 
   const registration = async (name, password , telefone) => {
-    console.log('good')
-
+    let number = telefone.replace(/\s/g, '');
+    
     try {
       let user = {
         name: name,
         password:password,
-        number: telefone
+        number: number
       };
-      
+      console.log(user);
       let response = await fetch('https://sunmadebackend.herokuapp.com/api1/v1/register/', {
         method: 'POST',
         headers: {
@@ -94,6 +94,7 @@ const Registration = () => {
         },
         body: JSON.stringify(user)
       });
+      console.log(response);
     } catch (e) {
         console.log(e);
     }

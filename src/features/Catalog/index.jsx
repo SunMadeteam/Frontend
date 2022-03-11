@@ -4,6 +4,7 @@ import { useLocation, Link } from 'react-router-dom';
 import ProductCart from './../../common/components/Product-cart/index';
 import Header from './../../common/components/Header/index';
 import Slider from './../../common/components/Slider/Slider';
+import Loader from '../../common/components/Loader/Loader';
 
 
 
@@ -12,30 +13,28 @@ const Catalog = (props) => {
 
   const [catalogeMore, setCatalog] = useState('');
 
-  const catalogIndex = useLocation().pathname.substring(9)
+  const catalogId = useLocation().pathname.substring(9,10)
+  const slideIndex = useLocation().pathname.substring(10,11)
 
 
 
 
   useEffect(() => {
-    getDetail(catalogIndex);
+    getDetail(catalogId);
   }, []);
-  const getDetail = async (catalogIndex) => {
-    const req = await fetch(url_catalog_name + catalogIndex);
+  const getDetail = async (catalogId) => {
+    const req = await fetch(url_catalog_name + catalogId);
     const res = await req.json();
     setCatalog(res.products);
-    console.log(res.products);
-
   };
-
   
 
   return (
     <div className='catalog-wrap'>
     <Header />
-    <Slider catalogIndex={catalogIndex}/>
+    <Slider slideIndex={slideIndex}/>
 
-      <div className='container catalog-wrapper '>
+      <div className= {catalogeMore ? 'container catalog-wrapper ' : 'container'}>
 
       {
         catalogeMore ?
@@ -44,7 +43,7 @@ const Catalog = (props) => {
            <ProductCart title={catalog.name} image={catalog.image} price={catalog.price} key={catalog.id} productId={catalog.id}/>
           )
         }
-        ):<div>oops</div>
+        ):<Loader/>
       }
       </div>
     </div>

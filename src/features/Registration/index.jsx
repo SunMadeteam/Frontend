@@ -86,7 +86,7 @@ const Registration = () => {
         password:password,
         number: number
       };
-      console.log(user);
+     
       let response = await fetch('https://sunmadebackend.herokuapp.com/api1/v1/register/', {
         method: 'POST',
         headers: {
@@ -94,9 +94,9 @@ const Registration = () => {
         },
         body: JSON.stringify(user)
       });
-      console.log(response);
+      
     } catch (e) {
-        console.log(e);
+      
     }
 
 }

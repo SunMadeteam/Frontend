@@ -10,7 +10,7 @@ const ProductCart = ({title, image, price , productId}) => {
       
       <div className='cart_img'>
       <Link to ={'/cartDescription/' + productId}>
-         <img url={image} alt="" /> 
+         <img src={image} alt="" /> 
       </Link>
         <FavoriteHeart />
       </div>

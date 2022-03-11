@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import ProductCart from './../../common/components/Product-cart/index';
 import Header from './../../common/components/Header/index';
+import Slider from './../../common/components/Slider/Slider';
 
 
 
@@ -11,16 +12,16 @@ const Catalog = (props) => {
 
   const [catalogeMore, setCatalog] = useState('');
 
-  const catalogName = useLocation().pathname.substring(9)
+  const catalogIndex = useLocation().pathname.substring(9)
 
 
 
 
   useEffect(() => {
-    getDetail(catalogName);
+    getDetail(catalogIndex);
   }, []);
-  const getDetail = async (catalogName) => {
-    const req = await fetch(url_catalog_name + catalogName);
+  const getDetail = async (catalogIndex) => {
+    const req = await fetch(url_catalog_name + catalogIndex);
     const res = await req.json();
     setCatalog(res.products);
     console.log(res.products);
@@ -32,7 +33,10 @@ const Catalog = (props) => {
   return (
     <div className='catalog-wrap'>
     <Header />
-      <div className='catalog-wrapper container'>
+    <Slider catalogIndex={catalogIndex}/>
+
+      <div className='container catalog-wrapper '>
+
       {
         catalogeMore ?
         catalogeMore.map( catalog=>{

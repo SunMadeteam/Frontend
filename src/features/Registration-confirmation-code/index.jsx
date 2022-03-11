@@ -16,7 +16,7 @@ const RegistrationConfirmationCode = () => {
       title = "Код подтверждения"
       underTitle = "Код был отправлен на: 0700 123 456"/>
        <InputCode
-        length={4}
+        length={6}
         loading={loading}
         onComplete={code => {
           setLoading(true);

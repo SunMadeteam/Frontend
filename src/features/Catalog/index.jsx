@@ -10,7 +10,7 @@ import Slider from './../../common/components/Slider/Slider';
 const Catalog = (props) => {
   const url_catalog_name = 'https://sunmadebackend.herokuapp.com/category/'
 
-  const [catalogeMore, setCatalog] = useState('');
+  const [catalog, setCatalog] = useState(null);
 
   const catalogIndex = useLocation().pathname.substring(9)
 
@@ -24,7 +24,6 @@ const Catalog = (props) => {
     const req = await fetch(url_catalog_name + catalogIndex);
     const res = await req.json();
     setCatalog(res.products);
-    console.log(res.products);
 
   };
 
@@ -38,14 +37,17 @@ const Catalog = (props) => {
       <div className='container catalog-wrapper '>
 
       {
-        catalogeMore ?
-        catalogeMore.map( catalog=>{
-          return(
-           <ProductCart title={catalog.name} image={catalog.image} price={catalog.price} key={catalog.id} productId={catalog.id}/>
-          )
-        }
-        ):<div>oops</div>
+        (catalog && catalog?.length !== 0) ? (
+          catalog?.map((item , index) => (
+            <ProductCart key={index}  base={item}/>
+          ))
+        ) : (catalog === null) ? (
+          <p>Loading</p>
+        ) : (
+          <>Database undefined</>
+        )
       }
+     
       </div>
     </div>
   )

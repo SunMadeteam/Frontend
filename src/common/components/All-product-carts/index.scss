@@ -3,7 +3,12 @@
 @import './../../helpers/variables.scss';
 
 .all_product_cart {
-  @include flex($justify:space-between);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 4px;
   margin-bottom: 16px;
+  @media (max-width:425px) {
+    justify-content: space-between;
+  }
 }

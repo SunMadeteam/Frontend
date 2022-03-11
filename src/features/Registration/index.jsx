@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import axios from 'axios'
+import axios from 'axios';
 
 import './index.scss';
 import BackButton from '../../common/components/Back-button';

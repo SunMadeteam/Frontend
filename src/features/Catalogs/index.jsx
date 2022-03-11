@@ -10,7 +10,6 @@ import garden from './img/garden.png'
 const Catalogs = () => {
   const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
   const [catalog, setCatalog] = useState('')
-
   useEffect(() => {
     getCatalog()
   }, [])

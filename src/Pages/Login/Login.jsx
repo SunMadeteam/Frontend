@@ -22,7 +22,8 @@ const [form, setForm] = useState({
   })
   const dispatch = useDispatch()
   const navigate = useNavigate()
-
+  const fail = useSelector(state => state.Failure)
+  const fault = [fail]
   const onChange = (type, value) => {
     switch (type) {
       case 'login':
@@ -45,29 +46,25 @@ const [form, setForm] = useState({
   const onSubmit = (e) => {
       e.preventDefault()
     console.log('signin', form)
-     dispatch(PostLogin(form))
-     console.log()
-    .then(() => {
-        navigate('/')
-    })
+     dispatch(PostLogin(form, navigate))
   }
     return (
         <div className="Auth_content Auth_back">
+          
             <div className="Auth">
                 <form className="Auth_form" onSubmit={onSubmit}>
                 <h2 className="hello">Привет!</h2>
                     <label className="Auth_label label_margin">Логин</label>
                         <input className="Auth_input Auth_input_login" 
-                        placeholder="Введите логин"
-                        onChange={(e)=>onChange('login', e.target.value)}
+                          placeholder="Введите логин"
+                          onChange={(e)=>onChange('login', e.target.value)}
                         />
-
                         <label className="Auth_label">Пароль</label>
 
                         <input className="Auth_input Auth_input_pass"
-                        placeholder="Введите пароль"
-                        type={(open===false)?"password":"text"}
-                        onChange={(e) => onChange('password', e.target.value)}
+                          placeholder="Введите пароль"
+                          type={(open===false)?"password":"text"}
+                          onChange={(e) => onChange('password', e.target.value)}
                         />
                         <div className="Auth_eye">
                             {
@@ -77,6 +74,7 @@ const [form, setForm] = useState({
                         </div>
                     <button className="Auth_button" type="submit"> ПРОДОЛЖИТЬ </button>
                 </form>
+                
             </div>
         </div>
     )

@@ -23,7 +23,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball'>1</div>
+            <div className='ball ball_2'>2</div>
          </div>
 
          <div className='processed_info' onClick={()=>setModalActive(true)}>
@@ -31,23 +31,77 @@ const ProcessedInfo = () => {
                 <h4>2</h4>
             </div>
             <div className='check_time'>
-                <h4>12:42</h4>
+                <h4>15:22</h4>
             </div>
             <div className='check_number'>
-                <h4>+996555333333</h4>
+                <h4>+996508234523</h4>
             </div>
             <div className='check_name'>
-                <h4>Карина</h4>
+                <h4>Айгерим</h4>
             </div>
             <div className='check_adres'>
-                <h4>Гагарина 33</h4>
+                <h4>Джал 23</h4>
             </div>
-            <div className='ball'>1</div>
+            <div className='ball ball_1'>1</div>
           </div>
 
           <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
                 <h4>3</h4>
+            </div>
+            <div className='check_time'>
+                <h4>17:42</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996502423322</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Диана</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>8 мкр, дом 2 кв 5</h4>
+            </div>
+            <div className='ball ball_5'>5</div>
+        </div>
+        <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>4</h4>
+            </div>
+            <div className='check_time'>
+                <h4>11:22</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996779992333</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Арген</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>Тыналиева 83</h4>
+            </div>
+            <div className='ball ball_4'>4</div>
+        </div>
+        <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>5</h4>
+            </div>
+            <div className='check_time'>
+                <h4>08:51</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996551234421</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Самат</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>Боконбаева/Манаса</h4>
+            </div>
+            <div className='ball ball_3'>3</div>
+        </div>
+        <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>6</h4>
             </div>
             <div className='check_time'>
                 <h4>12:42</h4>
@@ -61,8 +115,83 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball'>1</div>
+            <div className='ball ball_2'>2</div>
+         </div>
+
+         <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>7</h4>
+            </div>
+            <div className='check_time'>
+                <h4>15:22</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996508234523</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Айгерим</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>Джал 23</h4>
+            </div>
+            <div className='ball ball_1'>1</div>
+          </div>
+
+          <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>8</h4>
+            </div>
+            <div className='check_time'>
+                <h4>17:42</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996502423322</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Диана</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>8 мкр, дом 2 кв 5</h4>
+            </div>
+            <div className='ball ball_5'>5</div>
         </div>
+        <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>9</h4>
+            </div>
+            <div className='check_time'>
+                <h4>11:22</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996779992333</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Арген</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>Тыналиева 83</h4>
+            </div>
+            <div className='ball ball_4'>4</div>
+        </div>
+        <div className='processed_info' onClick={()=>setModalActive(true)}>
+            <div className='check_№'>
+                <h4>10</h4>
+            </div>
+            <div className='check_time'>
+                <h4>08:51</h4>
+            </div>
+            <div className='check_number'>
+                <h4>+996551234421</h4>
+            </div>
+            <div className='check_name'>
+                <h4>Самат</h4>
+            </div>
+            <div className='check_adres'>
+                <h4>Боконбаева/Манаса</h4>
+            </div>
+            <div className='ball ball_3'>3</div>
+        </div>
+        
         <ModalClient active={modalActive} setActive={setModalActive}>
         <div className='modal_text'>
                     <h3>№ 13</h3>

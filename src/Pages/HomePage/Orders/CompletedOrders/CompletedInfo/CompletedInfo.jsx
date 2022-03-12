@@ -34,16 +34,16 @@ export const CompletedInfo = () => {
                     <h4>2</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>19:52</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996772234211</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Екатерина</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>9 мкр, дом 2, кв 44</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -55,16 +55,16 @@ export const CompletedInfo = () => {
                     <h4>3</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>12:03</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996505543211</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Галина</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Джал 23, 55</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -76,16 +76,16 @@ export const CompletedInfo = () => {
                     <h4>4</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>15:41</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996704324452</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Данила</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Политех, дом 2, кв 41</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -97,16 +97,16 @@ export const CompletedInfo = () => {
                     <h4>5</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>11:13</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996702413211</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Карина</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>кара-жыгач, дом 22</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -118,16 +118,16 @@ export const CompletedInfo = () => {
                     <h4>6</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>19:14</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996772421444</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Алексей</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Московская/Тыныстанова</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -139,16 +139,16 @@ export const CompletedInfo = () => {
                     <h4>7</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>12:03</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996700234451</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Самат</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Ала-арча</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -160,16 +160,16 @@ export const CompletedInfo = () => {
                     <h4>8</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>11:00</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996707777777</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Александра</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Царское село</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>
@@ -181,16 +181,16 @@ export const CompletedInfo = () => {
                     <h4>9</h4>
                 </div>
                 <div className='check_time'>
-                    <h4>19:00</h4>
+                    <h4>09:08</h4>
                 </div>
                 <div className='check_number'>
-                    <h4>+996709323323</h4>
+                    <h4>+996505614283</h4>
                 </div>
                 <div className='check_name'>
-                    <h4>Шуламита</h4>
+                    <h4>Арген</h4>
                 </div>
                 <div className='check_adres'>
-                    <h4>Политех</h4>
+                    <h4>Чон арык</h4>
                 </div>
             </div>
             <div className='check_delete'><OrderDelete/></div>

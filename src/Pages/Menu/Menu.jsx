@@ -21,7 +21,6 @@ export const Menu = () => {
             <NavLink to="/HomePage/StaffRoute/StaffCourier" className={linkActiveClassName('StaffRoute')}><p>Сотрудники</p></NavLink>
             <NavLink to="/HomePage/AboutUsRoute/AboutUsContact" className={linkActiveClassName('AboutUsRoute')}><p>О нас</p></NavLink>
         </div>
-        <NavLink to="/">Главная страница</NavLink>
     </div>
   )
 }

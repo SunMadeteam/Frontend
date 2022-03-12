@@ -13,25 +13,25 @@ export const Care = () => {
         {(open===false)?
             <div className='care_flex'>
                 <h3>Сложность ухода</h3>  
-                <AiOutlineDown onClick={toggle}/>
+                <div onClick={toggle} className="care_vector__img"></div>
             </div>
             :
             <div>
                 <div className='care_flex'>
                     <h3>Сложность ухода</h3>
-                    <AiOutlineUp onClick={toggle}/>
+                    <div onClick={toggle} className="care_vector__img2"></div>
                 </div>
                 <div className='care_flex1'>
                     <p>Лёгкий</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
                 <div className='care_flex1'>
                     <p>Средний</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
                 <div className='care_flex1'>
                     <p>Сложный</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
             </div>
         } 

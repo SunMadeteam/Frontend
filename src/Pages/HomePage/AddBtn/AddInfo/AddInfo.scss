@@ -3,13 +3,27 @@
     h3{
         margin-right: 160px;
     }
-    svg{
-        color: var(--color-green);
+    .add_vector__img{
+        background-image: url(./vector_img.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 12px;
+        position: relative;
+        top: 5px;
+    }
+    .add_vector__img2{
+        background-image: url(./vector_img2.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 12px;
+        position: relative;
+        top: 5px;
     }
 }
 .add_flex1{
     display: flex;
     margin-top: 24px;
+    
     p{
         width: 170px;
         text-align: left;

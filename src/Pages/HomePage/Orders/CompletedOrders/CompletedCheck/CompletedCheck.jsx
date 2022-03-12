@@ -28,7 +28,7 @@ export const CompletedCheck = () => {
         </div>
         {
         (open===false)? 
-        <div className='filter_icon' onClick={toggle}><BsFilterRight/></div>
+        <div className='filter_icon__img' onClick={toggle}></div>
             :
         <div onClick={toggle}><CompletedFilter/></div>
         }

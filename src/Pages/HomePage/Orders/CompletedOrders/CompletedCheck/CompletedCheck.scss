@@ -1,15 +1,9 @@
-.filter_icon{
-    box-sizing: border-box;
-    border-radius: 8px;
+.filter_icon__img{
+    background-image: url(./filter_icon__img.svg);
+    background-repeat: no-repeat;
     width: 26px;
     height: 26px;
-    border: 2px solid var(--color-green);
     position: absolute;
     top: 112px;
-    right:29px;
-    svg{
-        width: 24px;
-        height: 24px;
-        color: var(--color-green);
-    }
+    right:28px;
 }

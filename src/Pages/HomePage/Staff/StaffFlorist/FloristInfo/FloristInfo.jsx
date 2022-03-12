@@ -232,7 +232,7 @@ export const FloristInfo = () => {
             <div><AddInfo/></div>
              <div className='status'> 
                   <h3>Статус</h3>
-                  <input type="checkbox"></input>
+                  <input type="radio"></input>
              </div>
              <BranchModal/>
                 <button className="modal_button"> ДОБАВИТЬ </button>

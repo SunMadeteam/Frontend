@@ -13,41 +13,41 @@ export const Category = () => {
     {(open===false)?
         <div className='category_flex'>
             <h3>Категории</h3>  
-            <AiOutlineDown onClick={toggle}/>
+            <div onClick={toggle} className="category_vector__img"></div>
         </div>
         :
         <div>
             <div className='category_flex'>
                 <h3>Категории</h3>
-                <AiOutlineUp onClick={toggle}/>
+                <div onClick={toggle} className="category_vector__img2"></div>
             </div>
             <div className='category_flex1'>
                 <p>Популярные</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Сад</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Дом</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Для подарка</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Почта</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Питание</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Аксессуары</p>
-                <input type="checkbox"/>
+                <input type="radio"/>
             </div>
 
         </div>

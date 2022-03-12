@@ -13,35 +13,35 @@ export const AboutUsContact = () => {
         <div className='contact'>
                 <div className='contact_whatsapp'>
                     <div>
-                        <AiOutlineWhatsApp/>
+                        <div className='whatsapp_img'></div>
                         <h3>WhatsApp</h3>
-                        <ImPencil/>
+                        <div className='pencil_img'></div>
                     </div>
                     <p>+966 000 111 111</p>
                 </div>
 
                 <div className='contact_telegram'>
                     <div>
-                        <RiTelegramLine/>
+                        <div className='telegram_img'></div>
                         <h3>Telegram</h3>
-                        <ImPencil/>
+                        <div className='pencil_img'></div>
                     </div>
                     <p>+966 000 111 111</p>
                 </div>
 
             <div className='contact_instagram'>
                 <div>
-                    <AiOutlineInstagram/>
+                    <div className='instagram_img'></div>
                     <h3>@SunMade</h3>
-                    <ImPencil/>
+                    <div className='pencil_img'></div>
                 </div>
             </div>
 
             <div className='contact_phone'>
                 <div>
-                    <BsTelephone/>
+                    <div className='phone_img'></div>
                     <h3>+966 000 111 111</h3>
-                    <ImPencil/>
+                    <div className='pencil_img'></div>
                 </div>
             </div>
         </div>
@@ -57,21 +57,21 @@ export const AboutUsContact = () => {
                     <div>
                         <IoLocationOutline/>
                         <h3>г. Бишкек, Байтик Батыра 49.</h3>
-                        <ImPencil/>
+                        <div className='three_dot__img'></div>
                     </div>
                 </div>
                 <div className='adress_branch'>
                     <div>
                         <IoLocationOutline/>
                         <h3>г. Бишкек, Манаса 47.</h3>
-                        <ImPencil/>
+                        <div className='three_dot__img'></div>
                     </div>
                 </div>
                 <div className='adress_branch'>
                     <div>
                         <IoLocationOutline/>
                         <h3>г. Бишкек, проспект чуй 147/1.</h3>
-                        <ImPencil/> 
+                        <div className='three_dot__img'></div> 
                     </div>
                 </div>
             </div>

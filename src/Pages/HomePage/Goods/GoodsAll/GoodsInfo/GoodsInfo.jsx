@@ -1,13 +1,23 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import './GoodsInfo.scss'
 import { OrderDelete } from '../../../Orders/NewOrders/OrderDelete/OrderDelete'
 import { ModalAdd } from '../../../AddBtn/ModalAdd/ModalAdd'
 import { Care } from '../HardCare/Care'
 import { Category } from '../HardCare/Category'
+import { useDispatch, useSelector } from 'react-redux'
+import { getGoods } from '../../../../../Store/AsyncAction/getGoods'
 export const GoodsInfo = () => {
+const goods = useSelector(state => state.Goods.goods)
 const [modalActive, setModalActive] = useState(false)
+const dispatch = useDispatch()
+useEffect(()=>{
+    dispatch(getGoods())
+},[])
+console.log(goods.products.map(i=>i))
   return (
     <div>
+        {goods.products.map(item=>console.log(item))}
+
         <div className='goods_info1'>
             <div className='goods_info' onClick={()=>setModalActive(true)}>
                 <div className='info_№'>
@@ -22,14 +32,14 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div> 
             <div className='info_delete'><OrderDelete/></div>  
          </div>
 
-         <div className='goods_info1'>
+         {/* <div className='goods_info1'>
             <div className='goods_info' onClick={()=>setModalActive(true)}>
                 <div className='info_№'>
                     <h4>2</h4>
@@ -43,7 +53,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>  
             </div>  
@@ -64,7 +74,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>    
@@ -85,7 +95,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>    
@@ -106,7 +116,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>  
@@ -127,7 +137,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>   
@@ -148,7 +158,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>   
@@ -169,7 +179,7 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div>    
@@ -190,12 +200,12 @@ const [modalActive, setModalActive] = useState(false)
                     <h4>03.01.2022</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>#Популярные</h4>
+                    <h4>Популярные</h4>
                 </div>
                 <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
             </div> 
             <div className='info_delete'><OrderDelete/></div>   
-         </div>
+         </div> */}
           <ModalAdd active={modalActive} setActive={setModalActive}>
             <div>
                 <h2>Добавить товар</h2>

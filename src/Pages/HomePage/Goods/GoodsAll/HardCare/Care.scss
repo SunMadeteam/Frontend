@@ -5,10 +5,22 @@
     h3{
        margin-right: 40px;
     }
-    svg{
-        color: var(--color-green);
+    .care_vector__img{
+        background-image: url(./vector_img.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 11px;
+        position: relative;
+        top: 5px;
     }
-    
+    .care_vector__img2{
+        background-image: url(./vector_img2.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 11px;
+        position: relative;
+        top: 5px;
+    }
 }
 .care_flex1{
     display: flex;

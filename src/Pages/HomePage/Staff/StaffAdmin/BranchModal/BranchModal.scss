@@ -1,23 +1,32 @@
 .branch_flex{
     display: flex;
     h3{
-        margin-right: 195px;
+        margin-right: 185px;
     }
-    svg{
-        color: var(--color-green);
+    .branch_vector__img{
+        background-image: url(./vector_img.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 12px;
+    }
+    .branch_vector__img2{
+        background-image: url(./vector_img2.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 12px;
     }
 }
 .branch_flex1{
     display: flex;
     margin-top: 24px;
     p{
-        width: 170px;
+        width: 255px;
         text-align: left;
-        margin-right: 95px;
+        margin-right: 10px;
     }
     input{
         width: 24px;
         height: 24px;
-        margin-left: 5px;
+       
     }
 }

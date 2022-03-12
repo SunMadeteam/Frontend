@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './StatisticsBtn.scss'
+
 export const StatisticsBtn = () => {
+  const setSecondActive=({isActive})=>isActive?'secondActive_btn__link':'second_btn__link';
   return (
     <div className='statistics'>
-        <div className="statistics_btn"><NavLink to="/HomePage/OrdersRoute/NewOrders">Новые заказы</NavLink></div>
-        <div className="statistics_btn"><NavLink to="/HomePage/OrdersRoute/ProcessedOrders">Обработанные</NavLink></div>
+      <NavLink to="/HomePage/OrdersRoute/NewOrders" className={setSecondActive}><p>Статистика</p></NavLink>
     </div>
   )
 }

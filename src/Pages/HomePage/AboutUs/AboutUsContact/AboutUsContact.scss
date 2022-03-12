@@ -1,6 +1,12 @@
 .contact{
 display: flex;
 flex-wrap: wrap;
+    .pencil_img{
+        background-image: url(./pencil_img.svg);
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 17px;
+    }
 }
 .contact_whatsapp{
     width: 510px;
@@ -15,10 +21,11 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between
     }
-    svg{
-        width: 20px;
-        height: 20px;
-        color: var(--color-green);
+    .whatsapp_img{
+        background-image: url(./whatsapp_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
     }
     h3{
         margin-right: 340px;
@@ -42,10 +49,11 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between
     }
-    svg{
-        width: 20px;
-        height: 20px;
-        color: var(--color-green);
+    .telegram_img{
+        background-image: url(./telegram_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
     }
     h3{
         margin-right: 340px;
@@ -69,10 +77,11 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between
     }
-    svg{
-        width: 20px;
-        height: 20px;
-        color: var(--color-green);
+    .instagram_img{
+        background-image: url(./instagram_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
     }
     h3{
         margin-right: 320px;
@@ -93,10 +102,11 @@ flex-wrap: wrap;
         display: flex;
         justify-content: space-between
     }
-    svg{
-        width: 20px;
-        height: 20px;
-        color: var(--color-green);
+    .phone_img{
+        background-image: url(./phone_img.svg);
+        background-repeat: no-repeat;
+        width: 22px;
+        height: 22px;
     }
     h3{
         margin-right: 250px;
@@ -125,6 +135,12 @@ flex-wrap: wrap;
         width: 25px;
         height: 25px;
         color: var(--color-green);
+    }
+    .three_dot__img{
+        background-image: url(./three_dot__img.svg);
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 21px;
     }
     h3{
         width: 300px;

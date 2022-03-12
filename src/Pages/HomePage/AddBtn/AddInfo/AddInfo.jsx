@@ -13,25 +13,25 @@ export const AddInfo = () => {
         {(open===false)?
             <div className='add_flex'>
                 <h3>Должность</h3>  
-                <AiOutlineDown onClick={toggle}/>
+                <div onClick={toggle} className="add_vector__img"></div>
             </div>
             :
             <div>
                 <div className='add_flex'>
                     <h3>Должность</h3>
-                    <AiOutlineUp onClick={toggle}/>
+                    <div onClick={toggle} className="add_vector__img2"></div>
                 </div>
                 <div className='add_flex1'>
                     <p>Админ</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
                 <div className='add_flex1'>
                     <p>Курьер</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
                 <div className='add_flex1'>
                     <p>Флорист</p>
-                    <input type="checkbox"/>
+                    <input type="radio"/>
                 </div>
             </div>
         } 

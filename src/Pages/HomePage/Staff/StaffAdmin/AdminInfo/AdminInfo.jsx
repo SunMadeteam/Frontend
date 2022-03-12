@@ -231,7 +231,7 @@ const [modalActive, setModalActive] = useState(false)
             <div><AddInfo/></div>
              <div className='status'> 
                   <h3>Статус</h3>
-                  <input type="checkbox"></input>
+                  <input type="radio"></input>
              </div>
              <BranchModal/>
           

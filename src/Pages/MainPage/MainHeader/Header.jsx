@@ -12,11 +12,11 @@ export const Header = () => {
     <header>
         <div className='header_img'>
           <div className='header_link'>
-            <NavLink to=""><p className='header_link__margin'>Заказы</p></NavLink>
-            <NavLink to=""><p >Товары</p></NavLink>
-            <NavLink to=""><p>Статистика</p></NavLink>
-            <NavLink to=""><p className='header_link__margin1'>Сотрудники</p></NavLink>
-            <NavLink to=""><p className='header_link__margin2'>О нас</p></NavLink>
+            <NavLink to="/HomePage/OrdersRoute/NewOrders"><p className='header_link__margin'>Заказы</p></NavLink>
+            <NavLink to="/HomePage/GoodsRoute/GoodsAll"><p >Товары</p></NavLink>
+            <NavLink to="/HomePage/StatisticsRoute"><p>Статистика</p></NavLink>
+            <NavLink to="/HomePage/StaffRoute/StaffCourier"><p className='header_link__margin1'>Сотрудники</p></NavLink>
+            <NavLink to="/HomePage/AboutUsRoute/AboutUsContact"><p className='header_link__margin2'>О нас</p></NavLink>
             {
               (open===false)?<div className='header_person' onClick={toggle}></div>:
                 <div className='person_box'>

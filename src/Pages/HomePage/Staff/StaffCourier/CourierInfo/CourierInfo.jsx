@@ -20,10 +20,11 @@ const [modalActive, setModalActive] = useState(false)
 const dispatch = useDispatch()
 const staff = useSelector(state => state.Staff.staff)
 // dispatch(fetchStaff())
+console.log(staff)
 useEffect(()=>{
     dispatch(fetchStaff())
 },[])
-console.log(fetchStaff())
+// console.log(fetchStaff())
 return (
       <div>
         <div className='courier_all'>
@@ -240,7 +241,7 @@ return (
             <div><AddInfo/></div>
              <div className='status'> 
                   <h3>Статус</h3>
-                  <input type="checkbox"></input>
+                  <input type="radio"></input>
              </div>
              <BranchModal/>
                 <button className="modal_button"> ДОБАВИТЬ </button>

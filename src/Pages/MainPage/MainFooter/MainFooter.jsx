@@ -41,8 +41,8 @@ export const MainFooter = () => {
                         <div className='footer_phone__img'></div>
                         <p>+966 000 111 111</p>
                     </div>
-                    <div className='footer_box__link'>
-                            <NavLink to="/HomePage/AboutUsRoute/AboutUsContact"><p>ПЕРЕЙТИ</p></NavLink>
+                    <div >
+                            <NavLink to="/HomePage/AboutUsRoute/AboutUsContact" className='footer_box__link'><p>ПЕРЕЙТИ</p></NavLink>
                     </div>
                 </div>
             </div>

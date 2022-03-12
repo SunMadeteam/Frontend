@@ -6,12 +6,12 @@ import App from './App';
 import * as firebase from 'firebase/app'
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDF88NhywgXLaS--bmo4pBWkoDJhqavf6s",
-  authDomain: "saule-b6190.firebaseapp.com",
-  projectId: "saule-b6190",
-  storageBucket: "saule-b6190.appspot.com",
-  messagingSenderId: "950785878943",
-  appId: "1:950785878943:web:09414eb51b456ed11babaa"
+  apiKey: "AIzaSyDkNTQ3wRPLzslwsUTY04vHen715vw9aHk",
+  authDomain: "saule2.firebaseapp.com",
+  projectId: "saule2",
+  storageBucket: "saule2.appspot.com",
+  messagingSenderId: "397336453349",
+  appId: "1:397336453349:web:161a5357e1bbe9950b340c"
 })
 
 

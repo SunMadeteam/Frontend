@@ -23,8 +23,6 @@ const RegistrationConfirmationCode = () => {
           setTimeout(() => setLoading(false), 10000);
         }}
       />
-      <WideWhiteButton word="ПРОДОЛЖИТЬ" />
-      <WideWhiteButton word="ОТПРАВИТЬ ПОВТОРНО" />
       <p>59 сек</p>
     </div>
   )

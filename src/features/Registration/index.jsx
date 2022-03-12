@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import './index.scss';
 import BackButton from '../../common/components/Back-button';
 import RegistrationTitle from '../../common/components/Registration-title';
@@ -34,7 +33,6 @@ const Registration = () => {
 
 
   const handleLogin = (e) => {
-     e.preventDefault()
      if(telefone.length >= 12){
       generateRecatcha()    
       let appVerifier = window.recaptchaVerifier
@@ -47,6 +45,8 @@ const Registration = () => {
         console.log(error)
       });
      }
+    localStorage.setItem('phone' , telefone)
+
   }
 
   return (
@@ -89,7 +89,7 @@ const Registration = () => {
         className={errorPassword && telefoneDirty ? 'input input_error ' : !errorPassword ? 'input input_green' : 'input'}
 
       />
-      <button onClick={handleLogin} className='btnReg'>Registration</button>
+      <button onClick={handleLogin} className='btnReg'>ПРОДОЛЖИТЬ</button>
     </div>
   )
 }

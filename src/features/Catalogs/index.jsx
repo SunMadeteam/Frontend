@@ -23,7 +23,7 @@ const Catalogs = () => {
       <HelloText />
       {catalog ?
         catalog.map((catalog, index) => {
-          console.log(catalog)
+          
           return (
             <Link to={'/catalog/' + catalog.id} key={catalog.id}>
               <CatalogBlock text={catalog.name} img={catalog.image}/>

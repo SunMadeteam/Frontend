@@ -4,11 +4,10 @@
 
 .all_product_cart {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
   gap: 4px;
   margin-bottom: 16px;
-  @media (max-width:425px) {
-    justify-content: space-between;
-  }
 }

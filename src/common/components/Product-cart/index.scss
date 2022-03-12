@@ -5,17 +5,15 @@
   border: 1px solid #F2F2F2;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  width: 300px;
+  width: 47%;
   margin: 20px 0;
   height:400px;
   @media (max-width:425px) {
-    width: 190px;
     height:100%;
 
   }
   .cart_img {
     position: relative;
-    display: flex;
     height: 200px;
     justify-content: center;
 

@@ -6,8 +6,10 @@ body {
 
 .header {
   @include flex($justify:space-between);
-  position: absolute;
-  top: 23px;
+  position: relative;
+  top: -4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   img {
     width: 30px;
     height: 30px;

@@ -6,8 +6,10 @@
 }
 
 .catalog-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 50%;
+    // display: grid;
+    // grid-template-columns: 1fr 50%;
     grid-gap: 15px;
-    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+   
 }

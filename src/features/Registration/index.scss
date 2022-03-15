@@ -1,40 +1,93 @@
-@import '../../common/components/global';
-@import '../../common/helpers/mixins';
-@import '../../common/helpers/variables';
+// @import '../../common/components/global';
+// @import '../../common/helpers/mixins';
+// @import '../../common/helpers/variables';
 
-.registration {
-  input {
-    padding: 13px 0 12px 10px;
-    &:focus-visible {
-      outline: none;
-      border: 2px solid $main-green;
-    }
-  }
-  .wideWhiteButton {
-    button {
-      margin-top: 40px;
-    }
-  }
-}
-.registration, .registration_code {
-  height: 100vh;
+// .registration {
+//   input {
+//     padding: 13px 0 12px 10px;
+//     &:focus-visible {
+//       outline: none;
+//       border: 2px solid $main-green;
+//     }
+//   }
+//   .wideWhiteButton {
+//     button {
+//       margin-top: 40px;
+//     }
+//   }
+// }
+// .registration, .registration_code {
+//   height: 100vh;
 
-  .back-button {
-    margin-top: 45px;
-    margin-bottom: 69px;
-  }
+//   .back-button {
+//     margin-top: 45px;
+//     margin-bottom: 69px;
+//   }
 
-  input {
-    margin-bottom: 20px;
-    border: 2px solid #CECACE;
-    &:focus-visible {
-      border: 2px solid $main-green;
-    }
-  }
+//   input {
+//     margin-bottom: 20px;
+//     border: 2px solid #CECACE;
+//     &:focus-visible {
+//       border: 2px solid $main-green;
+//     }
+//   }
   
 
-  .wideTransparentButton {
-    margin-top: 10px;
-    color: $main-green !important;
+//   .wideTransparentButton {
+//     margin-top: 10px;
+//     color: $main-green !important;
+//   }
+// }
+
+.registration{
+  .input{
+      border: 2px solid #C4C4C4;
+      margin: 10px auto;
   }
+  .input_green{
+      border: 2px solid #4FB61E;
+  }
+  .input_error{
+      border: 2px solid #fc3908;
+  }
+  .errorTelefone{
+      color: #fc3908;
+  }
+  .btnaza{
+      border:1px solid black;
+      width: 100px;
+      height: 59px;
+      background: #4FB61E;
+      color:red;
+  }
+  .btnaza:hover{
+      background: #000;
+  }
+  .ordering__payment{
+      margin-bottom: 200px;
+  }
+  .wideWhiteButton{
+    margin-top: 20px;
+  }
+}
+
+.btnReg{
+    width: 100%;
+    padding: 13px ;
+    border:0;
+    outline: 0;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    /* Main Green */
+
+    color: #4FB61E;
+    margin-top: 66px;
+    border: 2px solid #4FB61E;
+    background: transparent;
 }

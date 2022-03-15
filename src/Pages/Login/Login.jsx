@@ -6,8 +6,8 @@ import {RiEyeCloseLine} from "react-icons/ri"
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { ShowIcon } from "../../Store/Actions/Action";
 import { PostLogin } from "../../Store/AsyncAction/loginAsync";
+import { LoginFail } from "./LoginFail";
 
 const Login =()=>   {
     const [open, setOpen] = useState(false)
@@ -23,7 +23,6 @@ const [form, setForm] = useState({
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const fail = useSelector(state => state.Failure)
-  const fault = [fail]
   const onChange = (type, value) => {
     switch (type) {
       case 'login':
@@ -44,9 +43,9 @@ const [form, setForm] = useState({
   }
 
   const onSubmit = (e) => {
-      e.preventDefault()
+    e.preventDefault()
     console.log('signin', form)
-     dispatch(PostLogin(form, navigate))
+    dispatch(PostLogin(form,navigate))
   }
     return (
         <div className="Auth_content Auth_back">
@@ -58,6 +57,7 @@ const [form, setForm] = useState({
                         <input className="Auth_input Auth_input_login" 
                           placeholder="Введите логин"
                           onChange={(e)=>onChange('login', e.target.value)}
+                          required
                         />
                         <label className="Auth_label">Пароль</label>
 
@@ -65,6 +65,7 @@ const [form, setForm] = useState({
                           placeholder="Введите пароль"
                           type={(open===false)?"password":"text"}
                           onChange={(e) => onChange('password', e.target.value)}
+                          required
                         />
                         <div className="Auth_eye">
                             {

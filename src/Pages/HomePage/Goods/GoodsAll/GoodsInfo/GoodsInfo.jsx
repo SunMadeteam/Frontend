@@ -13,202 +13,48 @@ const dispatch = useDispatch()
 useEffect(()=>{
     dispatch(getGoods())
 },[])
+// let i = 1
+// const number = (i) => {
+//     let element = goods.products.map(element=>element.id)
+//     for(i=0; i<=element.length;i++){
+//         console.log('dsad',i)
+//     }
+//     return i=i+1
+// }
+// number()
+
 console.log(goods.products.map(i=>i))
   return (
     <div>
         {goods.products.map(item=>console.log(item))}
 
-        <div className='goods_info1'>
+        {goods.products.map(element =>
+            <div className='goods_info1'>
             <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>1</h4>
+                    <div className='info_№'>
+                    <h4>{}</h4>
                 </div>
+                
                 <div className='info_img'>
+                    <img src={element.image} width="84px" height="80px"/>
                 </div>
                 <div className='info_title'>
-                    <h4>Монстера</h4>
+                    <h4>{element.name}</h4>
                 </div>
                 <div className='info_data'>
-                    <h4>03.01.2022</h4>
+                    <h4>00.00.0000</h4>
                 </div>
                 <div className='info_category'>
-                    <h4>Популярные</h4>
+                    <h4>{element.category}</h4>
                 </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
+                <div className='info_description'><h4>{element.description}</h4></div>
             </div> 
             <div className='info_delete'><OrderDelete/></div>  
          </div>
-
-         {/* <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>2</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>  
-            </div>  
-            <div className='info_delete'><OrderDelete/></div>  
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>3</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>    
-            <div className='info_delete'><OrderDelete/></div>
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>4</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>    
-            <div className='info_delete'><OrderDelete/></div>
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>5</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>  
-            <div className='info_delete'><OrderDelete/></div>  
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>6</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>   
-            <div className='info_delete'><OrderDelete/></div> 
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>7</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>   
-            <div className='info_delete'><OrderDelete/></div> 
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>8</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div>    
-            <div className='info_delete'><OrderDelete/></div>
-         </div>
-
-         <div className='goods_info1'>
-            <div className='goods_info' onClick={()=>setModalActive(true)}>
-                <div className='info_№'>
-                    <h4>9</h4>
-                </div>
-                <div className='info_img'>
-                </div>
-                <div className='info_title'>
-                    <h4>Монстера</h4>
-                </div>
-                <div className='info_data'>
-                    <h4>03.01.2022</h4>
-                </div>
-                <div className='info_category'>
-                    <h4>Популярные</h4>
-                </div>
-                <div className='info_description'><h4>Сложность ухода - лёгкий</h4></div>
-            </div> 
-            <div className='info_delete'><OrderDelete/></div>   
-         </div> */}
+        )}
           <ModalAdd active={modalActive} setActive={setModalActive}>
             <div>
-                <h2>Добавить товар</h2>
+                <h2>Данные товара</h2>
                 <form className='goods_modal'>
                     <label className='goods_label label_margin'>Добавить фото</label>
                     <div className='goods_img'></div>

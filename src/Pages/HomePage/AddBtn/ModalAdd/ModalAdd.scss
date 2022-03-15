@@ -3,9 +3,9 @@
     width: 100vw;
     background-color: rgba(0,0,0,0.4);
     position: fixed;
+    overflow:auto;
     top:0;
     right:0px;
- 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +23,8 @@
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 8px;
+    height: 95%;
+    overflow: auto;
     width: 400px;
     font-size: 18px;
 }

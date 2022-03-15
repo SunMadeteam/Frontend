@@ -5,11 +5,10 @@ import {AiOutlineRight} from 'react-icons/ai'
 import { WindowDelete } from './WindowDelete/WindowDelete'
 import { WindowEdit } from './WindowEdit/WindowEdit'
 export const ThreeDots = () => {
-const [open, setOpen] = useState(false)
-  console.log(open, 'window')
-const toggle=()=>{
-        setOpen(!open)
-} 
+// const [open, setOpen] = useState(false)
+// const toggle=()=>{
+//         setOpen(!open)
+// } 
   return (
 
       <div className='three_dot'><AiOutlineRight/></div>

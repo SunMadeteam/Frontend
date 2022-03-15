@@ -8,7 +8,8 @@ import {RiEyeCloseLine} from "react-icons/ri"
 import { BranchModal } from '../../StaffAdmin/BranchModal/BranchModal'
 import { SalaryModal } from '../../StaffAdmin/SalaryModal/SalaryModal'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchStaff } from '../../../../../Store/AsyncAction/loginAsync'
+import { fetchStaff } from '../../../../../Store/AsyncAction/fetchStaff'
+
 
 export const CourierInfo = () => {
     const [eyeOpen, setEyeOpen] = useState(false)
@@ -19,202 +20,36 @@ export const CourierInfo = () => {
 const [modalActive, setModalActive] = useState(false)
 const dispatch = useDispatch()
 const staff = useSelector(state => state.Staff.staff)
-// dispatch(fetchStaff())
-console.log(staff)
 useEffect(()=>{
     dispatch(fetchStaff())
 },[])
-// console.log(fetchStaff())
+
+// staff.map(element => console.log(element))
 return (
-      <div>
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>1</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>2</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>3</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>4</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>5</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>6</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>7</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>8</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
-  
-        <div className='courier_all'>
-          <div className='courier_info' onClick={()=>setModalActive(true)}>
-              <div className='info_№'>
-                  <h4>9</h4>
-              </div>
-              <div className='info_name'>
-                  <h4>Леонид Якубович</h4>
-              </div>
-              <div className='info_number'>
-                  <h4>+996 505 614 949</h4>
-              </div>
-              <div className='info_salary'>
-                  <h4>21 000 c</h4>
-              </div>
-              <div className='info_order'>
-                  <h4>98</h4>
-              </div>
-              </div>
-              <ThreeDots/>
-        </div>    
+        <div className='staff_global'>
+            {/* {staff.map(element => 
+            <div className='courier_all'>
+            <div className='courier_info' onClick={()=>setModalActive(true)}>
+                <div className='info_№'>
+                    <h4 key={element.id}></h4>
+                </div>
+                <div className='info_name'>
+                    <h4>{element.name}</h4>
+                </div>
+                <div className='info_number'>
+                    <h4>{element.number}</h4>
+                </div>
+                <div className='info_salary'>
+                    <h4>{element.salary}</h4>
+                </div>
+                <div className='info_order'>
+                    <h4>98</h4>
+                </div>
+                </div>
+                <ThreeDots/>
+            </div>    
+            )} */}
+            
             <ModalAdd active={modalActive} setActive={setModalActive}>
             <div className='staff_modal'>
             <h2>Данные сотрудника</h2>

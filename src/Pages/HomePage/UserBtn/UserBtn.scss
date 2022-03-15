@@ -5,9 +5,16 @@
         width: 45px;
         height: 45px;
         background: #ffffff;
-        svg{
-                width: 25px;
-                height: 25px;
+        position: relative;
+        .user_persone__img1{
+        background-image: url(./persone_black.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 7px;
+        left: 8.5px;
         }
 }
 .user_info{
@@ -20,22 +27,28 @@
        text-align: left;
        position: absolute;
        right: 18px;
-       svg{
-               width: 25px;
-               height: 25px;
-               position: relative;
-               left: 40px;
-               top: 3px;
-       }
-       h3{
+       padding-top: 12px;
+       z-index: 1;
+       div{
         margin-bottom: 32px;
         margin-left: 20px;
         font-size: 18px;
-        margin-top: 3px;
-    }
-    p{
+        font-weight: bold;
+        }
+        p{
         margin-bottom: 32px;
         margin-left: 20px;
         font-size: 18px;
-    }
+        }
+        .user_persone__img{
+        background-image: url(./persone_black.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 9px;
+        top: 7px;
+
+   }
 }

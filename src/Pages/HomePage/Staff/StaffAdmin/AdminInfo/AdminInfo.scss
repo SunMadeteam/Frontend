@@ -1,3 +1,16 @@
+.staff_global{
+    .modal_content_add{
+        padding: 10.5px;
+        border: 2px solid #4FB61E;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 8px;
+        height: 88%;
+        overflow: auto;
+        width: 400px;
+        font-size: 18px;
+    }    
+}
 .admin_all{
     display: flex;
     border-bottom: 2px solid #B8D7A9;

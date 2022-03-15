@@ -18,7 +18,7 @@ const foggle=()=>{
 }   
 const [modalActive, setModalActive] = useState(false)
 return (    
-    <div>
+    <div className='add_content'>
       {
          (open===false)?<button className='add_btn' onClick={toggle}>Добавить</button>:
          <div className='add_info'>

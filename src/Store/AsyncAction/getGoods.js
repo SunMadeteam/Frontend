@@ -7,8 +7,7 @@ export const getGoods = () =>{
           headers:{
             Authorization: 'Token ' + localStorage.getItem('token-sunMade')
           }
-        }
-          )
+        })
         return dispatch({type: GET_GOODS, payload:response.data})
         console.log(err=>console.log(err.response.data))
       }

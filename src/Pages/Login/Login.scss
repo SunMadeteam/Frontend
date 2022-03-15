@@ -20,7 +20,15 @@
     background: #F8F6F4;
     border-radius: 14px;
     margin: 180px 0px 0px 760px;
-
+    input:invalid{
+        border: solid 3px red;
+    }
+    input:valid{
+        border:solid 2px black;
+    }
+    .label_margin{
+        margin-top: 63px;
+    }
 }
 .Auth_input{
     border: 2px solid var(--color-green);
@@ -31,6 +39,7 @@
     margin: 0px 0px 25px 0px;
     padding: 0.5rem;
     font-size: 18px;
+   
 }
 .Auth_input_pass{
     margin-bottom:125px
@@ -40,9 +49,7 @@
     margin-right: 240px;
     margin-bottom: 4px;
 }
-.label_margin{
-    margin-top: 63px;
-}
+
 .Auth_button{
     color: #FFFFFF;
     font-weight: bold;

@@ -16,7 +16,7 @@ export const AdminInfo = () => {
   }   
 const [modalActive, setModalActive] = useState(false)
     return (
-      <div>
+      <div className='staff_global'>
         <div className='admin_all'>
           <div className='admin_info' onClick={()=>setModalActive(true)}>
               <div className='info_№'>

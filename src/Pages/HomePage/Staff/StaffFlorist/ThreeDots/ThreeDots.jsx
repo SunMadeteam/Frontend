@@ -11,7 +11,7 @@ export const ThreeDots = () => {
 // } 
   return (
 
-      <div className='three_dot'><AiOutlineRight/></div>
+      <div className='three_dot'></div>
     // <div>
     //     {
     //         (open===false)?

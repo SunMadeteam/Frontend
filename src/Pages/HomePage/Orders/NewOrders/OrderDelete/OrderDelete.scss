@@ -1,9 +1,9 @@
 .delete_icon{
-    svg{
-        color: var(--color-green);
-        width: 20px;
-        height: 20px;
-    }
+   background-image: url(./delete_img.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 16px;
+   height: 17px;
 }
 .delete_cont{
     padding: 5px;

@@ -1,11 +1,10 @@
 .three_dot{
-color: var(--color-green);
-margin-left: 150px;
+background-image: url(./line_img__right.svg);
+background-repeat: no-repeat;
+width: 14px;
 margin-top: 15px;
-svg{
-    width: 25px;
-    height: 25px;
-}
+margin-left: 215px;
+height: 20px;
 }
 .window{
     width: 190px;

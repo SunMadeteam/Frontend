@@ -24,14 +24,14 @@ useEffect(()=>{
     dispatch(fetchStaff())
 },[])
 
-// staff.map(element => console.log(element))
+staff.map(element => console.log(element))
 return (
         <div className='staff_global'>
-            {/* {staff.map(element => 
-            <div className='courier_all'>
+            {staff.map(element => 
+            <div className='courier_all' key={element.id}>
             <div className='courier_info' onClick={()=>setModalActive(true)}>
                 <div className='info_№'>
-                    <h4 key={element.id}></h4>
+                    <h4 key={element.id}>{element.id}</h4>
                 </div>
                 <div className='info_name'>
                     <h4>{element.name}</h4>
@@ -48,7 +48,7 @@ return (
                 </div>
                 <ThreeDots/>
             </div>    
-            )} */}
+            )}
             
             <ModalAdd active={modalActive} setActive={setModalActive}>
             <div className='staff_modal'>

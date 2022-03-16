@@ -1,7 +1,7 @@
 import { SIGN_IN_FAILURE } from "../../const"
 
 const initialState = {
-    res:'',
+    res:{},
 }
 export const loginFailureReducer = (state=initialState, action)=>{
     switch (action.type){

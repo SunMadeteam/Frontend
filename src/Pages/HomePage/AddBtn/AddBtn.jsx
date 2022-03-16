@@ -47,8 +47,8 @@ return (
                   type={(eyeOpen===false)?"password":"text"}/>
             <div className="add_eye">
                 {
-                  (eyeOpen===false)?<RiEyeCloseLine onClick={foggle}/>:
-                  <AiOutlineEye onClick={foggle}/>
+                  (eyeOpen===false)?<div onClick={foggle} className="add_close__eye"/>:
+                  <div onClick={foggle} className="add_open__eye"/>
                 }
             </div>
            <div className='add_input_pass'><AddInfo/></div>

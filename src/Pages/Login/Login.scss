@@ -20,14 +20,41 @@
     background: #F8F6F4;
     border-radius: 14px;
     margin: 180px 0px 0px 760px;
-    input:invalid{
-        border: solid 3px red;
-    }
-    input:valid{
-        border:solid 2px black;
-    }
+    position: relative;
     .label_margin{
         margin-top: 63px;
+    }
+    .Auth_failure{
+        color: red;
+        position: absolute;
+        bottom: 152px;
+    }
+    .Auth_input__fail{
+        border:2px solid red;
+    }
+    .Auth_button__grey{
+        background-color: #c4c4c4;
+        transition: 0.5s;
+    }
+    .Auth_close__eye{
+        background-image: url(./close_eye__img.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17.6px;
+        height:8px;
+        position: absolute;
+        left: 30px;
+        top: 5px;
+    }
+    .Auth_open__eye{
+        background-image: url(./open_eye__img.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 15px;
+        position: absolute;
+        left: 30px;
+        top: 3px;
     }
 }
 .Auth_input{
@@ -39,10 +66,9 @@
     margin: 0px 0px 25px 0px;
     padding: 0.5rem;
     font-size: 18px;
-   
 }
 .Auth_input_pass{
-    margin-bottom:125px
+    margin-bottom:80px
 }
 .Auth_label{
     opacity: 50%;
@@ -59,6 +85,8 @@
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 0.03em;
+    border: none;
+    transition: 0.5s;
 } 
 .hello{
     font-weight: bold;
@@ -68,7 +96,7 @@
 }
 .Auth_eye{
     position: relative;
-    bottom: 157px;
+    bottom: 114px;
     left: 128px;
     color:var(--color-green);
     width: 5rem;

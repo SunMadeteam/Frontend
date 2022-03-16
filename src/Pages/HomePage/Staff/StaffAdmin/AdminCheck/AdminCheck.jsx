@@ -18,6 +18,9 @@ export const AdminCheck = () => {
         <div className='check_order'>
             <h3>Заказ/мес</h3>
         </div>
+        <div className='check_goto'>
+            <h3>Перейти к зп</h3>
+        </div>
     </div>
   )
 }

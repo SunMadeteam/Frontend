@@ -13,6 +13,7 @@ const dispatch = useDispatch()
 useEffect(()=>{
     dispatch(getGoods())
 },[])
+console.log(goods)
 // let i = 1
 // const number = (i) => {
 //     let element = goods.products.map(element=>element.id)
@@ -23,18 +24,16 @@ useEffect(()=>{
 // }
 // number()
 
-console.log(goods.products.map(i=>i))
   return (
     <div>
-        {goods.products.map(item=>console.log(item))}
+        {goods.map(item=>console.log(item))}
 
-        {goods.products.map(element =>
-            <div className='goods_info1'>
+        {goods.map((element, index) =>
+            <div className='goods_info1' key={element.id}>
             <div className='goods_info' onClick={()=>setModalActive(true)}>
                     <div className='info_№'>
-                    <h4>{}</h4>
+                    <h4>{index+1}</h4>
                 </div>
-                
                 <div className='info_img'>
                     <img src={element.image} width="84px" height="80px"/>
                 </div>

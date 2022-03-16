@@ -7,7 +7,7 @@ import { OrderDelete } from '../OrderDelete/OrderDelete'
 export const OrderInfo = () => {
     const [modalActive, setModalActive] = useState(false)
   return (
-    <div>
+    <div className='order_global'>
     <div className='order_info'>
         <div className='order_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>

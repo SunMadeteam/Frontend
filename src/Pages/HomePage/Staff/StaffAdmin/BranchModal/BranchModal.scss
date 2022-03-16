@@ -1,7 +1,8 @@
 .branch_flex{
     display: flex;
     h3{
-        margin-right: 185px;
+        margin-right: 188px;
+        width: 70px;
     }
     .branch_vector__img{
         background-image: url(./vector_img.svg);
@@ -9,11 +10,19 @@
         width: 15px;
         height: 12px;
     }
+    
+}
+.branch_flex2{
+    display: flex;
     .branch_vector__img2{
         background-image: url(./vector_img2.svg);
         background-repeat: no-repeat;
         width: 15px;
         height: 12px;
+    }
+    h3{
+        margin-right: 178px;
+        margin-left: 8px;
     }
 }
 .branch_flex1{
@@ -27,6 +36,5 @@
     input{
         width: 24px;
         height: 24px;
-       
     }
 }

@@ -6,7 +6,7 @@ export const AboutUsBtn = () => {
   return (
     <div className='about_us'>
         <NavLink to="/HomePage/AboutUsRoute/AboutUsContact" className={setSecondActive}><p>Контакты</p></NavLink>
-        <div className='plus'></div>
+        {/* <div className='plus'></div> */}
     </div>
   )
 }

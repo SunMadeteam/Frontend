@@ -16,7 +16,7 @@ export const BranchModal = () => {
             </div>
             :
             <div>
-                <div className='branch_flex'>
+                <div className='branch_flex2'>
                     <h3>Филиалы</h3>
                     <div onClick={toggle} className="branch_vector__img2"></div>
                 </div>

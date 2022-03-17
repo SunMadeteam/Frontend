@@ -6,9 +6,9 @@ import { AddInfo } from '../../../AddBtn/AddInfo/AddInfo'
 import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
 import { BranchModal } from '../../StaffAdmin/BranchModal/BranchModal'
-import { SalaryModal } from '../../StaffAdmin/SalaryModal/SalaryModal'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchStaff } from '../../../../../Store/AsyncAction/fetchStaff'
+import { NavLink } from 'react-router-dom'
 
 
 export const CourierInfo = () => {

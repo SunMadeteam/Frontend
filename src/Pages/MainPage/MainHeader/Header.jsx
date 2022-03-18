@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.scss";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
-
+  const navigate = useNavigate()
   const toggle = () => {
     setOpen(!open);
   };
+  const logOut = () =>{
+    localStorage.removeItem('token-sunMade')
+    navigate('/Login')
+  }
   const user = useSelector((state) => state.Login.login.number);
   return (
     <header>
@@ -34,10 +38,10 @@ export const Header = () => {
           ) : (
             <div className="person_box">
               <h3>
-                {user} <div className="header_person1" onClick={toggle}></div>
+                {user?user:"---------------"} <div className="header_person1" onClick={toggle}></div>
               </h3>
               <p>+996 000 123 456</p>
-              <p>Выйти</p>
+              <p onClick={logOut}>Выйти</p>
             </div>
           )}
         </div>

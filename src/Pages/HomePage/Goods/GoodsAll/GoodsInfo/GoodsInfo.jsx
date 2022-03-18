@@ -13,7 +13,7 @@ const dispatch = useDispatch()
 useEffect(()=>{
     dispatch(getGoods())
 },[])
-console.log(goods)
+// console.log(goods.results)
 // let i = 1
 // const number = (i) => {
 //     let element = goods.products.map(element=>element.id)
@@ -23,12 +23,11 @@ console.log(goods)
 //     return i=i+1
 // }
 // number()
-
   return (
     <div>
-        {goods.map(item=>console.log(item))}
+        {/* {goods.results.map(item=>console.log(item))} */}
 
-        {goods.map((element, index) =>
+        {goods.results.map((element, index) =>
             <div className='goods_info1' key={element.id}>
             <div className='goods_info' onClick={()=>setModalActive(true)}>
                     <div className='info_№'>

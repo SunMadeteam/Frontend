@@ -5,7 +5,8 @@
         box-sizing: border-box;
         background-color: #fff;
         border-radius: 8px;
-        height: 53%;
+        height: 75%;
+        max-height: 580px;
         overflow: auto;
         width: 400px;
         font-size: 18px;
@@ -116,7 +117,7 @@
     height: 50px;
     background: #C4C4C4;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.03em;
 } 

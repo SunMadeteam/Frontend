@@ -2,7 +2,9 @@ import { GET_STAFF } from "../../const"
 
 
 const initialState = {
-  staff:[]
+  staff:{
+    results:[],
+  },
 }
 
 export const getStaffReducer = (state=initialState, action) => {

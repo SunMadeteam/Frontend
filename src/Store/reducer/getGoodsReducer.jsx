@@ -1,7 +1,9 @@
 import { GET_GOODS } from "../../const";
 
 const initialState = {
-  goods: [],
+  goods: {
+    results:[]
+  },
 };
 
 export const getGoodsReducer = (state = initialState, action) => {

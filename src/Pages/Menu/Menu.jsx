@@ -17,7 +17,7 @@ export const Menu = () => {
         <div className='menu_flex'>
             <NavLink to="/HomePage/OrdersRoute/NewOrders" className={linkActiveClassName('OrdersRoute')}><p>Заказы</p></NavLink>
             <NavLink to="/HomePage/GoodsRoute/GoodsAll" className={linkActiveClassName('GoodsRoute')}><p>Товары</p></NavLink>
-            <NavLink to="/HomePage/StatisticsRoute/BarChart" className={linkActiveClassName('StatisticsRoute')}><p>Статистика</p></NavLink>
+            <NavLink to="/HomePage/StatisticsRoute" className={linkActiveClassName('StatisticsRoute')}><p>Статистика</p></NavLink>
             <NavLink to="/HomePage/StaffRoute/StaffCourier" className={linkActiveClassName('StaffRoute')}><p>Сотрудники</p></NavLink>
             <NavLink to="/HomePage/AboutUsRoute/AboutUsContact" className={linkActiveClassName('AboutUsRoute')}><p>О нас</p></NavLink>
         </div>

@@ -23,8 +23,8 @@ const Login = () => {
   const onChange = (type, value) => {
     setForm({
       ...form,
-      [type]: value
-    })
+      [type]: value,
+    });
   };
 
   const onSubmit = (e) => {
@@ -33,9 +33,18 @@ const Login = () => {
     dispatch(PostLogin(form, navigate));
   };
 
-  const redInputPassword=()=>(fail.res.message?"Auth_input Auth_input_pass Auth_input__fail":"Auth_input Auth_input_pass")
-  const redInputLogin=()=>(fail.res.message?"Auth_input Auth_input__fail":"Auth_input Auth_input_login")
-  const setButton=()=>((form.number===""||form.password==="") ? "Auth_button Auth_button__grey":"Auth_button")
+  const redInputPassword = () =>
+    fail.res.message
+      ? "Auth_input Auth_input_pass Auth_input__fail"
+      : "Auth_input Auth_input_pass";
+  const redInputLogin = () =>
+    fail.res.message
+      ? "Auth_input Auth_input__fail"
+      : "Auth_input Auth_input_login";
+  const setButton = () =>
+    form.number === "" || form.password === ""
+      ? "Auth_button Auth_button__grey"
+      : "Auth_button";
   return (
     <div className="Auth_content Auth_back">
       <div className="Auth">
@@ -59,14 +68,16 @@ const Login = () => {
           />
           <div className="Auth_eye">
             {open === false ? (
-              <div onClick={toggle} className="Auth_close__eye"/>
+              <div onClick={toggle} className="Auth_close__eye" />
             ) : (
-              <div onClick={toggle} className="Auth_open__eye"/>
+              <div onClick={toggle} className="Auth_open__eye" />
             )}
           </div>
-          {(fail.res.message)&&
-            <span className="Auth_failure ">Пароль или логин введен неверно</span>
-          }
+          {fail.res.message && (
+            <span className="Auth_failure ">
+              Пароль или логин введен неверно
+            </span>
+          )}
           <button className={setButton()} type="submit">
             ПРОДОЛЖИТЬ
           </button>

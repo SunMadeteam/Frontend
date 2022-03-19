@@ -20,7 +20,11 @@
     height: 50px;
     text-align: left;
     font-style: normal;
-    
+    .check_adres{
+        width: 370px;
+        height: 50px;
+        margin-right: 165px;
+    }
 }
 h4{
     margin-top: 15px;
@@ -51,11 +55,7 @@ h4{
     width: 200px;
     height: 50px;
 }
-.check_adres{
-    width: 370px;
-    height: 50px;
-    margin-right: 165px;
-}
+
 .check_delete{
     margin-top: 15px;
 

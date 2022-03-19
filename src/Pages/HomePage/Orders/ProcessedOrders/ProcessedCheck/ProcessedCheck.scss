@@ -1,32 +1,34 @@
 .check_status{
     display: flex;
     flex-direction: row;
-    .ball{
-        border-radius: 100%;
-        width: 30px;
-        height: 30px;
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin-right: 20px;
-    }
-    .ball_1{
-        background-color: #FFCC69;
-    }
-    .ball_2{
-        background-color: #FFCC69;
-    }
-    .ball_3{
-        background-color: #69D2FF;
-    }
-    .ball_4{
-        background-color: #69D2FF;
-    }
-    .ball_5{
-        background-color: #76DD0F;
-    }
+    width: 162px;
+    margin-left: 108px;
+    // .ball{
+    //     border-radius: 100%;
+    //     width: 30px;
+    //     height: 30px;
+    //     margin-top: 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     align-items: center;
+    //     margin-right: 20px;
+    // }
+    // .ball_1{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_2{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_3{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_4{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_5{
+    //     background-color: #76DD0F;
+    // }
 }
 .processed_check{
     display: flex;

@@ -22,7 +22,7 @@ export const CourierInfo = () => {
   useEffect(() => {
     dispatch(fetchStaff());
   }, []);
-  // console.log(staff)
+  console.log(staff)
   staff.results.map((element) => console.log(element));
   return (
     <div className="staff_global">

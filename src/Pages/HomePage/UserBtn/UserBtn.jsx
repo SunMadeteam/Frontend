@@ -25,7 +25,7 @@ const UserBtn = () => {
       ) : (
         <div className="user_info">
           <div>
-            {user?user:"----------"} <div className="user_persone__img1" onClick={toggle}></div>
+            {user?user:"----------"} <div className="user_persone__img" onClick={toggle}></div>
           </div>
           <p>+996 000 123 456</p>
           <p onClick={logOut}>Выйти</p>

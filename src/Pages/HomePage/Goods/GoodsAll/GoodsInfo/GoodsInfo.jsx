@@ -13,7 +13,7 @@ const dispatch = useDispatch()
 useEffect(()=>{
     dispatch(getGoods())
 },[])
-// console.log(goods.results)
+console.log(goods)
 // let i = 1
 // const number = (i) => {
 //     let element = goods.products.map(element=>element.id)

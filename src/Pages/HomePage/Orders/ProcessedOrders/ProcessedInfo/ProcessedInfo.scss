@@ -9,34 +9,56 @@
     height: 50px;
     text-align: left;
     font-style: normal;
-    .check_adres{
-        margin-right: 148px;
-    }
-    .ball{
-        border-radius: 100%;
-        width: 30px;
+    .processed_status{
+        width: 115px;
         height: 30px;
-        margin-top: 15px;
+        align-items: center;
         display: flex;
         justify-content: center;
-        text-align: center;
-        align-items: center;
+        text-align: center ;
+        border-radius: 8px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-left: 35px;
     }
-    .ball_1{
+    .status_color__accept{
         background-color: #FFCC69;
     }
-    .ball_2{
-        background-color: #FFCC69;
-    }
-    .ball_3{
+    .status_color__delivered{
         background-color: #69D2FF;
     }
-    .ball_4{
-        background-color: #69D2FF;
-    }
-    .ball_5{
+    .status_color__completed{
         background-color: #76DD0F;
     }
+    .check_adres{
+        width: 405px;
+        height: 50px;
+    }
+    // .ball{
+    //     border-radius: 100%;
+    //     width: 30px;
+    //     height: 30px;
+    //     margin-top: 15px;
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    //     align-items: center;
+    // }
+    // .ball_1{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_2{
+    //     background-color: #FFCC69;
+    // }
+    // .ball_3{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_4{
+    //     background-color: #69D2FF;
+    // }
+    // .ball_5{
+    //     background-color: #76DD0F;
+    // }
 }
 .processed_info:nth-child(even){
     background-color: var(--color-two);

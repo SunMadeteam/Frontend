@@ -23,7 +23,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball ball_2'>2</div>
+            <div className='processed_status status_color__delivered'>доставил</div>
          </div>
 
          <div className='processed_info' onClick={()=>setModalActive(true)}>
@@ -42,7 +42,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Джал 23</h4>
             </div>
-            <div className='ball ball_1'>1</div>
+            <div className='processed_status status_color__accept'>принял</div>
           </div>
 
           <div className='processed_info' onClick={()=>setModalActive(true)}>
@@ -61,7 +61,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>8 мкр, дом 2 кв 5</h4>
             </div>
-            <div className='ball ball_5'>5</div>
+            <div className='processed_status status_color__completed'>завершил</div>
         </div>
         <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -79,7 +79,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Тыналиева 83</h4>
             </div>
-            <div className='ball ball_4'>4</div>
+            <div className='processed_status status_color__accept'>забрал</div>
         </div>
         <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -97,7 +97,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Боконбаева/Манаса</h4>
             </div>
-            <div className='ball ball_3'>3</div>
+            <div className='processed_status status_color__delivered'>в пути</div>
         </div>
         <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -115,7 +115,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Гагарина 33</h4>
             </div>
-            <div className='ball ball_2'>2</div>
+            <div className='processed_status status_color__accept'>забрал</div>
          </div>
 
          <div className='processed_info' onClick={()=>setModalActive(true)}>
@@ -134,7 +134,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Джал 23</h4>
             </div>
-            <div className='ball ball_1'>1</div>
+            <div className='processed_status status_color__delivered'>доставил</div>
           </div>
 
           <div className='processed_info' onClick={()=>setModalActive(true)}>
@@ -153,7 +153,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>8 мкр, дом 2 кв 5</h4>
             </div>
-            <div className='ball ball_5'>5</div>
+            <div className='processed_status status_color__accept'>принял</div>
         </div>
         <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -171,7 +171,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Тыналиева 83</h4>
             </div>
-            <div className='ball ball_4'>4</div>
+            <div className='processed_status status_color__accept'>забрал</div>
         </div>
         <div className='processed_info' onClick={()=>setModalActive(true)}>
             <div className='check_№'>
@@ -189,7 +189,7 @@ const ProcessedInfo = () => {
             <div className='check_adres'>
                 <h4>Боконбаева/Манаса</h4>
             </div>
-            <div className='ball ball_3'>3</div>
+            <div className='processed_status status_color__accept'>забрал</div>
         </div>
         
         <ModalClient active={modalActive} setActive={setModalActive}>

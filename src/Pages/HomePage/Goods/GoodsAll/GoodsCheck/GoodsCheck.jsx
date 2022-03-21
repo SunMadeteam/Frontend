@@ -15,9 +15,6 @@ return (
     <div className='check_title'>
         <h3>Название</h3>
     </div>
-    <div className='check_data'>
-        <h3>Дата</h3>
-    </div>
     <div className='check_category'>
         <h3>Категория</h3>
     </div>

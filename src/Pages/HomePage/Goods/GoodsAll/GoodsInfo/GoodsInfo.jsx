@@ -39,9 +39,6 @@ console.log(goods)
                 <div className='info_title'>
                     <h4>{element.name}</h4>
                 </div>
-                <div className='info_data'>
-                    <h4>00.00.0000</h4>
-                </div>
                 <div className='info_category'>
                     <h4>{element.category}</h4>
                 </div>

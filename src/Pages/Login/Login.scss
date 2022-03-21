@@ -27,7 +27,7 @@
     .Auth_failure{
         color: red;
         position: absolute;
-        bottom: 152px;
+        bottom: 188px;
     }
     .Auth_input__fail{
         border:2px solid red;
@@ -44,7 +44,7 @@
         height:8px;
         position: absolute;
         left: 30px;
-        top: 5px;
+        top: 7px;
     }
     .Auth_open__eye{
         background-image: url(./open_eye__img.svg);
@@ -55,6 +55,33 @@
         position: absolute;
         left: 30px;
         top: 3px;
+    }
+    input::placeholder{
+        opacity: 50%;
+    }
+    .red_close__eye{
+        background-image: url(./red_close__eye.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17.6px;
+        height: 8px;
+        position: absolute;
+        right: -5.5px;
+        bottom: 58px;
+        z-index: 1000;
+        background-color: #fff;
+    }
+    .red_open__eye{
+        background-image: url(./red_open__eye.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 19px;
+        height: 15px;
+        position: absolute;
+        right: -6px;
+        bottom: 56px;
+        z-index: 1000;
+        background-color: #fff;
     }
 }
 .Auth_input{

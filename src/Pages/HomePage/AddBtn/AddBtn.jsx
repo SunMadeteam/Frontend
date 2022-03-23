@@ -26,21 +26,27 @@ const AddBtn = (props) => {
 
   });
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const usertype = useSelector(state=>state.Login.usertype)
-  console.log(usertype)
+  console.log(usertype.usertype)
   const onChange = (type, value) => {
     setForm({
       ...form,
       [type]: value,
-      usertype:usertype,
+      usertype:usertype.usertype,
     });
   };
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("signup", form);
-    dispatch(registerStaff(form, navigate));
+    dispatch(registerStaff(form));
   };
+  const fail = useSelector(state=>state.Failure.err.number)
+  console.log(fail)
+  const redInput = () =>
+    fail
+      ? "add_input add_input_login red_input"
+      : "add_input add_input_login";
   const setButton = () =>
     form.number === "" || form.password === "" || form.name ===""
       ? "add_button"
@@ -80,7 +86,7 @@ const AddBtn = (props) => {
             />
             <label className="add_label">Номер</label>
             <input
-              className="add_input add_input_login"
+              className={redInput()}
               placeholder="Введите номер"
               onChange={(e) => onChange("number", e.target.value)}
             />

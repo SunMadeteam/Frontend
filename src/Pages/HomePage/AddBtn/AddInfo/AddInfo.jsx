@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { useDispatch } from 'react-redux'
+import { usertype } from '../../../../Store/Actions/Action'
 import { registerStaff } from '../../../../Store/AsyncAction/registerStaff'
 import './AddInfo.scss'
 
@@ -18,8 +19,8 @@ export const AddInfo = () => {
       ...radioInput,
       [type]: value,
     });
-    dispatch(radioInput)
-    // console.log(radioInput)
+    dispatch(usertype(radioInput))
+    console.log(radioInput)
   };
   
   return (
@@ -38,16 +39,19 @@ export const AddInfo = () => {
                 <div className='add_flex1'>
                     <p>Админ</p>
                     <input type="radio" name='radio' value="1" 
+                    // checked={value=="2"?true:false}
                     onChange={(e) => onChange("usertype", e.target.value = "admin")}/>
                 </div>
                 <div className='add_flex1' >
                     <p>Курьер</p>
                     <input type="radio" name='radio' value="2" 
+                    // checked={value=="2"?true:false}
                     onChange={(e) => onChange("usertype", e.target.value = "runner")}/>
                 </div>
                 <div className='add_flex1'>
                     <p>Флорист</p>
                     <input type="radio" name='radio' value="3"
+                    // checked={value=="2"?true:false}
                     onChange={(e) => onChange("usertype", e.target.value = "florist")}/>
                 </div>
             </div>

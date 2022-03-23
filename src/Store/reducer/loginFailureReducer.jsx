@@ -2,6 +2,7 @@ import { REGISTER_FAILURE, SIGN_IN_FAILURE } from "../../const";
 
 const initialState = {
   res: {},
+  err:{},
 };
 export const loginFailureReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -13,7 +14,7 @@ export const loginFailureReducer = (state = initialState, action) => {
       case REGISTER_FAILURE:
         return{
           ...state,
-          res:action.payload,
+          err:action.payload,
         }
     default:
       return state;

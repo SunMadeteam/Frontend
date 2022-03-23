@@ -2,7 +2,7 @@ import { GET_GOODS } from "../../const";
 
 const initialState = {
   goods: {
-    results:[]
+    results: [],
   },
 };
 

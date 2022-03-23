@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
-import {AiOutlineDown,AiOutlineUp} from 'react-icons/ai'
+import { useDispatch } from 'react-redux'
+import { registerStaff } from '../../../../Store/AsyncAction/registerStaff'
 import './AddInfo.scss'
 
 export const AddInfo = () => {
@@ -8,8 +9,21 @@ export const AddInfo = () => {
     const toggle=()=>{
         setOpen(!open)
   }   
+  const dispatch = useDispatch()
+  const [radioInput, setRadioInput] = useState({
+    usertype:"",
+  });
+  const onChange = (type, value) => {
+    setRadioInput({
+      ...radioInput,
+      [type]: value,
+    });
+    dispatch(radioInput)
+    // console.log(radioInput)
+  };
+  
   return (
-    <div className='add_position'>
+    <div className='add_usertype'>
         {(open===false)?
             <div className='add_flex'>
                 <h3>Должность</h3>  
@@ -23,15 +37,18 @@ export const AddInfo = () => {
                 </div>
                 <div className='add_flex1'>
                     <p>Админ</p>
-                    <input type="radio"/>
+                    <input type="radio" name='radio' value="1" 
+                    onChange={(e) => onChange("usertype", e.target.value = "admin")}/>
                 </div>
-                <div className='add_flex1'>
+                <div className='add_flex1' >
                     <p>Курьер</p>
-                    <input type="radio"/>
+                    <input type="radio" name='radio' value="2" 
+                    onChange={(e) => onChange("usertype", e.target.value = "runner")}/>
                 </div>
                 <div className='add_flex1'>
                     <p>Флорист</p>
-                    <input type="radio"/>
+                    <input type="radio" name='radio' value="3"
+                    onChange={(e) => onChange("usertype", e.target.value = "florist")}/>
                 </div>
             </div>
         } 

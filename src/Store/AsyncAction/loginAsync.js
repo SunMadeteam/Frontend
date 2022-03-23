@@ -1,6 +1,6 @@
 import { API_POST_LOGIN, SIGN_IN, SIGN_IN_FAILURE } from "../../const";
 import { signinFormStart } from "../Actions/Action";
-import axios from "axios";
+import  axios  from "axios";
 
 export const PostLogin = (formData, navigate) => {
   return async (dispatch) => {

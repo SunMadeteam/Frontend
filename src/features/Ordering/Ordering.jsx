@@ -4,6 +4,7 @@ import Header from '../../common/components/Header';
 import './index.scss'
 
 import WideWhiteButton from '../../common/components/Wide-white-button';
+import WideButton from '../../common/components/Wide-button';
 
 const Ordering = () => {
   const [name, setName] = useState('')
@@ -108,8 +109,8 @@ const Ordering = () => {
         />
         <div className='ordering__payment'>Опата наличными при получении</div>
 
-        <WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} />
-      
+        <WideButton word='ОФОРМИТЬ ЗАКАЗ' />
+        {/* <WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} /> */}
       </div>
     </div>
   )

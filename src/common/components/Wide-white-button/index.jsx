@@ -1,13 +1,21 @@
 import './index.scss';
 
-const WideWhiteButton = ({word , disabled}) => {
+const WideWhiteButton = ({word , disabled , verify ,text}) => {
   // const state = true;
-
+    
     return (
       <>
-        <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
-          <button  disabled={disabled}> {word} </button>
-        </div>
+        {
+          word === 'Продолжить' ? (
+            <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
+              <button  disabled={disabled} onClick={verify}> {text} </button>
+            </div>
+          ) : (
+            <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
+              <button  disabled={disabled} onClick={verify}> {text} </button>
+            </div>
+          )
+        }
       </>
     
     )

@@ -2,6 +2,8 @@ import {Routes, Route} from "react-router-dom"
 import Login from "./Pages/Login/Login"
 import HomePage from './Pages/HomePage/HomePage';
 import './App.scss'
+
+
 import { MainPage } from "./Pages/MainPage/MainPage";
 const App=()=> {
   return (

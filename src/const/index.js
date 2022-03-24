@@ -16,3 +16,5 @@ export const GET_GOODS = 'GET_GOODS'
 export const SIGNIN_FORM_STARTED = "SIGNIN_FORM_STARTED"
 export const SIGNIN_FORM_SUCCESS = "SIGNIN_FORM_SUCCESS"
 export const USER_TYPE = "USER_TYPE"
+export const CLEAR_ERR = "CLEAR_ERR"
+export const JWT_TOKEN = "JWT_TOKEN"

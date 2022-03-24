@@ -4,9 +4,10 @@ import { ModalAdd } from "../../../AddBtn/ModalAdd/ModalAdd";
 import { ThreeDots } from "../ThreeDots/ThreeDots";
 import { AiOutlineEye } from "react-icons/ai";
 import { RiEyeCloseLine } from "react-icons/ri";
-import { AddInfo } from "../../../AddBtn/AddInfo/AddInfo";
+import { AddStaff } from "../../../AddBtn/AddStaff/AddStaff";
 import { BranchModal } from "../../StaffAdmin/BranchModal/BranchModal";
 import { SalaryModal } from "../../StaffAdmin/SalaryModal/SalaryModal";
+import { PositionModal } from "../../StaffAdmin/PositionModal/PositionModal";
 
 export const FloristInfo = () => {
   const [eyeOpen, setEyeOpen] = useState(false);
@@ -250,7 +251,7 @@ export const FloristInfo = () => {
               )}
             </div>
             <div>
-              <AddInfo />
+            <div><PositionModal/></div>
             </div>
             <div className="status">
               <h3>Статус</h3>

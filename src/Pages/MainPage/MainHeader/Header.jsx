@@ -9,11 +9,11 @@ export const Header = () => {
   const toggle = () => {
     setOpen(!open);
   };
+  const dataUser = localStorage.getItem('user')
   const logOut = () =>{
     localStorage.removeItem('token-sunMade')
     navigate('/Login')
   }
-  const user = useSelector((state) => state.Login.login.number);
   return (
     <header>
       <div className="header_img">
@@ -38,7 +38,7 @@ export const Header = () => {
           ) : (
             <div className="person_box">
               <h3>
-                {user?user:"---------------"} <div className="header_person1" onClick={toggle}></div>
+                {dataUser?dataUser:"---------------"} <div className="header_person1" onClick={toggle}></div>
               </h3>
               <p>+996 000 123 456</p>
               <p onClick={logOut}>Выйти</p>

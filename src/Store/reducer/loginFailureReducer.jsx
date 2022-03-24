@@ -1,4 +1,4 @@
-import { REGISTER_FAILURE, SIGN_IN_FAILURE } from "../../const";
+import { CLEAR_ERR, REGISTER_FAILURE, SIGN_IN_FAILURE } from "../../const";
 
 const initialState = {
   res: {},
@@ -11,6 +11,11 @@ export const loginFailureReducer = (state = initialState, action) => {
         ...state,
         res: action.payload,
       };
+      case CLEAR_ERR:
+        return{
+          ...state,
+          res:{},
+        }
       case REGISTER_FAILURE:
         return{
           ...state,

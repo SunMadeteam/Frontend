@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./CourierInfo.scss";
 import { ModalAdd } from "../../../AddBtn/ModalAdd/ModalAdd";
 import { ThreeDots } from "../../StaffFlorist/ThreeDots/ThreeDots";
-import { AddInfo } from "../../../AddBtn/AddInfo/AddInfo";
+import { AddStaff } from "../../../AddBtn/AddStaff/AddStaff";
 import { AiOutlineEye } from "react-icons/ai";
 import { RiEyeCloseLine } from "react-icons/ri";
 import { BranchModal } from "../../StaffAdmin/BranchModal/BranchModal";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStaff } from "../../../../../Store/AsyncAction/fetchStaff";
+import { PositionModal } from "../../StaffAdmin/PositionModal/PositionModal";
 
 
 export const CourierInfo = () => {
@@ -27,7 +28,7 @@ export const CourierInfo = () => {
   return (
     <div className="staff_global">
       {staff.results.map((element, index) => (
-        <div className="courier_all" key={element.id}>
+        <div className="courier_all" key={element.id} >
           <div className="courier_info" onClick={() => setModalActive(true)}>
             <div className="info_№">
               <h4>{index + 1}</h4>
@@ -49,7 +50,7 @@ export const CourierInfo = () => {
         </div>
       ))}
 
-      <ModalAdd active={modalActive} setActive={setModalActive}>
+      <ModalAdd active={modalActive} setActive={setModalActive}> 
         <div className="staff_modal">
           <h2>Данные сотрудника</h2>
           <form className="modal_form">
@@ -78,7 +79,7 @@ export const CourierInfo = () => {
               )}
             </div>
             <div>
-              <AddInfo />
+            <PositionModal/>
             </div>
             <div className="status">
               <h3>Статус</h3>

@@ -14,7 +14,7 @@ const UserBtn = () => {
     localStorage.removeItem("token-sunMade");
     navigate("/Login");
   };
-  const user = useSelector((state) => state.Login.login.number);
+  const user = localStorage.getItem('user')
   // console.log(user);
   return (
     <div>

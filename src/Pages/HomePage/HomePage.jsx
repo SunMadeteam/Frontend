@@ -14,7 +14,9 @@ import { AboutUsRoute } from "./AboutUs/AboutUsRoute"
 const HomePage =()=>{
     return(
         <div className="main">
+            <div>
              <Menu/>
+            </div>
              <div className="home_content">
                  <div className="header">
                     <SearchInput />

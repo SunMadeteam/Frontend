@@ -4,9 +4,10 @@ import { ModalAdd } from '../../../AddBtn/ModalAdd/ModalAdd'
 import { ThreeDots } from '../../StaffFlorist/ThreeDots/ThreeDots'
 import {AiOutlineEye} from "react-icons/ai"
 import {RiEyeCloseLine} from "react-icons/ri"
-import { AddInfo } from '../../../AddBtn/AddInfo/AddInfo'
+import { AddStaff } from '../../../AddBtn/AddStaff/AddStaff'
 import { BranchModal } from '../BranchModal/BranchModal'
 import { SalaryModal } from '../SalaryModal/SalaryModal'
+import { PositionModal } from '../PositionModal/PositionModal'
 
 export const AdminInfo = () => {
   const [eyeOpen, setEyeOpen] = useState(false)
@@ -228,7 +229,7 @@ const [modalActive, setModalActive] = useState(false)
                     <AiOutlineEye onClick={foggle}/>
                     }
                 </div>
-            <div><AddInfo/></div>
+        <div><PositionModal/></div>
              <div className='status'> 
                   <h3>Статус</h3>
                   <input type="radio"></input>

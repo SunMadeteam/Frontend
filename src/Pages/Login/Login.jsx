@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { PostLogin } from "../../Store/AsyncAction/loginAsync";
+import { clearErr } from "../../Store/Actions/Action";
 
 const Login = () => {
   const [open, setOpen] = useState(false);
@@ -32,10 +33,11 @@ const Login = () => {
       [type]: value,
     });
   };
-
+  
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("signin", form);
+    dispatch(clearErr())
     dispatch(PostLogin(form, navigate));
   };
   const redInputPassword = () =>
@@ -53,6 +55,7 @@ const Login = () => {
   // const normalInput = () =>
   //   form.number===""&&
   //   "Auth_input";
+
   return (
     <div className="Auth_content Auth_back">
       <div className="Auth">

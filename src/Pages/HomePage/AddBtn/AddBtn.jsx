@@ -2,7 +2,7 @@ import React from "react";
 import "./AddBtn.scss";
 import { useState } from "react";
 import { ModalAdd } from "./ModalAdd/ModalAdd";
-import { AddInfo } from "./AddInfo/AddInfo";
+import { AddInfo, AddStaff } from "./AddStaff/AddStaff";
 import { registerStaff } from "../../../Store/AsyncAction/registerStaff";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -12,46 +12,9 @@ const AddBtn = (props) => {
   const toggle = () => {
     setOpen(!open);
   };
-  const [eyeOpen, setEyeOpen] = useState(false);
-
-  const foggle = () => {
-    setEyeOpen(!eyeOpen);
-  };
   const [modalActive, setModalActive] = useState(false);
 
-  const [form, setForm] = useState({
-    name:"",
-    number: "",
-    password: "",
-
-  });
-  const dispatch = useDispatch();
-  // const navigate = useNavigate();
-  const usertype = useSelector(state=>state.Login.usertype)
-  console.log(usertype.usertype)
-  const onChange = (type, value) => {
-    setForm({
-      ...form,
-      [type]: value,
-      usertype:usertype.usertype,
-    });
-  };
-  const onSubmit = (e) => {
-    e.preventDefault();
-    console.log("signup", form);
-    dispatch(registerStaff(form));
-  };
-  const fail = useSelector(state=>state.Failure.err.number)
-  console.log(fail)
-  const redInput = () =>
-    fail
-      ? "add_input add_input_login red_input"
-      : "add_input add_input_login";
-  const setButton = () =>
-    form.number === "" || form.password === "" || form.name ===""
-      ? "add_button"
-      : "add_button add_button__active";
-
+  
   return (
     <div className="add_content">
       {open === false ? (
@@ -75,43 +38,8 @@ const AddBtn = (props) => {
         </div>
       )}
       <ModalAdd active={modalActive} setActive={setModalActive}>
-        <div className="add_staff">
-          <h2>Добавить сотрудника</h2>
-          <form className="add_form" onSubmit={onSubmit}>
-            <label className="add_label label_margin">Имя/Фамилия</label>
-            <input
-              className="add_input add_input_login"
-              placeholder="Введите имя и фамилию"
-              onChange={(e) => onChange("name", e.target.value)}
-            />
-            <label className="add_label">Номер</label>
-            <input
-              className={redInput()}
-              placeholder="Введите номер"
-              onChange={(e) => onChange("number", e.target.value)}
-            />
-            <label className="add_label">Пароль</label>
-
-            <input
-              className="add_input "
-              placeholder="Введите пароль"
-              type={eyeOpen === false ? "password" : "text"}
-              onChange={(e) => onChange("password", e.target.value)}
-            />
-            <div className="add_eye">
-              {eyeOpen === false ? (
-                <div onClick={foggle} className="add_close__eye" />
-              ) : (
-                <div onClick={foggle} className="add_open__eye" />
-              )}
-            </div>
-            <div className="add_input_pass">
-              <AddInfo />
-            </div>
-            <button className={setButton()} type="submit">ДОБАВИТЬ</button>
-          </form>
-        </div>
-      </ModalAdd>
+        <AddStaff/>
+      </ModalAdd> 
     </div>
   );
 };

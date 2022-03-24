@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HelloText from '../../common/components/Hello-text';
 import './index.scss';
 import CatalogBlock from './../../common/components/Catalog-block/index';
+import Loader from '../../common/components/Loader/Loader';
 
 
 
@@ -17,6 +18,7 @@ const Catalogs = () => {
     const req = await fetch(URL_CATALOG)
     const resp = await req.json()
     setCatalog(resp.categories)
+    console.log(resp);
   }
   return (
     <div className='container'>
@@ -25,13 +27,13 @@ const Catalogs = () => {
         catalog.map((catalog, index) => {
           
           return (
-            <Link to={'/catalog/' + catalog.id} key={catalog.id}>
+            <Link to={'/catalog/' + catalog.id + index} key={catalog.id}>
               <CatalogBlock text={catalog.name} img={catalog.image}/>
             </Link>
           )
         })
         :
-        <h3>pusto</h3>}
+        <Loader/>}
     </div>
   )
 }

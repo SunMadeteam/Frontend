@@ -1,9 +1,9 @@
 import './index.scss';
 import { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import ProductCart from './../../common/components/Product-cart/index';
-import Header from './../../common/components/Header/index';
-import Slider from './../../common/components/Slider/Slider';
+import ProductCart from '../../../common/components/Product-cart/index';
+import Header from '../../../common/components/Header/index';
+import Slider from '../../../common/components/Slider/Slider';
 
 
 

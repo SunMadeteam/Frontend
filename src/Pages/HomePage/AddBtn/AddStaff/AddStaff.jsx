@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { usertype } from "../../../../Store/Actions/Action";
+import { clearErr, usertype } from "../../../../Store/Actions/Action";
 import { registerStaff } from "../../../../Store/AsyncAction/registerStaff";
 import "./AddStaff.scss";
 
@@ -35,6 +35,7 @@ export const AddStaff = () => {
   const dispatch = useDispatch();
 
   const onChange = (type, value) => {
+    dispatch(clearErr())
     setForm({
       ...form,
       [type]: value,

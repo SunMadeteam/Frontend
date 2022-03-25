@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
-import { AiOutlineUp } from 'react-icons/ai'
-import {AiOutlineDown } from 'react-icons/ai'
+import { useSelector } from 'react-redux'
 import './Category.scss'
 export const Category = () => {
     const [open, setOpen] = useState(false)
@@ -8,6 +7,8 @@ export const Category = () => {
     const toggle=()=>{
         setOpen(!open)
   }   
+  const product = useSelector(state => state.Goods.product)
+ 
   return (
     <div className='category_position'>
     {(open===false)?
@@ -23,31 +24,46 @@ export const Category = () => {
             </div>
             <div className='category_flex1'>
                 <p>Популярные</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===1 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Сад</p>
-                <input type="radio"/>
+                <input 
+                // value={product.category}
+                checked={product.category===2 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Дом</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===3 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Для подарка</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===4 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Почта</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===5 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Питание</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===6 ? true: false}
+                type="radio"/>
             </div>
             <div className='category_flex1'>
                 <p>Аксессуары</p>
-                <input type="radio"/>
+                <input 
+                checked={product.category===7 ? true: false}
+                type="radio"/>
             </div>
 
         </div>

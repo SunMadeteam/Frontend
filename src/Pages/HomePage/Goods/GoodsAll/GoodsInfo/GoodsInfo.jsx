@@ -6,30 +6,56 @@ import { Care } from "../HardCare/Care";
 import { Category } from "../HardCare/Category";
 import { useDispatch, useSelector } from "react-redux";
 import { getGoods } from "../../../../../Store/AsyncAction/getGoods";
+import { getProduct } from "../../../../../Store/AsyncAction/getProduct";
+import { Hight } from "../HardCare/Hight";
 export const GoodsInfo = () => {
+
   const goods = useSelector((state) => state.Goods.goods);
-  const [modalActive, setModalActive] = useState(false);
-  const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getGoods());
   }, []);
-  console.log(goods);
-  // let i = 1
-  // const number = (i) => {
-  //     let element = goods.products.map(element=>element.id)
-  //     for(i=0; i<=element.length;i++){
-  //         console.log('dsad',i)
-  //     }
-  //     return i=i+1
-  // }
-  // number()
+
+  // console.log(goods);
+  const getProductById = (id) => {
+    dispatch(getProduct(id));
+  };
+  const [modalActive, setModalActive] = useState(false, getProductById);
+  const product = useSelector((state) => state.Goods.product);
+  // console.log(product);
+  
+  const [form, setForm] = useState({
+    name: "",
+    number: "",
+    password: "",
+    usertype: "",
+    branch:"",
+    is_active: true,
+  });
+  const dispatch = useDispatch();
+
+  const onChange = (type, value) => {
+    // dispatch(clearErr())
+    setForm({
+      ...form,
+      [type]: value,
+    });
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log("signup", form);
+    // dispatch(registerStaff(form));
+  };
+
   return (
     <div>
       {/* {goods.results.map(item=>console.log(item))} */}
-
       {goods.results.map((element, index) => (
         <div className="goods_info1" key={element.id}>
-          <div className="goods_info" onClick={() => setModalActive(true)}>
+          <div
+            className="goods_info"
+            onClick={() => setModalActive(true, getProductById(element.id))}
+          >
             <div className="info_№">
               <h4>{index + 1}</h4>
             </div>
@@ -51,26 +77,30 @@ export const GoodsInfo = () => {
           </div>
         </div>
       ))}
+      
       <ModalAdd active={modalActive} setActive={setModalActive}>
         <div>
-          <h2>Данные товара</h2>
-          <form className="goods_modal">
+          <form className="goods_modal" onSubmit={onSubmit}>
+            <h2>Данные товара</h2>
             <label className="goods_label label_margin">Добавить фото</label>
-            <div className="goods_img"></div>
+            <img src={product.image} className="goods_img" />
             <label className="goods_label">Название</label>
-            <input placeholder="Саговник" className="goods_input" />
+            <input className="goods_input" value={product.name} 
+            onChange={(e) => onChange("name", e.target.value)}
+            />
             <label className="goods_label">Цена</label>
-            <input placeholder="2700c" className="goods_input" />
+            <input value={product.price} className="goods_input" 
+            onChange={(e) => onChange("price", e.target.value)}
+            />
             <label className="goods_label">Описание</label>
+
+            <div className="goods_description">{product.description}</div>
+            <Care />
+            {/* <pre>{product.complexity_of_care}</pre> */}
+            <Hight />
+            <Category />
+            <button className="goods_button" type="submit">СОХРАНИТЬ</button>
           </form>
-          <div className="goods_description">
-            Вечнозеленые растения, лианы, кустарники с лазящими толстыми
-            стеблями, часто свисающими воздушными корнями. Листья крупные,
-            кожистые. Черешок длинный, у основания — влагалищный.
-          </div>
-          <Care />
-          <Category />
-          <button className="goods_button">СОХРАНИТЬ</button>
         </div>
       </ModalAdd>
     </div>

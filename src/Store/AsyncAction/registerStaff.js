@@ -14,8 +14,6 @@ export const registerStaff = (formData) => {
         data: JSON.stringify(formData), 
       })
         .then(() => {
-          // navigate("/Login");
-        //   localStorage.setItem("token-sunMade", res.data.token);
           dispatch({ type: REGISTER_STAFF, payload: formData });
         })
         .catch((err) =>

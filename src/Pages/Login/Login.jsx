@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { PostLogin } from "../../Store/AsyncAction/loginAsync";
-import { clearErr } from "../../Store/Actions/Action";
+import { clearRes } from "../../Store/Actions/Action";
 
 const Login = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,9 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const fail = useSelector((state) => state.Failure);
+  console.log(fail)
   const onChange = (type, value) => {
+    dispatch(clearRes())
     setForm({
       ...form,
       [type]: value,
@@ -37,7 +39,6 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("signin", form);
-    dispatch(clearErr())
     dispatch(PostLogin(form, navigate));
   };
   const redInputPassword = () =>
@@ -49,7 +50,7 @@ const Login = () => {
       ? "Auth_input Auth_input__fail"
       : "Auth_input Auth_input_login";
   const setButton = () =>
-    form.number === "" || form.password === ""
+    form.number === "" || form.password === "" || fail.res.message
       ? "Auth_button Auth_button__grey"
       : "Auth_button";
   // const normalInput = () =>

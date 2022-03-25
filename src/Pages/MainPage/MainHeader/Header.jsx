@@ -10,8 +10,10 @@ export const Header = () => {
     setOpen(!open);
   };
   const dataUser = localStorage.getItem('user')
+  console.log(dataUser)
   const logOut = () =>{
     localStorage.removeItem('token-sunMade')
+    localStorage.removeItem('user')
     navigate('/Login')
   }
   return (

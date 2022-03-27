@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./CourierInfo.scss";
 import { ModalAdd } from "../../../AddBtn/ModalAdd/ModalAdd";
 import { ThreeDots } from "../../StaffFlorist/ThreeDots/ThreeDots";
-import { AddStaff } from "../../../AddBtn/AddStaff/AddStaff";
 import { AiOutlineEye } from "react-icons/ai";
 import { RiEyeCloseLine } from "react-icons/ri";
 import { BranchModal } from "../../StaffAdmin/BranchModal/BranchModal";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStaff } from "../../../../../Store/AsyncAction/fetchStaff";
 import { PositionModal } from "../../StaffAdmin/PositionModal/PositionModal";
+import { Pagination } from "../../../Paginetion/Pagination";
+import { paginationStaff } from "../../../../../Store/AsyncAction/pagination";
 
 
 export const CourierInfo = () => {
@@ -23,8 +24,8 @@ export const CourierInfo = () => {
   useEffect(() => {
     dispatch(fetchStaff());
   }, []);
-  console.log(staff)
-  staff.results.map((element) => console.log(element));
+  // console.log("dsa", staff.next)
+  // staff.results.map((element) => console.log(element));
   return (
     <div className="staff_global">
       {staff.results.map((element, index) => (
@@ -49,6 +50,8 @@ export const CourierInfo = () => {
           <ThreeDots />
         </div>
       ))}
+
+      <Pagination next={staff.next} previous={staff.previous} take={paginationStaff}/>
 
       <ModalAdd active={modalActive} setActive={setModalActive}> 
         <div className="staff_modal">

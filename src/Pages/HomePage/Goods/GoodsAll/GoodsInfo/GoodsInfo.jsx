@@ -8,11 +8,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { getGoods } from "../../../../../Store/AsyncAction/getGoods";
 import { getProduct } from "../../../../../Store/AsyncAction/getProduct";
 import { Hight } from "../HardCare/Hight";
+import { Pagination } from "../../../Paginetion/Pagination";
+import { paginationGoods } from "../../../../../Store/AsyncAction/pagination";
 export const GoodsInfo = () => {
 
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
-  console.log(goods);
+  // console.log(goods);
 
   useEffect(() => {
     dispatch(getGoods());
@@ -21,6 +23,7 @@ export const GoodsInfo = () => {
   const getProductById = (id) => {
     dispatch(getProduct(id));
   };
+
   const [modalActive, setModalActive] = useState(false, getProductById);
   
   const [form, setForm] = useState({
@@ -59,7 +62,7 @@ export const GoodsInfo = () => {
               <h4>{index + 1}</h4>
             </div>
             <div className="info_img">
-              <img src={element.image} width="84px" height="80px" />
+              {/* <img src={element.image} width="84px" height="80px" /> */}
             </div>
             <div className="info_title">
               <h4>{element.name}</h4>
@@ -76,11 +79,7 @@ export const GoodsInfo = () => {
           </div>
         </div>
       ))}
-      <div className="pagination">
-        <div className="pagination_box">
-          1
-        </div>
-      </div>
+      <Pagination next={goods.next} previous={goods.previous} take={paginationGoods}/>
       <ModalAdd active={modalActive} setActive={setModalActive}>
         <div>
           <form className="goods_modal" onSubmit={onSubmit}>

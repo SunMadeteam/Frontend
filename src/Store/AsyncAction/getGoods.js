@@ -9,6 +9,5 @@ export const getGoods = () =>{
           }
         })
         return dispatch({type: GET_GOODS, payload:response.data})
-        console.log(err=>console.log(err.response.data))
       }
 }

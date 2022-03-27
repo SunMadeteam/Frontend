@@ -28,7 +28,7 @@ const UserBtn = () => {
             {user?user:"----------"} <div className="user_persone__img" onClick={toggle}></div>
           </div>
           <p>+996 000 123 456</p>
-          <p onClick={logOut}>Выйти</p>
+          <p onClick={logOut} style={{cursor:"pointer"}}>Выйти</p>
         </div>
       )}
     </div>

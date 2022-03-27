@@ -10,7 +10,7 @@ export const Care = () => {
   };
 
   const product = useSelector((state) => state.Goods.product);
-  console.log(product);
+// console.log(product);
   const [checked, setChecked] = useState(false);
 
   const checkedValueEasy = () => {

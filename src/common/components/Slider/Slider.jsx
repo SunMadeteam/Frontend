@@ -5,41 +5,37 @@ import home from './home.png';
 
 import { useState } from 'react';
 
-const Slider = ({catalogIndex}) => {
-    const catalogeMore = [
-        {
-            img: home,
-            name: 'сад'
-        },
-        {
-            img: home,
-            name: 'сад'
-        },
-        {
-            img: home,
-            name: 'сад'
-        },
-        {
-            img: home,
-            name: 'сад'
-        }
-    ]
-    
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [length, setLength] = useState(catalogeMore.length)
-    const [touchPosition, setTouchPosition] = useState(null)
+const Slider = ({ slideIndex }) => {
 
-const handleTouchStart = (e) => {
-    setTouchPosition(e.touches[0].clientX)
-}
+    slideIndex = Number(slideIndex)
+    const [catalogeMore, setCatalog] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(slideIndex)
+    const [touchPosition, setTouchPosition] = useState(null)
+    const [sliderLength, setSliderLength] = useState(0)
+
+
+    const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
+
 
     useEffect(() => {
-        setLength(catalogeMore.length)
-    }, [catalogIndex])
+        getDetail();
+    }, []);
+    const getDetail = async () => {
+        const req = await fetch(URL_CATALOG);
+        const res = await req.json();
+        setCatalog(res.categories);
+        setSliderLength(res.categories.length)
+
+    };
+
+    const handleTouchStart = (e) => {
+        setTouchPosition(e.touches[0].clientX)
+    }
 
     const next = () => {
-        setCurrentIndex(currentIndex + 1)
-        if(currentIndex > length-2){
+        if (currentIndex !== sliderLength - 1) {
+            setCurrentIndex(currentIndex + 1)
+        } else if (currentIndex > sliderLength - 2) {
             setCurrentIndex(0)
         }
     }
@@ -47,21 +43,22 @@ const handleTouchStart = (e) => {
     const prev = () => {
         if (currentIndex > 0) {
             setCurrentIndex(currentIndex - 1)
-        }else{
-            setCurrentIndex(length-1)
+
+        } else if (currentIndex === 0) {
+            setCurrentIndex(sliderLength - 1)
         }
     }
     const handleTouchMove = (e) => {
-      
-        if(touchPosition === null) {
+
+        if (touchPosition === null) {
             return
         }
         const currentTouch = e.touches[0].clientX
         const diff = touchPosition - currentTouch
-    
+
         if (diff > 5) {
             next()
-        }else if(diff < -5){
+        } else if (diff < -5) {
             prev()
         }
         setTouchPosition(null)
@@ -73,35 +70,35 @@ const handleTouchStart = (e) => {
         <div className="carousel-container">
             <div className="carousel-wrapper">
                 <div className="carousel-content-wrapper"
-                 onTouchStart={handleTouchStart}
-                 onTouchMove={handleTouchMove}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
                 >
                     <div className="carousel-content"
                         style={{ transform: `translateX(-${currentIndex * 96}%)` }}
                     >
-                         {
-                     catalogeMore ?
-                         catalogeMore.map((slide, index) => {
-                             return (
-                                 <div className='slider__item'
-                                     key={index}
-                                     style={{
-                                         background:`url(${home})`,
-                                         backgroundRepeat:'no-repeat',
-                                         backgroundPosition:'center'
-                                     }}
-                                 >
-                                     <div>{slide.name}</div>
-                                     
-                                 </div>
-                             )
-                         })
-                         : ''
-                 }
+                        {
+                            catalogeMore ?
+                                catalogeMore.map((slide, index) => {
+                                    return (
+                                        <div className='slider__item'
+                                            key={index}
+                                            style={{
+                                                background: `url(${slide.image})`,
+                                                backgroundRepeat: 'no-repeat',
+                                                backgroundPosition: 'center'
+                                            }}
+                                        >
+                                            <div>{slide.name}</div>
+
+                                        </div>
+                                    )
+                                })
+                                : ''
+                        }
                     </div>
                 </div>
             </div>
-          
+
         </div>
     )
 }

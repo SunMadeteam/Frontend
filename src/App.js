@@ -12,6 +12,7 @@ import CartDescription from './features/Cart-description/index';
 import  Ordering  from './features/Ordering/Ordering';
 import PersonalArea from './features/Personal-area';
 import SelectDateTime from './features/Select-date-time/SelectDateTime';
+import CatalogBlock from './common/components/Catalog-block/index';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path='/auth' element={<Authorization/>} />
         <Route path='/shopping' element={<Shopping />} />
         <Route path='/catalogs' element={<Catalogs />} />
-        <Route path='/catalog/:catalogName' element={<Catalog />} />
+        <Route path='/catalog/:id' element={<Catalog />} />
         <Route path='/cartDescription/:flowersName' element={<CartDescription />} />
         <Route path='/about' element={<About />} />
         <Route path='/ordering' element={<Ordering />} />

@@ -9,31 +9,34 @@ import Loader from '../../common/components/Loader/Loader';
 
 const Catalogs = () => {
   const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
-  const [catalog, setCatalog] = useState('')
+  const [catalog, setCatalog] = useState(null)
   useEffect(() => {
-    getCatalog()
+    getCatalog(URL_CATALOG)
   }, [])
 
-  const getCatalog = async () => {
-    const req = await fetch(URL_CATALOG)
-    const resp = await req.json()
-    setCatalog(resp.categories)
-    console.log(resp);
+  const getCatalog = async (url) => {
+    fetch(url)
+    .then(res => res.json())
+    .then(r => setCatalog(r.results))
   }
+
   return (
     <div className='container'>
       <HelloText />
-      {catalog ?
-        catalog.map((catalog, index) => {
-          
-          return (
-            <Link to={'/catalog/' + catalog.id + index} key={catalog.id}>
-              <CatalogBlock text={catalog.name} img={catalog.image}/>
+       
+        {
+        (catalog && catalog?.length !== 0) ? (
+          catalog?.map((item , index) => (
+            <Link to={`/catalog/${item.id}`} key={item.id}>
+              <CatalogBlock text={item.name} img={item.image}/>
             </Link>
-          )
-        })
-        :
-        <Loader/>}
+          ))
+        ) : (catalog === null) ? (
+          <Loader />
+        ) : (
+          <>Datacatalog undefined</>
+        )
+      } 
     </div>
   )
 }

@@ -13,7 +13,7 @@ const AllProductCarts = () => {
   function getBase(url){
     fetch(url)
     .then(res => res.json())
-    .then(res => setBase(res.products))
+    .then(res => setBase(res.results))
   }
 
   console.log(base)

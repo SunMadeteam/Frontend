@@ -11,5 +11,10 @@
     grid-gap: 15px;
     display: flex;
     flex-flow: wrap;
-   
+   .loader {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 100%; 
+   }
 }

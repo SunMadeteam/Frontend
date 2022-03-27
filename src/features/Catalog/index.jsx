@@ -9,13 +9,12 @@ import Loader from '../../common/components/Loader/Loader';
 
 
 const Catalog = (props) => {
-  const url_catalog_name = 'https://sunmadebackend.herokuapp.com/category'
+  const {id} = useParams()
+  const url_catalog_name = `https://sunmadebackend.herokuapp.com/api/products/?category=${id}`
 
   const [catalog, setCatalog] = useState(null);
 
   const catalogIndex = useLocation().pathname.substring(9)
-
-  const {id} = useParams()
 
   console.log(id)
 
@@ -24,12 +23,12 @@ const Catalog = (props) => {
     getDetail(url_catalog_name);
   }, []);
   const getDetail = async ( url) => {
-    fetch(`${url}/${id}`)
+    fetch(url)
     .then(res => res.json())
-    .then(r => console.log(r))
+    .then(r => setCatalog(r.results))
   };
 
-  
+  console.log(catalog)
 
   return (
     <div className='catalog-wrap'>
@@ -44,7 +43,9 @@ const Catalog = (props) => {
             <ProductCart key={index}  base={item}/>
           ))
         ) : (catalog === null) ? (
-            <Loader />
+            <div className='loader'>
+              <Loader />
+            </div>
         ) : (
           <>Database undefined</>
         )

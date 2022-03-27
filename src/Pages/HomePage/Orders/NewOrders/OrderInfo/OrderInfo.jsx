@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './OrderInfo.scss'
 import { ModalClient } from '../../Modals/ModalClient/ModalClient'
 import {ImPencil} from 'react-icons/im'
-import { OrderDelete } from '../OrderDelete/OrderDelete'
+import { Delete } from '../../../Delete/Delete'
 
 export const OrderInfo = () => {
     const [modalActive, setModalActive] = useState(false)
@@ -27,7 +27,7 @@ export const OrderInfo = () => {
             </div>
             
          </div> 
-         <div className='check_delete'><OrderDelete/></div>   
+         <div className='check_delete'><Delete/></div>   
          </div>
 
          <div className='order_info'>
@@ -48,7 +48,7 @@ export const OrderInfo = () => {
                     <h4>Советская\Ахунбавева, дом 44, кв 5</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -69,7 +69,7 @@ export const OrderInfo = () => {
                     <h4>Масалиева/Советская</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -90,7 +90,7 @@ export const OrderInfo = () => {
                     <h4>Тыныстанова 23</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -111,7 +111,7 @@ export const OrderInfo = () => {
                     <h4>Аламедин 1</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -132,7 +132,7 @@ export const OrderInfo = () => {
                     <h4>Киевская 51, кв 44</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -153,7 +153,7 @@ export const OrderInfo = () => {
                     <h4>5 мкр, 55</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -174,7 +174,7 @@ export const OrderInfo = () => {
                     <h4>Московская 52, 23</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -195,7 +195,7 @@ export const OrderInfo = () => {
                     <h4>Чуй 42, 33</h4>
                 </div>       
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
          
           <ModalClient active={modalActive} setActive={setModalActive}>
@@ -224,7 +224,7 @@ export const OrderInfo = () => {
                         <p className='content_title'>Монстера</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>8400 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <div className='goods_content'>
                         <p className='content_№'>2</p>
@@ -232,7 +232,7 @@ export const OrderInfo = () => {
                         <p className='content_title'>Листова земля</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>1200 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <div className='goods_content'>
                         <p className='content_№'>3</p>
@@ -240,7 +240,7 @@ export const OrderInfo = () => {
                         <p className='content_title'>Лейка</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>1000 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <p className='modal_total'>10 600 c</p>
                     <div className='modal_button__flex'>

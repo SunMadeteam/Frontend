@@ -7,6 +7,7 @@ export const API_GET_STAFF = 'https://sunmadebackend.herokuapp.com/api1/v1/regis
 export const API_GET_GOODS = 'https://sunmadebackend.herokuapp.com/api/products/'
 export const API_POST_REGISTER_STAFF = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/'
 export const API_GET_PRODUCT = 'https://sunmadebackend.herokuapp.com/products/89/'
+export const API_GET_CATEGORY = "https://sunmadebackend.herokuapp.com/api/categories/"
 
 export const SIGN_IN = "SIGN_IN"
 export const GET_PRODUCT = "GET_PRODUCT"
@@ -23,3 +24,6 @@ export const JWT_TOKEN = "JWT_TOKEN"
 export const CLEAR_RES = "CLEAR_RES"
 export const PAGINATION_GOODS = "PAGINATION_GOODS"
 export const PAGINATION_STAFF = "PAGINATION_STAFF"
+export const DELETE_PRODUCT = "DELETE_PRODUCT"
+export const GET_CATEGORY = "GET_CATEGORY"
+export const GET_CATEGORY_BY_ID = "GET_CATEGORY_BY_ID"

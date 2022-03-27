@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import "./CompletedInfo.scss"
-import { OrderDelete } from '../../NewOrders/OrderDelete/OrderDelete'
+import { Delete } from '../../../Delete/Delete'
 import { ModalClient } from '../../Modals/ModalClient/ModalClient'
 import "./CompletedInfo.scss"
 export const CompletedInfo = () => {
@@ -25,7 +25,7 @@ export const CompletedInfo = () => {
                     <h4>Политех</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -46,7 +46,7 @@ export const CompletedInfo = () => {
                     <h4>9 мкр, дом 2, кв 44</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -67,7 +67,7 @@ export const CompletedInfo = () => {
                     <h4>Джал 23, 55</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -88,7 +88,7 @@ export const CompletedInfo = () => {
                     <h4>Политех, дом 2, кв 41</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -109,7 +109,7 @@ export const CompletedInfo = () => {
                     <h4>кара-жыгач, дом 22</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -130,7 +130,7 @@ export const CompletedInfo = () => {
                     <h4>Московская/Тыныстанова</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -151,7 +151,7 @@ export const CompletedInfo = () => {
                     <h4>Ала-арча</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -172,7 +172,7 @@ export const CompletedInfo = () => {
                     <h4>Царское село</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <div className='order_info'>
@@ -193,7 +193,7 @@ export const CompletedInfo = () => {
                     <h4>Чон арык</h4>
                 </div>
             </div>
-            <div className='check_delete'><OrderDelete/></div>
+            <div className='check_delete'><Delete/></div>
          </div>
 
          <ModalClient active={modalActive} setActive={setModalActive}>
@@ -222,7 +222,7 @@ export const CompletedInfo = () => {
                         <p className='content_title'>Монстера</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>8400 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <div className='goods_content'>
                         <p className='content_№'>2</p>
@@ -230,7 +230,7 @@ export const CompletedInfo = () => {
                         <p className='content_title'>Листова земля</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>1200 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <div className='goods_content'>
                         <p className='content_№'>3</p>
@@ -238,7 +238,7 @@ export const CompletedInfo = () => {
                         <p className='content_title'>Лейка</p>
                         <input className='input_number' placeholder='3'></input>
                         <p>1000 c</p>
-                        <div className='goods_delete'><OrderDelete/></div>
+                        <div className='goods_delete'><Delete/></div>
                     </div>
                     <p className='modal_total__processed'>10 600 c</p>
                 </div>

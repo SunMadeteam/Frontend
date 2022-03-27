@@ -8,7 +8,7 @@ import { BranchModal } from "../../StaffAdmin/BranchModal/BranchModal";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStaff } from "../../../../../Store/AsyncAction/fetchStaff";
 import { PositionModal } from "../../StaffAdmin/PositionModal/PositionModal";
-import { Pagination } from "../../../Paginetion/Pagination";
+import { Pagination } from "../../../Pagination/Pagination";
 import { paginationStaff } from "../../../../../Store/AsyncAction/pagination";
 
 

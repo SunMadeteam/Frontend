@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GoodsInfo.scss";
-import { OrderDelete } from "../../../Orders/NewOrders/OrderDelete/OrderDelete";
+import { Delete } from "../../../Delete/Delete";
 import { ModalAdd } from "../../../AddBtn/ModalAdd/ModalAdd";
 import { Care } from "../HardCare/Care";
 import { Category } from "../HardCare/Category";
@@ -8,13 +8,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { getGoods } from "../../../../../Store/AsyncAction/getGoods";
 import { getProduct } from "../../../../../Store/AsyncAction/getProduct";
 import { Hight } from "../HardCare/Hight";
-import { Pagination } from "../../../Paginetion/Pagination";
+import { Pagination } from "../../../Pagination/Pagination";
 import { paginationGoods } from "../../../../../Store/AsyncAction/pagination";
+import { deleteProduct } from "../../../../../Store/AsyncAction/deleteProduct";
 export const GoodsInfo = () => {
 
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
-  // console.log(goods);
+  console.log(goods);
 
   useEffect(() => {
     dispatch(getGoods());
@@ -75,7 +76,7 @@ export const GoodsInfo = () => {
             </div>
           </div>
           <div className="info_delete">
-            <OrderDelete />
+            <Delete id={element.id} newState={getGoods} take={deleteProduct} />
           </div>
         </div>
       ))}

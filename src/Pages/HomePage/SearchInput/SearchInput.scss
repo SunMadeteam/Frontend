@@ -1,5 +1,5 @@
 .search_input{
-    width: 841px;
+    width: 831px;
     height: 45px;
     background: #FFFFFF;
     border: 2px solid var(--color-green);
@@ -8,16 +8,17 @@
     margin: 0px 0px 0px 0px ;
 }
 .search_icons{
-    position: relative;
-    bottom: 35px;
-    right: 400px;
+    position: absolute;
     color: var(--color-green);
-    svg{
-        width: 20px;
-        height: 20px;
-}
+   background-image: url(./search_img.svg);
+   width: 30px;
+   height: 30px;
+   left: 30px;
+   top: 27px;
 }
 .search_input::placeholder{
     position: relative;
-    left: 36px;
+    font-weight: bold;
+    opacity: 50%;
+    left: 50px;
 }

@@ -11,18 +11,17 @@ import { Hight } from "../HardCare/Hight";
 export const GoodsInfo = () => {
 
   const goods = useSelector((state) => state.Goods.goods);
+  const product = useSelector((state) => state.Goods.product);
+  console.log(goods);
 
   useEffect(() => {
     dispatch(getGoods());
   }, []);
 
-  // console.log(goods);
   const getProductById = (id) => {
     dispatch(getProduct(id));
   };
   const [modalActive, setModalActive] = useState(false, getProductById);
-  const product = useSelector((state) => state.Goods.product);
-  // console.log(product);
   
   const [form, setForm] = useState({
     name: "",
@@ -77,7 +76,11 @@ export const GoodsInfo = () => {
           </div>
         </div>
       ))}
-      
+      <div className="pagination">
+        <div className="pagination_box">
+          1
+        </div>
+      </div>
       <ModalAdd active={modalActive} setActive={setModalActive}>
         <div>
           <form className="goods_modal" onSubmit={onSubmit}>

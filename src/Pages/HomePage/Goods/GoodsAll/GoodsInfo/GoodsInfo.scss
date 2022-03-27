@@ -82,6 +82,8 @@
         text-align: left;
         margin-left: 45px;
         margin-bottom: 5px;
+        font-weight: bold;
+        
     }
     .label_margin{
         margin-left: 94px;
@@ -115,4 +117,23 @@
         margin: 0 auto;
         padding: 10px;
         text-align: left;
+}
+
+.pagination{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    div{
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+        background-color: #B8D7A9;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
 }

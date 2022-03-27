@@ -7,10 +7,8 @@ export const SearchInput = () => {
         <input 
         className='search_input'
         placeholder='Поиск в системе'
-        
         />
         <div className='search_icons'>
-          <BsSearch />
         </div>
     </div>
   )

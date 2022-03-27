@@ -27,15 +27,15 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const fail = useSelector((state) => state.Failure);
-  console.log(fail)
+  console.log(fail);
   const onChange = (type, value) => {
-    dispatch(clearRes())
+    dispatch(clearRes());
     setForm({
       ...form,
       [type]: value,
     });
   };
-  
+
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("signin", form);
@@ -71,7 +71,7 @@ const Login = () => {
           />
           <label className="Auth_label">Пароль</label>
 
-          <input 
+          <input
             className={redInputPassword()}
             placeholder="Введите пароль"
             type={open === false && redEyeOpen === false ? "password" : "text"}
@@ -80,19 +80,24 @@ const Login = () => {
           />
           <div className="Auth_eye">
             {open === false ? (
-              <div onClick={toggle} className="Auth_close__eye" />
+              <div
+                onClick={toggle}
+                className={
+                  fail.res.message ? "red_close__eye" : "Auth_close__eye"
+                }
+              />
             ) : (
-              <div onClick={toggle} className="Auth_open__eye" />
+              <div
+                onClick={toggle}
+                className={
+                  fail.res.message ? "red_open__eye" : "Auth_open__eye"
+                }
+              />
             )}
           </div>
           {fail.res.message && (
             <span className="Auth_failure ">
               Пароль или логин введен неверно
-              {redEyeOpen === false ? (
-                <div onClick={foggle} className="red_close__eye" />
-              ) : (
-                <div onClick={foggle} className="red_open__eye" />
-              )}
             </span>
           )}
           <button className={setButton()} type="submit">

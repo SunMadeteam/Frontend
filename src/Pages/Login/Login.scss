@@ -66,22 +66,18 @@
         width: 17.6px;
         height: 8px;
         position: absolute;
-        right: -5.5px;
-        bottom: 58px;
-        z-index: 1000;
-        background-color: #fff;
+        right: 32px;
+        top: 7px;
     }
     .red_open__eye{
         background-image: url(./red_open__eye.svg);
         background-repeat: no-repeat;
         background-size: cover;
-        width: 19px;
+        width: 18px;
         height: 15px;
         position: absolute;
-        right: -6px;
-        bottom: 56px;
-        z-index: 1000;
-        background-color: #fff;
+        right: 32px;
+        top: 2px;
     }
 }
 .Auth_input{

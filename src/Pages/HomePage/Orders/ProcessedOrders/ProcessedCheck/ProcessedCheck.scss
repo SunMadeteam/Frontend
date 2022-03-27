@@ -1,8 +1,13 @@
 .check_status{
     display: flex;
     flex-direction: row;
-    width: 162px;
-    margin-left: 108px;
+    width: 100px;
+    margin-left: 85px;
+    white-space: nowrap;
+    h3{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
     // .ball{
     //     border-radius: 100%;
     //     width: 30px;

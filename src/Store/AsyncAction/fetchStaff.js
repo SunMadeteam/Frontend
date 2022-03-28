@@ -9,6 +9,5 @@ export const fetchStaff = () => {
       },
     });
     dispatch({ type: GET_STAFF, payload: response.data });
-    console.log((err) => console.log(err.response.data));
   };
 };

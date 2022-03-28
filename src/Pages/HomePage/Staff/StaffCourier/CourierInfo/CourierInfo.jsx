@@ -24,7 +24,6 @@ export const CourierInfo = () => {
   useEffect(() => {
     dispatch(fetchStaff());
   }, []);
-  // console.log("dsa", staff.next)
   // staff.results.map((element) => console.log(element));
   return (
     <div className="staff_global">
@@ -82,7 +81,7 @@ export const CourierInfo = () => {
               )}
             </div>
             <div>
-            <PositionModal/>
+            <PositionModal />
             </div>
             <div className="status">
               <h3>Статус</h3>

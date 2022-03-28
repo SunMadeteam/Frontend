@@ -1,4 +1,4 @@
-import { GET_GOODS, GET_PRODUCT, PAGINATION_GOODS, DELETE_PRODUCT, GET_CATEGORY, GET_CATEGORY_BY_ID } from "../../const";
+import { GET_GOODS, GET_PRODUCT, PAGINATION_GOODS, DELETE_PRODUCT, GET_CATEGORY, GET_CATEGORY_BY_ID, GET_GOODS_BY_CATEGORY } from "../../const";
 
 const initialState = {
   goods: {
@@ -25,7 +25,7 @@ export const getGoodsReducer = (state = initialState, action) => {
       return { ...state,};
     case GET_CATEGORY:
       return { ...state, category:action.payload };
-    case GET_CATEGORY_BY_ID:
+    case GET_GOODS_BY_CATEGORY:
         return { ...state, goods:action.payload };
     default:
       return state;

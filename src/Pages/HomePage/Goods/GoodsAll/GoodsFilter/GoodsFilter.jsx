@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./GoodsFilter.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { getCategory } from "../../../../../Store/AsyncAction/getCategory";
+import { getGoodsByCategory } from "../../../../../Store/AsyncAction/getGoodsByCategory";
 export const GoodsFilter = () => {
   const [open, setOpen] = useState(false);
 
@@ -9,14 +10,15 @@ export const GoodsFilter = () => {
     setOpen(!open);
   };
   const category = useSelector((state) => state.Goods.category);
-  console.log(category);
+  // console.log(category);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCategory());
   }, []);
   const onChange = (value) => {
-    console.log(value);
+    dispatch(getGoodsByCategory(value))
+    // console.log(value);
   };
   return (
     <div>

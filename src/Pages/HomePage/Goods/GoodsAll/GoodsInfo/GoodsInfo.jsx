@@ -15,7 +15,9 @@ export const GoodsInfo = () => {
 
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
-  console.log(goods);
+  const category = useSelector(state => state.Goods.category)
+  // console.log(goods);
+  console.log(category)
 
   useEffect(() => {
     dispatch(getGoods());

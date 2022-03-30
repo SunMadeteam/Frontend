@@ -10,7 +10,7 @@ export const deleteProduct = (id) => {
         Authorization: "Token " + localStorage.getItem("token-sunMade"),
       },
     });
-    return dispatch({ type: DELETE_PRODUCT });
+    return dispatch({ type: DELETE_PRODUCT, payload:id });
     // console.log(err=>console.log(err.response.data))
   };
 };

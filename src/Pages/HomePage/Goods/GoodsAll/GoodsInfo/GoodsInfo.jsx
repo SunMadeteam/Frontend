@@ -17,7 +17,7 @@ export const GoodsInfo = () => {
   const product = useSelector((state) => state.Goods.product);
   const category = useSelector(state => state.Goods.category)
   // console.log(goods);
-  console.log(category)
+  // console.log(category)
 
   useEffect(() => {
     dispatch(getGoods());
@@ -78,7 +78,7 @@ export const GoodsInfo = () => {
             </div>
           </div>
           <div className="info_delete">
-            <Delete id={element.id} newState={getGoods} take={deleteProduct} />
+            <Delete id={element.id} take={deleteProduct} />
           </div>
         </div>
       ))}

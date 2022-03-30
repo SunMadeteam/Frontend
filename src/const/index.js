@@ -3,11 +3,14 @@ export const SHOW_ICON = "SHOW_ICON"
 export const HIDE_ICON = "HIDE_ICON"
 
 export const API_POST_LOGIN = "https://sunmadebackend.herokuapp.com/api1/v1/login/"
-export const API_GET_STAFF = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/'
+export const API_GET_STAFF_COURIER = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/?usertype=runner'
+export const API_GET_STAFF_FLORIST = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/?usertype=florist'
+export const API_GET_STAFF_ADMIN = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/?usertype=admin'
 export const API_GET_GOODS = 'https://sunmadebackend.herokuapp.com/api/products/'
 export const API_POST_REGISTER_STAFF = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/'
 export const API_GET_PRODUCT = 'https://sunmadebackend.herokuapp.com/products/89/'
 export const API_GET_CATEGORY = "https://sunmadebackend.herokuapp.com/api/categories/"
+export const API_GET_BRANCH = "https://sunmadebackend.herokuapp.com/api1/v1/branch/"
 
 export const SIGN_IN = "SIGN_IN"
 export const GET_PRODUCT = "GET_PRODUCT"
@@ -27,3 +30,5 @@ export const PAGINATION_STAFF = "PAGINATION_STAFF"
 export const DELETE_PRODUCT = "DELETE_PRODUCT"
 export const GET_CATEGORY = "GET_CATEGORY"
 export const GET_GOODS_BY_CATEGORY = "GET_GOODS_BY_CATEGORY"
+export const GET_ONE_STAFF = "GET_ONE_STAFF"
+export const GET_BRANCH = "GET_BRANCH"

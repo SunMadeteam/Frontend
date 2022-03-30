@@ -9,7 +9,6 @@ export const Delete = (props) => {
   };
   const dispatch = useDispatch()
   const deleteThings = (id) =>{
-    dispatch(props.newState())
     dispatch(props.take(id))  
   }
   return (

@@ -4,8 +4,9 @@
 .hello_text {
   margin-top: 16px;
   @include flex($justify:space-between);
-  padding-top: 15px;
-  padding-bottom: 24px;
+  margin-top: 15px;
+  margin-bottom: 24px;
+  // position: fixed;
   p {
     font-family: $font;
     @include font(30px, 35px);

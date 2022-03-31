@@ -16,7 +16,7 @@ const AllProductCarts = () => {
     .then(res => setBase(res.results))
   }
 
-  console.log(base)
+  // console.log(base)
   return (
     <div className='all_product_cart'>
        {

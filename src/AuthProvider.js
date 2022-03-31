@@ -10,7 +10,7 @@ const AuthProvider = ({children}) => {
     const unListen = onAuthStateChanged(auth , authUser => {
       setUser({
         id:authUser.uid,
-        name:authUser.displayName
+        phonenumber:authUser.phoneNumber
       })
     })
 

@@ -4,7 +4,7 @@ import PlusMinus from './../Plus-minus-button/index';
 import { Link } from 'react-router-dom';
 
 const ProductCart = ({base}) => {
-  // console.log(base)
+  console.log(base)
   return (
     <div className='product_cart'>
       <div className='cart_img'>

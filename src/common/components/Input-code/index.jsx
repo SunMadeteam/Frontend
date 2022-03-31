@@ -4,7 +4,7 @@ import WideWhiteButton from './../Wide-white-button/index';
 import { RecaptchaVerifier } from 'firebase/auth';
 import { getAuth } from 'firebase/auth';
 import { signInWithPhoneNumber } from 'firebase/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const InputCode = ({ length, loading, onComplete }) => {
@@ -14,7 +14,7 @@ const InputCode = ({ length, loading, onComplete }) => {
   const [numbers , setNumbers] = useState('')
   const [btnType , setBtnType] = useState('')
   const auth = getAuth()
-
+  const navigate = useNavigate()
   function generateRecatcha(){
     window.recaptchaVerifier = new RecaptchaVerifier('recatcha', {
       'size': 'invisible',
@@ -38,7 +38,7 @@ const InputCode = ({ length, loading, onComplete }) => {
   //   }
   // };
  
- 
+
   const verifyCode = (e) =>{
       e.preventDefault()
       if(numbers.length === 6){
@@ -46,6 +46,7 @@ const InputCode = ({ length, loading, onComplete }) => {
         confirmationResult.confirm(numbers).then((results) => {
           const user = results.user
           console.log(user)
+          navigate('/personal-area')
         })
       }
       setValue('Продолжить')  

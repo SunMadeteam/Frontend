@@ -12,10 +12,11 @@ import CartDescription from './features/Cart-description/index';
 import  Ordering  from './features/Ordering/Ordering';
 import PersonalArea from './features/Personal-area';
 import SelectDateTime from './features/Select-date-time/SelectDateTime';
-import CatalogBlock from './common/components/Catalog-block/index';
+import { useAuth } from './useAuth';
 
 
 function App() {
+ 
   return (
     <div>
       <Routes>

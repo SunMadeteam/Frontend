@@ -4,7 +4,6 @@ import WideWhiteButton from './../Wide-white-button/index';
 import { RecaptchaVerifier } from 'firebase/auth';
 import { getAuth } from 'firebase/auth';
 import { signInWithPhoneNumber } from 'firebase/auth';
-import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 
@@ -12,6 +11,7 @@ const InputCode = ({ length, loading, onComplete }) => {
   const [code, setCode] = useState([...Array(length)].map(() => ""));
   const inputs = useRef([]);
   const [value , setValue] = useState('')
+  const [numbers , setNumbers] = useState('')
   const [btnType , setBtnType] = useState('')
   const auth = getAuth()
 
@@ -23,30 +23,32 @@ const InputCode = ({ length, loading, onComplete }) => {
       }
     }, auth);
   }
-  const processInput = (e, slot) => {
-    setValue(e.target.value)
-    const num = e.target.value;
-    if (/[^0-9]/.test(num)) return;
-    const newCode = [...code];
-    newCode[slot] = num;
-    setCode(newCode);
-    if (slot !== length - 1) {
-      inputs.current[slot + 1].focus();
-    }
-    if (newCode.every(num => num !== "")) {
-      onComplete(newCode.join(""));
-    }
-  };
+  // const processInput = (e, slot) => {
+  //   setNumbers(e.target.value)
+  //   const num = e.target.value;
+  //   if (/[^0-9]/.test(num)) return;
+  //   const newCode = [...code];
+  //   newCode[slot] = num;
+  //   setCode(newCode);
+  //   if (slot !== length - 1) {
+  //     inputs.current[slot + 1].focus();
+  //   }
+  //   if (newCode.every(num => num !== "")) {
+  //     onComplete(newCode.join(""));
+  //   }
+  // };
+ 
+ 
   const verifyCode = (e) =>{
       e.preventDefault()
-      console.log('continue')
-      if(value.length === 6){
-        let confirmResult = window.confirmationResult
-        confirmResult.confirm(value).then(res => {
-          const user = res.user
+      if(numbers.length === 6){
+        let confirmationResult = window.confirmationResult;
+        confirmationResult.confirm(numbers).then((results) => {
+          const user = results.user
+          console.log(user)
         })
       }
-      setValue('Продолжить')
+      setValue('Продолжить')  
   }
 
 
@@ -82,7 +84,7 @@ const InputCode = ({ length, loading, onComplete }) => {
   return (
     <div className="code-input">
       <div className="code-inputs registration_validation_inputs">
-        {code.map((num, idx) => {
+        {/* {code.map((num, idx) => {
           return (
             <input
               key={idx}
@@ -97,7 +99,8 @@ const InputCode = ({ length, loading, onComplete }) => {
               ref={ref => inputs.current.push(ref)}
             />
           );
-        })}
+        })} */}
+        <input type="text" placeholder="Verify"  onChange={e => setNumbers(e.target.value)}/>
       </div>
       <Link to='/'> <WideWhiteButton verify={verifyCode} word={value} text="Продолжить" /> </Link>
       <WideWhiteButton word={value} verify={sendRepeat}  text="Отправить повторно"/>

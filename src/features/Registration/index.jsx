@@ -46,7 +46,6 @@ const Registration = () => {
       });
      }
     localStorage.setItem('phone' , telefone)
-
   }
 
   return (

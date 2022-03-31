@@ -40,7 +40,7 @@ const Registration = () => {
       .then(confirms =>{
         console.log(confirms)
         window.confirmationResult = confirms 
-        navigate('/confirmation')
+        navigate('/registration/confirmation')
       }).catch((error) => {
         console.log(error)
       });

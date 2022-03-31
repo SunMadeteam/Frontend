@@ -12,14 +12,15 @@ function App() {
     <div>
       <Routes>
         {Routelist.map(route => {
-          if(!route.auth && !user){
-            return false
+          if(route.auth){
+            return (
+              <Route path={route.path} element={<route.element />}  key={route.path}/>
+            )
           }
 
-          return (
-            <Route path={route.path} element={<route.element />}  key={route.path}/>
-          )
+          return false
         })}
+        
       </Routes>
       <FooterMenu />
       <hr />      

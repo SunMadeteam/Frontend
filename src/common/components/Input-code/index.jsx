@@ -46,7 +46,7 @@ const InputCode = ({ length, loading, onComplete }) => {
         confirmationResult.confirm(numbers).then((results) => {
           const user = results.user
           console.log(user)
-          navigate('/personal-area')
+          navigate('/personalArea')
         })
       }
       setValue('Продолжить')  

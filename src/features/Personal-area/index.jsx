@@ -2,8 +2,15 @@ import './index.scss';
 import right from './img/right.svg';
 import HelloText from './../../common/components/Hello-text/index';
 import Input from './../../common/components/Input/Input';
+import { signOut } from 'firebase/auth';
+import { getAuth } from 'firebase/auth';
 
 const PersonalArea = () => {
+  const auth = getAuth()
+  const signOutUser = () =>{
+    signOut(auth)
+  }
+  
   return (
     <div className = 'personal_area container'>
       <HelloText />
@@ -24,7 +31,7 @@ const PersonalArea = () => {
       </div>
       <div className='personal_buttons'>
         <div className='history'>
-          <p>Выйти из профиля</p>
+          <p onClick={signOutUser}>Выйти из профиля</p>
         </div>
       </div>
     </div>

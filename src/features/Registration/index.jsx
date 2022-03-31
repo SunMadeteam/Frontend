@@ -53,7 +53,8 @@ const Registration = () => {
       <Link to='/'> {<BackButton />} </Link>
       <RegistrationTitle
         title="Регистрация"
-        underTitle="Для входа в избранное и лич. кабинет вам необходимо зарегистрироваться" />
+        underTitle="Для входа в избранное и лич. кабинет вам необходимо зарегистрироваться"
+        />
         <div id="recatcha"></div>
       {(errorName && nameDirty) && <div className='errorTelefone' >{errorName}</div>}
       <input

@@ -100,7 +100,7 @@ const InputCode = ({ length, loading, onComplete }) => {
             />
           );
         })} */}
-        <input type="text" placeholder="Verify"  onChange={e => setNumbers(e.target.value)}/>
+        <input type="text" placeholder="Код подтверждения"  onChange={e => setNumbers(e.target.value)}/>
       </div>
       <Link to='/'> <WideWhiteButton verify={verifyCode} word={value} text="Продолжить" /> </Link>
       <WideWhiteButton word={value} verify={sendRepeat}  text="Отправить повторно"/>

@@ -55,11 +55,11 @@ export const FloristInfo = () => {
             <div className="info_number">
               <h4>{element.number}</h4>
             </div>
-            <div className="info_salary">
-              <h4>{element.salary}</h4>
-            </div>
             <div className="info_order">
               <h4>36</h4>
+            </div>
+            <div className="info_salary">
+              <h4>{element.salary}</h4>
             </div>
           </div>
           <div className="three_dots">

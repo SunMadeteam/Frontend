@@ -62,7 +62,7 @@ h4{
 }
 .modal_text{
    text-align: left;
-   margin-left: 15px;
+   margin-left: 5px;
 }
 .modal_text__number{
     display: flex;
@@ -225,6 +225,8 @@ h4{
     margin-bottom: 54px;
 }
 .modal_button__flex{
+    display: flex;
+    justify-content: space-between;
     button{
         width: 260px;
         height: 50px;

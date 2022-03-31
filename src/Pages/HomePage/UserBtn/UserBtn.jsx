@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./UserBtn.scss";
-import { BsPerson } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 const UserBtn = () => {

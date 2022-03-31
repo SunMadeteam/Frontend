@@ -52,11 +52,11 @@ export const AdminInfo = () => {
             <div className="info_number">
               <h4>{element.number}</h4>
             </div>
-            <div className="info_salary">
-              <h4>{element.salary}c</h4>
-            </div>
             <div className="info_order">
               <h4>92</h4>
+            </div>
+            <div className="info_salary">
+              <h4>{element.salary}c</h4>
             </div>
           </div>
           <ThreeDots />

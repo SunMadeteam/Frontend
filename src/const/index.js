@@ -11,6 +11,8 @@ export const API_POST_REGISTER_STAFF = 'https://sunmadebackend.herokuapp.com/api
 export const API_GET_PRODUCT = 'https://sunmadebackend.herokuapp.com/products/89/'
 export const API_GET_CATEGORY = "https://sunmadebackend.herokuapp.com/api/categories/"
 export const API_GET_BRANCH = "https://sunmadebackend.herokuapp.com/api1/v1/branch/"
+export const API_GET_ORDER = "https://sunmadebackend.herokuapp.com/api/order/"
+
 
 export const SIGN_IN = "SIGN_IN"
 export const GET_PRODUCT = "GET_PRODUCT"
@@ -32,3 +34,5 @@ export const GET_CATEGORY = "GET_CATEGORY"
 export const GET_GOODS_BY_CATEGORY = "GET_GOODS_BY_CATEGORY"
 export const GET_ONE_STAFF = "GET_ONE_STAFF"
 export const GET_BRANCH = "GET_BRANCH"
+export const IS_ACTIVE = "IS_ACTIVE"
+export const GET_ORDER = "GET_ORDER"

@@ -10,7 +10,7 @@ export const BranchModal = () => {
   };
   const branch = useSelector((state) => state.Staff.branch.results);
   const oneStaff = useSelector(state => state.Staff.oneStaff.results)
-  console.log(oneStaff)
+  // console.log(oneStaff)
   // console.log(branch);
 //   const check = branch.filter(id=>id.id===oneStaff[0].branch|| id.id===null)
 //   console.log(check)

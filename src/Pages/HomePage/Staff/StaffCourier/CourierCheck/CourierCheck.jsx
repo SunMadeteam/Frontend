@@ -12,11 +12,11 @@ export const CourierCheck = () => {
         <div className='check_number'>
             <h3>Номер</h3>
         </div>
-        <div className='check_salary'>
-            <h3>Зп/мес.</h3>
-        </div>
         <div className='check_order'>
             <h3>Заказ/мес</h3>
+        </div>
+        <div className='check_salary'>
+            <h3>Зп/мес.</h3>
         </div>
         <div className='check_goto'>
             <h3>Перейти к зп</h3>

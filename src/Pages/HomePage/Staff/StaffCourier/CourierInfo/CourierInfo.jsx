@@ -4,7 +4,6 @@ import { ModalAdd } from "../../../AddBtn/ModalAdd/ModalAdd";
 import { ThreeDots } from "../../StaffFlorist/ThreeDots/ThreeDots";
 import { AiOutlineEye } from "react-icons/ai";
 import { RiEyeCloseLine } from "react-icons/ri";
-import { BranchModal } from "../../StaffFlorist/BranchModal/BranchModal";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStaffCourier } from "../../../../../Store/AsyncAction/fetchStaff";
 import { PositionModal } from "../../StaffFlorist/PositionModal/PositionModal";
@@ -20,20 +19,23 @@ export const CourierInfo = () => {
     setEyeOpen(!eyeOpen);
   };
   const oneStaff = useSelector((state) => state.Staff.oneStaff.results);
-  // console.log(oneStaff);
+  console.log(oneStaff);
   const [modalActive, setModalActive] = useState(false);
   const dispatch = useDispatch();
   const staff = useSelector((state) => state.Staff.staff);
-  console.log(staff)
+  // console.log(staff)
   useEffect(() => {
     dispatch(fetchStaffCourier());
   }, []);
   const getStaffForModal = (number) => {
     dispatch(getOneStaff(number));
     dispatch(getBranch())
-
   };
-  const onChange = (value) => {};
+  // const [name, setName] = useState(oneStaff[0].name)
+  const onChange =() =>{
+
+  }
+ 
   // staff.results.map((element) => console.log(element));
   return (
     <div className="staff_global">
@@ -55,11 +57,11 @@ export const CourierInfo = () => {
             <div className="info_number">
               <h4>{element.number}</h4>
             </div>
-            <div className="info_salary">
-              <h4>{element.salary}</h4>
-            </div>
             <div className="info_order">
               <h4>98</h4>
+            </div>
+            <div className="info_salary">
+              <h4>{element.salary}</h4>
             </div>
           </div>
           <ThreeDots />
@@ -82,11 +84,12 @@ export const CourierInfo = () => {
                 className="modal_input modal_input_login"
                 type="text"
                 value={element.name}
-                onChange={(e) => onChange(e.target.value)}
+                // onChange={(e) => setName(e.target.value)}
               />
               <label className="modal_label">Номер</label>
               <input
                 className="modal_input modal_input_login"
+                type="text"
                 value={element.number}
               />
               <label className="modal_label">Пароль</label>

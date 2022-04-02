@@ -16,7 +16,7 @@ const Catalog = (props) => {
 
   const catalogIndex = useLocation().pathname.substring(9)
 
-  console.log(id)
+  // console.log(id)
 
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Catalog = (props) => {
     .then(r => setCatalog(r.results))
   };
 
-  console.log(catalog)
+  // console.log(catalog)
 
   return (
     <div className='catalog-wrap'>
@@ -39,8 +39,8 @@ const Catalog = (props) => {
 
       {
         (catalog && catalog?.length !== 0) ? (
-          catalog?.map((item , index) => (
-            <ProductCart key={index}  base={item}/>
+          catalog?.map((catalog , index) => (
+            <ProductCart key={index}  base={catalog}/>
           ))
         ) : (catalog === null) ? (
             <div className='loader'>

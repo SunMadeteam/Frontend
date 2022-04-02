@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import * as firebase from 'firebase/app'
+import AuthProvider from './AuthProvider';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDkNTQ3wRPLzslwsUTY04vHen715vw9aHk",
@@ -17,7 +18,9 @@ firebase.initializeApp({
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );

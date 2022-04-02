@@ -8,13 +8,15 @@ import "./index.scss";
 const RegistrationConfirmationCode = () => {
 
   const [loading, setLoading] = useState(false);
-
+  let user_number = localStorage.getItem('phone');
   return (
     <div className="registration_confirmation_code container">
       <BackButton />
       <RegistrationTitle 
       title = "Код подтверждения"
-      underTitle = "Код был отправлен на: 0700 123 456"/>
+      underTitle = 'Код был отправлен на:'
+      number = {user_number}
+      />
        <InputCode
         length={6}
         loading={loading}

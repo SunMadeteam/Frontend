@@ -2,12 +2,12 @@
 @import './../../helpers/variables.scss';
 
 .registration_validation_inputs {
-  @include flex($justify:space-around);
-  gap: 10px;
+  @include flex($justify: center);
+  // gap: 10px;
   margin: 64px 84px 100px 84px;
 
   input {
-    width: 50px;
+    width: 300px;
     background: #FFFDFC;
     border-radius: 8px;
     height: 50px;

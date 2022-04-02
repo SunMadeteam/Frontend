@@ -8,13 +8,13 @@ const ProductCart = ({base}) => {
   return (
     <div className='product_cart'>
       <div className='cart_img'>
-        <Link to ={'/cartDescription/' + base.productId}>
+        <Link to ={'/cartDescription/' + base.id}>
           <img src={base.image} alt="" /> 
         </Link>
         <FavoriteHeart />
       </div>
       <div className='cart_body'>
-        <Link to ={'/cartDescription/' + base.productId}>
+        <Link to ={'/cartDescription/' + base.id}>
             <p className='title'>{base.name}</p>
         </Link> 
         <div className='price_wrap flex'>

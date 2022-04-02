@@ -71,13 +71,13 @@ export const Routelist = [
     path:'/registration',
     exact:true,
     element:Registration,
-    auth:false,
+    auth:true,
   },
   {
     path:'/registration/confirmation',
     exact:true,
     element:RegistrationConfirmationCode,
-    auth:false,
+    auth:true,
   },
   {
     path:'/auth',

@@ -12,7 +12,7 @@ const FooterMenu = () => {
         <Link to='/'> {<HomeButton />} </Link>
         <Link to='/catalogs'> {<CatalogButton />} </Link>
         <Link to='/cart'> {<ShoppingButton />} </Link>
-        <Link to='/personalArea'> {<PersonalButton />} </Link>
+        <Link to='/registration'> {<PersonalButton />} </Link>
       </div>
     </div>
   )

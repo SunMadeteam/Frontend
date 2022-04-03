@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./UserBtn.scss";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 const UserBtn = () => {
   const [open, setOpen] = useState(false);
@@ -27,7 +26,7 @@ const UserBtn = () => {
             {user?user:"----------"} <div className="user_persone__img" onClick={toggle}></div>
           </div>
           <p>+996 000 123 456</p>
-          <p onClick={logOut} style={{cursor:"pointer"}}>Выйти</p>
+          <p onClick={logOut} style={{cursor:"pointer", marginBottom:'0px', marginTop:'33px'}}>Выйти</p>
         </div>
       )}
     </div>

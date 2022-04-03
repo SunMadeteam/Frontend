@@ -4,57 +4,75 @@ import { ModalClient } from "../../Modals/ModalClient/ModalClient";
 import { Delete } from "../../../Delete/Delete";
 import { useDispatch, useSelector } from "react-redux";
 import { getOrder } from "../../../../../Store/AsyncAction/getOrder";
+import { Pagination } from "../../../Pagination/Pagination";
+import { paginationOrder } from "../../../../../Store/AsyncAction/pagination";
+import { deleteOrder } from "../../../../../Store/AsyncAction/deleteOrder";
+import { getOrderById } from "../../../../../Store/AsyncAction/getOrderById";
 
 export const OrderInfo = () => {
-    const dispatch = useDispatch()
-    const order = useSelector(state=>state.Order.order)
-    console.log(order)
-    useEffect(() => {
-        dispatch(getOrder());
-      }, []);
+  const dispatch = useDispatch();
+  const order = useSelector((state) => state.Order.order);
+  const oneOrder = useSelector(state => state.Order.getOrder)
+  console.log(oneOrder)
+  // console.log(order);
+  useEffect(() => {
+    dispatch(getOrder());
+  }, []);
   const [modalActive, setModalActive] = useState(false);
   return (
     <div className="order_global">
-        {order.results.map((element, index) => (
-            <div className="order_info">
-            <div className="order_info" onClick={() => setModalActive(true)}>
-              <div className="check_№">
-                <h4>{index+1}</h4>
-              </div>
-              <div className="check_time">
-                <h4>15:33</h4>
-              </div>
-              <div className="check_number">
-                <h4>+996505555555</h4>
-              </div>
-              <div className="check_name">
-                <h4>Бегимай</h4>
-              </div>
-              <div className="check_adres">
-                <h4>Советская\Ахунбавева</h4>
-              </div>
+      {order.results.map((element, index) => (
+        <div className="order_info" key={element.id}>
+          <div
+            className="order_info"
+            onClick={() =>
+              setModalActive(true, dispatch(getOrderById(element.id)))
+            }
+          >
+            <div className="check_№">
+              <h4>{index + 1}</h4>
             </div>
-            <div className="check_delete">
-              <Delete />
+            <div className="check_time">
+              <h4>{element.date}</h4>
+            </div>
+            <div className="check_number">
+              <h4>{element.number}</h4>
+            </div>
+            <div className="check_name">
+              <h4>{element.name}</h4>
+            </div>
+            <div className="check_adres">
+              <h4>{element.adress}</h4>
             </div>
           </div>
-        ))}
+          <div className="check_delete">
+            <Delete id={element.id} take={deleteOrder} />
+          </div>
+        </div>
+      ))}
+
+      <Pagination
+        next={order.next}
+        previous={order.previous}
+        take={paginationOrder}
+      />
+
       <ModalClient active={modalActive} setActive={setModalActive}>
         <div className="modal_text">
           <h3>№ 13</h3>
         </div>
         <div className="modal_order__flex">
           <label>Имя</label>
-          <input className="modal_order__input" placeholder="Леонид"></input>
+          <input className="modal_order__input" value={oneOrder.name}></input>
           <label>Номер</label>
           <input
             className="modal_order__input"
-            placeholder="+996 000 111 111"
+            value={oneOrder.number}
           ></input>
           <label>Адрес</label>
           <input
             className="modal_order__input input_height"
-            placeholder="Жибек-Жолу 305, дом 30, кв. 5"
+            value={oneOrder.adress}
           ></input>
         </div>
         <div className="modal_goods">

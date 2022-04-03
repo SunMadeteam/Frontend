@@ -59,7 +59,7 @@ export const AdminInfo = () => {
               <h4>{element.salary}c</h4>
             </div>
           </div>
-          <ThreeDots />
+          <ThreeDots id={element.id} number={element.number}/>
         </div>
       ))}
       <Pagination
@@ -86,9 +86,10 @@ export const AdminInfo = () => {
               <label className="modal_label">Пароль</label>
 
               <input
-                className="modal_input "
+                className="modal_input modal_input__bottom"
                 placeholder="Введите пароль"
                 type={eyeOpen === false ? "password" : "text"}
+                // style={{marginBottom:"1px"}}
               />
               <div className="modal_eye">
                 {eyeOpen === false ? (

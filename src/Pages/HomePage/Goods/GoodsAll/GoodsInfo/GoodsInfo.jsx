@@ -16,7 +16,7 @@ export const GoodsInfo = () => {
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
   const category = useSelector(state => state.Goods.category)
-  // console.log(goods);
+  console.log(goods);
   // console.log(category)
 
   useEffect(() => {
@@ -65,13 +65,13 @@ export const GoodsInfo = () => {
               <h4>{index + 1}</h4>
             </div>
             <div className="info_img">
-              {/* <img src={element.image} width="84px" height="80px" /> */}
+              <img src={element.image} width="84px" height="80px" />
             </div>
             <div className="info_title">
               <h4>{element.name}</h4>
             </div>
             <div className="info_category">
-              <h4>{element.category}</h4>
+              <h4>{element.category.name}</h4>
             </div>
             <div className="info_description">
               <h4>{element.description}</h4>
@@ -94,7 +94,7 @@ export const GoodsInfo = () => {
             onChange={(e) => onChange("name", e.target.value)}
             />
             <label className="goods_label">Цена</label>
-            <input value={product.price} className="goods_input" 
+            <input value={product.price +" c"} className="goods_input" 
             onChange={(e) => onChange("price", e.target.value)}
             />
             <label className="goods_label">Описание</label>

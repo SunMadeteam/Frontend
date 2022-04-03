@@ -19,7 +19,7 @@ export const CourierInfo = () => {
     setEyeOpen(!eyeOpen);
   };
   const oneStaff = useSelector((state) => state.Staff.oneStaff.results);
-  console.log(oneStaff);
+  // console.log(oneStaff);
   const [modalActive, setModalActive] = useState(false);
   const dispatch = useDispatch();
   const staff = useSelector((state) => state.Staff.staff);
@@ -64,7 +64,7 @@ export const CourierInfo = () => {
               <h4>{element.salary}</h4>
             </div>
           </div>
-          <ThreeDots />
+          <ThreeDots id={element.id} number={element.number}/>
         </div>
       ))}
 

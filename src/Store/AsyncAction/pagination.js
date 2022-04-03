@@ -1,4 +1,4 @@
-import { PAGINATION_GOODS, PAGINATION_STAFF } from "../../const";
+import { PAGINATION_GOODS, PAGINATION_ORDER, PAGINATION_STAFF } from "../../const";
 import axios from "axios";
 
 export const paginationGoods = (next) => {
@@ -20,5 +20,16 @@ export const paginationStaff = (next) => {
       },
     });
     return dispatch({ type: PAGINATION_STAFF, payload: response.data });
+  };
+};
+
+export const paginationOrder = (next) => {
+  return async (dispatch) => {
+    const response = await axios(next, {
+      headers: {
+        Authorization: "Token " + localStorage.getItem("token-sunMade"),
+      },
+    });
+    return dispatch({ type: PAGINATION_ORDER, payload: response.data });
   };
 };

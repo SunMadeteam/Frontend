@@ -3,7 +3,16 @@
     flex-direction: column;
     text-align: left;
     margin-top: 14px;
-    .nth:nth-child(odd){
+    .filter_icon__img2{
+        background-image: url(./filter_icon__img.svg);
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        right: 20px;
+        top: 91px;
+    }
+    .nth:nth-child(even){
         background-color: var(--color-two);
     }
     .table_line__first{
@@ -22,15 +31,7 @@
             margin-right: 60px;
             padding-left: 10px;
         }
-        .filter_icon__img2{
-            background-image: url(./filter_icon__img.svg);
-            background-repeat: no-repeat;
-            width: 26px;
-            height: 26px;
-            position: absolute;
-            right: 0;
-            top: 100px;
-        }
+      
     }
 
     .table_line__second{
@@ -86,8 +87,8 @@
         height: 200px;
         border: 2px solid var(--color-green);
         position: absolute;
-        top: 100px;
-        right: 16px;
+        top: 79px;
+        right: 8px;
         font-size: 18px;
         padding: 10px;
         background-color: #fff;
@@ -108,6 +109,8 @@
             background-repeat: no-repeat;
             width: 26px;
             height: 26px;
+            top:10px;
+            right: 10px;
         }
         input{
             box-sizing:border-box;

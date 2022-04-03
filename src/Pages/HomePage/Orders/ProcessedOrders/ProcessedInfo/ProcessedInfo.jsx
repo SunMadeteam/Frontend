@@ -187,7 +187,7 @@ const ProcessedInfo = () => {
                 <h4>Самат</h4>
             </div>
             <div className='check_adres'>
-                <h4>Боконбаева/Манаса</h4>
+                <h4>Боконбаева/Манасаdsadsadsadsadsadsadsadsa</h4>
             </div>
             <div className='processed_status status_color__accept'>забрал</div>
         </div>

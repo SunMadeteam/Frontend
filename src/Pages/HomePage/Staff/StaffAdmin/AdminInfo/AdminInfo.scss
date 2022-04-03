@@ -130,7 +130,7 @@
     border-radius: 8px;
     height: 50px;
     width: 300px;
-    margin: 0px 0px 25px 0px;
+    margin-bottom: 25px;
     padding: 0.5rem;
     font-size: 18px;
 }
@@ -154,6 +154,7 @@
     font-weight: 700;
     margin-top: 40px;
     margin-bottom: 10px;
+    border: none;
 } 
 .hello{
     font-weight: bold;
@@ -167,4 +168,7 @@
     left: 128px;
     color:var(--color-green);
     width: 5rem;
+}
+.modal_input__bottom{
+    margin-bottom: 1px;
 }

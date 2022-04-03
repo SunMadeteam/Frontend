@@ -7,6 +7,7 @@
     // height: 100%;
     padding: 20px;
     display: flex;
+    // justify-content: center;
     .active_btn__link{
         font-weight: bold;
         border: none;
@@ -62,11 +63,11 @@
     }
 }
 .home_content{
-    border: 3px solid var(--color-green);
+    border: 2px solid var(--color-green);
     box-sizing: border-box;
     border-radius: 8px;
     // height: 100%;
-    // min-height: 1105px;
+    min-height: 900px;
     position: relative;
     flex-basis: 1080px;
     // width: 1080px;
@@ -74,10 +75,10 @@
 }
 
 .menu_wrapper{
-    border: 3px solid var(--color-green);
+    border: 2px solid var(--color-green);
     box-sizing: border-box;
     border-radius: 8px;
-    // min-height: 1105px;
+    min-height: 900px;
     height: 100%;
     margin-right: 20px;
     // flex-basis: 400px;
@@ -92,4 +93,5 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }

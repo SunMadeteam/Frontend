@@ -17,7 +17,7 @@ export const GoodsFilter = () => {
     dispatch(getCategory());
   }, []);
   const onChange = (value) => {
-    dispatch(getGoodsByCategory(value))
+    dispatch(getGoodsByCategory(value));
     // console.log(value);
   };
   return (
@@ -27,18 +27,23 @@ export const GoodsFilter = () => {
       ) : (
         <div className="goods_filter">
           <div>
-            <p style={{ fontWeight: "bold", fontSize: "20px" }}>Категории</p>{" "}
+            <p style={{ fontWeight: "bold", fontSize: "20px" }}>Категории</p>
             <div className="goods_icon" onClick={toggle}></div>
           </div>
           {category.results.map((element) => (
-            <div key={element.id}>
-              <p>{element.name}</p>{" "}
-              <input
-                type="radio"
-                name="category"
-                value={element.id}
-                onChange={(e) => onChange(e.target.value)}
-              />
+            <div key={element.id} className="goods_filter__element">
+              <label className="custom-radio " >
+                <p>{element.name}</p>
+               
+                <input
+                  type="radio"
+                  name="category"
+                  value={element.id}
+                  onChange={(e) => onChange(e.target.value)}
+                />
+                <span></span>
+              </label>
+              {/* <span className="custom_radio__input"></span> */}
             </div>
           ))}
         </div>

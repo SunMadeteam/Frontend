@@ -43,7 +43,7 @@ export const Header = () => {
                 {dataUser?dataUser:"---------------"} <div className="header_person1" onClick={toggle}></div>
               </h3>
               <p>+996 000 123 456</p>
-              <p onClick={logOut}>Выйти</p>
+              <p onClick={logOut} style={{cursor:"pointer"}}>Выйти</p>
             </div>
           )}
         </div>

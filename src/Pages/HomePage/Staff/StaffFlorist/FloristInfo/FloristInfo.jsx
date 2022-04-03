@@ -63,7 +63,7 @@ export const FloristInfo = () => {
             </div>
           </div>
           <div className="three_dots">
-            <ThreeDots />
+            <ThreeDots id={element.id} number={element.number}/>
           </div>
         </div>
       ))}

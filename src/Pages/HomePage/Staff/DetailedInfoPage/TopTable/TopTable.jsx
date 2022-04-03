@@ -1,19 +1,20 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import "./TopTable.scss";
 
 export const TopTable = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const toggle = () => {
     setOpen(!open);
   };
+  const salary = useSelector(state=>state.Staff.salary)
+  console.log(salary)
+  const oneStaff = useSelector(state=>state.Staff.oneStaff.results)
+  console.log(oneStaff)
   return (
     <div className="all_line">
-      <div className="table_line__first nth">
-        <h3 className="line_first__name">Леонид Якубович</h3>
-        <h3 className="line_first__number">+996 000 111 111</h3>
-        <h3>Активен</h3>
-        {/* {open === true ? (
+       {open === true ? (
           <div className="filter_icon__img2" onClick={toggle}></div>
         ) : (
           <div className="completed_filter">
@@ -38,8 +39,14 @@ export const TopTable = () => {
               <input type="radio" />
             </div>
           </div>
-        )} */}
-      </div>
+        )}
+      {oneStaff.map(element => (
+        <div className="table_line__first nth">
+          <h3 className="line_first__name">{element.name}</h3>
+          <h3 className="line_first__number">{element.number}</h3>
+          <h3>{element.is_active===true?"Активен":"Не активен"}</h3>
+        </div>
+      ))}
       <div className="table_line__second nth">
         <p className="line_second__№">№</p>
         <p className="line_second__day">Рабочий день</p>

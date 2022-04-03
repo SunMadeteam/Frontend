@@ -2,10 +2,7 @@ import React from "react";
 import "./AddBtn.scss";
 import { useState } from "react";
 import { ModalAdd } from "./ModalAdd/ModalAdd";
-import { AddInfo, AddStaff } from "./AddStaff/AddStaff";
-import { registerStaff } from "../../../Store/AsyncAction/registerStaff";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { AddStaff } from "./AddStaff/AddStaff";
 const AddBtn = (props) => {
   const [open, setOpen] = useState(false);
 

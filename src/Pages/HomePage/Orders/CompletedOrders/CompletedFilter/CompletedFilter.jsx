@@ -1,6 +1,5 @@
 import React from 'react'
 import './CompletedFilter.scss'
-import {BsFilterRight} from 'react-icons/bs'
 export const CompletedFilter = () => {
   return (
     <div className='completed_filter'>

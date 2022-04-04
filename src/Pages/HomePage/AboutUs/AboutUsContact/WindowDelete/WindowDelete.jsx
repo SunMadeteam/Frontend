@@ -1,24 +1,24 @@
 import React,{useState} from 'react'
-import { WindowEdit } from '../WindowEdit/WindowEdit'
+// import { WindowEdit } from '../WindowEdit/WindowEdit'
 import './WindowDelete.scss'
 
 export const WindowDelete = () => {
 const [open, setOpen] = useState(false)
 
-const toggle=()=>{
+const foggle=()=>{
         setOpen(!open)
 } 
   return (
     <div>
         {
-           (open===false)? <div onClick={toggle}><p >Удалить</p></div>
+           (open===false)? <div onClick={foggle}><p style={{marginBottom:"20px"}}>Удалить</p></div>
            :
             <div className='window_delete'>
-                <WindowEdit/>
+                {/* <WindowEdit/> */}
                 <p>Удалить</p>
                 <span>Вы точно хотите удалить?</span>
                 <button>Да</button>
-                <button onClick={toggle} className="button_no">Нет</button>
+                <button onClick={foggle} className="button_no">Нет</button>
             </div>
         }
     </div>

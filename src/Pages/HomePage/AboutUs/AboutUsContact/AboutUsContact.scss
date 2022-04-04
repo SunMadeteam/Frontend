@@ -148,6 +148,23 @@ flex-wrap: wrap;
         font-weight: 600;
         margin-right: 90px;
     }
+    .window{
+        width: 190px;
+        border: 2px solid var(--color-green);
+        box-sizing: border-box;
+        border-radius: 8px;
+        background-color:#ffffff;
+        display: flex;
+        flex-direction: column;
+
+        p{
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 188px;
+            // height: 40px;
+            text-align: left;
+        }
+    }
 }
 .img_adress{
     width: 508px;

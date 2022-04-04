@@ -13,4 +13,3 @@ export const getGoodsByCategory = (id) => {
     // console.log(err=>console.log(err.response.data))
   };
 };
-

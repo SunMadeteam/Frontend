@@ -1,4 +1,11 @@
-import { GET_BRANCH, GET_ONE_STAFF, GET_SALARY, GET_STAFF, IS_ACTIVE, PAGINATION_STAFF } from "../../const";
+import {
+  GET_BRANCH,
+  GET_ONE_STAFF,
+  GET_SALARY,
+  GET_STAFF,
+  IS_ACTIVE,
+  PAGINATION_STAFF,
+} from "../../const";
 
 const initialState = {
   staff: {
@@ -7,16 +14,18 @@ const initialState = {
   oneStaff: {
     results: [],
   },
-  branch: {},
-  salary:{
+  branch: {
     results:[]
-  }
+  },
+  salary: {
+    results: [],
+  },
 };
 
 export const getStaffReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_STAFF:
-      return { ...state, staff:action.payload};
+      return { ...state, staff: action.payload };
     case PAGINATION_STAFF:
       return { ...state, staff: action.payload };
     case GET_ONE_STAFF:
@@ -25,8 +34,8 @@ export const getStaffReducer = (state = initialState, action) => {
       return { ...state, branch: action.payload };
     case IS_ACTIVE:
       return { ...state, staff: action.payload };
-      case GET_SALARY:
-        return { ...state, salary: action.payload };
+    case GET_SALARY:
+      return { ...state, salary: action.payload };
     default:
       return state;
   }

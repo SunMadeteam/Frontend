@@ -7,17 +7,3 @@ height: 20px;
 position: relative;
 left: 215px;
 }
-.window{
-    width: 190px;
-    border: 2px solid var(--color-green);
-    box-sizing: border-box;
-    border-radius: 8px;
-    background-color:#ffffff;
-    z-index:100;
-    p{
-        margin-top: 10px;
-        margin-left: 20px;
-        width: 188px;
-        height: 40px;
-    }
-}

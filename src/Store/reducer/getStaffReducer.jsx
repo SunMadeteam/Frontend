@@ -18,8 +18,9 @@ const initialState = {
     results:[]
   },
   salary: {
-    results: [],
+    results:[]
   },
+  loading:false
 };
 
 export const getStaffReducer = (state = initialState, action) => {
@@ -35,7 +36,7 @@ export const getStaffReducer = (state = initialState, action) => {
     case IS_ACTIVE:
       return { ...state, staff: action.payload };
     case GET_SALARY:
-      return { ...state, salary: action.payload };
+      return { ...state, salary: action.payload,loading:true };
     default:
       return state;
   }

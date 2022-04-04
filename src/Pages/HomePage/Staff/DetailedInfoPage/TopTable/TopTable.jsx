@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getOneStaff } from "../../../../../Store/AsyncAction/getOneStaff";
 import "./TopTable.scss";
 
 export const TopTable = () => {
@@ -8,8 +9,12 @@ export const TopTable = () => {
   const toggle = () => {
     setOpen(!open);
   };
-  const salary = useSelector(state=>state.Staff.salary)
-  console.log(salary)
+
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getOneStaff(localStorage.getItem('number-staff')))
+  },[])
+
   const oneStaff = useSelector(state=>state.Staff.oneStaff.results)
   console.log(oneStaff)
   return (
@@ -40,8 +45,8 @@ export const TopTable = () => {
             </div>
           </div>
         )}
-      {oneStaff.map(element => (
-        <div className="table_line__first nth">
+      {oneStaff.map((element,index) => (
+        <div className="table_line__first nth" key={index}>
           <h3 className="line_first__name">{element.name}</h3>
           <h3 className="line_first__number">{element.number}</h3>
           <h3>{element.is_active===true?"Активен":"Не активен"}</h3>

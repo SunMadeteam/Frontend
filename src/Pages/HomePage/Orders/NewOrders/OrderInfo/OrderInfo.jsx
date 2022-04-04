@@ -12,8 +12,9 @@ import { getOrderById } from "../../../../../Store/AsyncAction/getOrderById";
 export const OrderInfo = () => {
   const dispatch = useDispatch();
   const order = useSelector((state) => state.Order.order);
-  const oneOrder = useSelector(state => state.Order.getOrder)
-  console.log(oneOrder)
+  const oneOrder = useSelector((state) => state.Order.getOrder);
+  console.log(oneOrder);
+  
   // console.log(order);
   useEffect(() => {
     dispatch(getOrder());
@@ -65,10 +66,7 @@ export const OrderInfo = () => {
           <label>Имя</label>
           <input className="modal_order__input" value={oneOrder.name}></input>
           <label>Номер</label>
-          <input
-            className="modal_order__input"
-            value={oneOrder.number}
-          ></input>
+          <input className="modal_order__input" value={oneOrder.number}></input>
           <label>Адрес</label>
           <input
             className="modal_order__input input_height"

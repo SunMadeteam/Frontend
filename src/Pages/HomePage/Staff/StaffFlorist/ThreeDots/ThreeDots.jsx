@@ -12,8 +12,12 @@ export const ThreeDots = (props) => {
  
   const dispatch = useDispatch()
   const takeSalary = (id, number) =>{
-    dispatch(getSalary(id))
-    dispatch(getOneStaff(number))
+    localStorage.setItem('id', id)
+    localStorage.setItem('number-staff', number)
+    const ide = localStorage.getItem('id')
+    // console.log(ide)
+    dispatch(getSalary(ide))
+    dispatch(getOneStaff(localStorage.getItem('number-staff')))
     // console.log(id)
   }
   

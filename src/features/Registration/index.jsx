@@ -48,6 +48,8 @@ const Registration = () => {
     localStorage.setItem('phone' , telefone)
   }
 
+  console.log(name);
+  
   return (
     <div className='registration container'>
       <Link to='/'> {<BackButton />} </Link>

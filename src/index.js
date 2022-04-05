@@ -7,12 +7,12 @@ import * as firebase from 'firebase/app'
 import AuthProvider from './AuthProvider';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyDkNTQ3wRPLzslwsUTY04vHen715vw9aHk",
-  authDomain: "saule2.firebaseapp.com",
-  projectId: "saule2",
-  storageBucket: "saule2.appspot.com",
-  messagingSenderId: "397336453349",
-  appId: "1:397336453349:web:161a5357e1bbe9950b340c"
+  apiKey: "AIzaSyDc3DnkafD8lGVFXNBu7L0RKF3WVnBfsZI",
+  authDomain: "sunmade-3a3e9.firebaseapp.com",
+  projectId: "sunmade-3a3e9",
+  storageBucket: "sunmade-3a3e9.appspot.com",
+  messagingSenderId: "453066980289",
+  appId: "1:453066980289:web:dc357703b98ebf546e4d40"
 })
 
 

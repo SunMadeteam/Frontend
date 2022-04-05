@@ -11,8 +11,8 @@ const FooterMenu = () => {
       <div className='footer_menu'>
         <Link to='/'> {<HomeButton />} </Link>
         <Link to='/catalogs'> {<CatalogButton />} </Link>
-        <Link to='/shopping'> {<ShoppingButton />} </Link>
-        <Link to='/personalArea'> {<PersonalButton />} </Link>
+        <Link to='/cart'> {<ShoppingButton />} </Link>
+        <Link to='/registration'> {<PersonalButton />} </Link>
       </div>
     </div>
   )

@@ -5,6 +5,10 @@ import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getBranch } from "../../../../Store/AsyncAction/getBranch";
 import { WindowDelete } from "./WindowDelete/WindowDelete";
+import { Delete } from "../../Delete/Delete";
+import { deleteBranch } from "../../../../Store/AsyncAction/deleteBranhc";
+import { changeInput } from "../../../../Store/Actions/Action";
+import { getBranchById } from "../../../../Store/AsyncAction/getBranchById";
 export const AboutUsContact = () => {
   const setSecondActive = ({ isActive }) =>
     isActive ? "secondActive_btn__link" : "second_btn__link";
@@ -13,32 +17,50 @@ export const AboutUsContact = () => {
     dispatch(getBranch());
   }, []);
   const branch = useSelector((state) => state.Staff.branch);
-  console.log(branch);
-  const [open, setOpen] = useState(false);
+  console.log(branch.results);
+  // const oneBranch = useSelector(state=>state.Staff.getBranch)
+  // console.log(oneBranch)
+  const [disable, setDisable] = useState(true);
   const toggle = () => {
-    setOpen(!open);
+    setDisable(!disable);
   };
   const focusWhatsApp = useRef();
   const focusTelegram = useRef();
   const focusPhone = useRef();
   const focusInstagram = useRef();
+  const focusAdress = useRef();
 
-  const onFocusWhatsApp = () => {
-    focusWhatsApp.current.focus();
-  };
-  const onFocusTelegram = () => {
-    focusTelegram.current.focus();
-  };
-  const onFocusPhone = () => {
-    focusPhone.current.focus();
-  };
-  const onFocusInstagram = () => {
-    focusInstagram.current.focus();
-  };
   const [whatsApp, setWhatsApp] = useState("+966 000 111 111");
   const [telegram, setTelegram] = useState("+966 000 111 111");
   const [phone, setPhone] = useState("+966 000 111 111");
   const [instagram, setInstagram] = useState("@SunMade");
+
+  const onFocusWhatsApp = () => {
+    setWhatsApp("");
+    focusWhatsApp.current.focus();
+  };
+  const onFocusTelegram = () => {
+    setTelegram("");
+    focusTelegram.current.focus();
+  };
+  const onFocusPhone = () => {
+    setPhone("");
+    focusPhone.current.focus();
+  };
+  const onFocusInstagram = () => {
+    setInstagram("");
+    focusInstagram.current.focus();
+  };
+  // const onFocusAdress = (id) => {
+  //   // console.log(id);
+  //   if (id === branch.results.id) {
+  //     focusAdress.current.focus(id);
+  //   }
+  // };
+  const onChange = (value) => {
+    console.log(value)
+    dispatch(changeInput(value));
+  };
 
   return (
     <div>
@@ -80,10 +102,7 @@ export const AboutUsContact = () => {
               onChange={(e) => setInstagram(e.target.value)}
               placeholder="@SunMade"
             ></input>
-            <div
-              className="pencil_img"
-              onClick={ onFocusInstagram}
-            ></div>
+            <div className="pencil_img" onClick={onFocusInstagram}></div>
           </div>
         </div>
 
@@ -113,12 +132,25 @@ export const AboutUsContact = () => {
 
       <div className="adress">
         <div>
-          {branch.results.map((element) => (
-            <div className="adress_branch">
-              <div>
+          {branch.results.map((element, index) => (
+            <div className="adress_branch" key={index}>
+              <div className="branch_cont">
                 <IoLocationOutline />
-                <h3>{element.adress}</h3>
-                <div>
+                <label className="branch_cont">
+                  <input
+                    value={element.adress}
+                    placeholder="Адрес филиала"
+                    ref={focusAdress}
+                    onChange={(e) => onChange(e.target.value)}
+                    disabled={disable}
+                  />
+                  <Delete id={element.id} take={deleteBranch} />
+                  <div
+                    className="pencil_img"
+                    onClick={() => toggle(element.id)}
+                  ></div>
+                </label>
+                {/* <div>
                   {open === false ? (
                     <div className="three_dot__img" onClick={toggle}></div>
                   ) : (
@@ -129,7 +161,7 @@ export const AboutUsContact = () => {
                       </div>
                     </div>
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

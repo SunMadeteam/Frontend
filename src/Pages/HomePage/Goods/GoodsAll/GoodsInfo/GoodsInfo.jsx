@@ -13,10 +13,9 @@ import { paginationGoods } from "../../../../../Store/AsyncAction/pagination";
 import { deleteProduct } from "../../../../../Store/AsyncAction/deleteProduct";
 import { changeGoodsInput } from "../../../../../Store/Actions/Action";
 export const GoodsInfo = () => {
-
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
-  const category = useSelector(state => state.Goods.category)
+  // const category = useSelector(state => state.Goods.category)
   console.log(product);
   // console.log(category)
 
@@ -29,21 +28,21 @@ export const GoodsInfo = () => {
   };
 
   const [modalActive, setModalActive] = useState(false, getProductById);
-  
+
   const [form, setForm] = useState({
     name: "",
     number: "",
     password: "",
     usertype: "",
-    branch:"",
+    branch: "",
     is_active: true,
   });
   const dispatch = useDispatch();
 
   const onChange = (type, value) => {
     // dispatch(clearErr())
-    dispatch(changeGoodsInput(type, value))
-    console.log(type)
+    dispatch(changeGoodsInput(value));
+    console.log(type);
     setForm({
       ...form,
       [type]: value,
@@ -85,7 +84,11 @@ export const GoodsInfo = () => {
           </div>
         </div>
       ))}
-      <Pagination next={goods.next} previous={goods.previous} take={paginationGoods}/>
+      <Pagination
+        next={goods.next}
+        previous={goods.previous}
+        take={paginationGoods}
+      />
       <ModalAdd active={modalActive} setActive={setModalActive}>
         <div>
           <form className="goods_modal" onSubmit={onSubmit}>
@@ -93,21 +96,29 @@ export const GoodsInfo = () => {
             <label className="goods_label label_margin">Добавить фото</label>
             <img src={product.image} className="goods_img" />
             <label className="goods_label">Название</label>
-            <input className="goods_input" value={product.name} 
-            onChange={(e) => onChange("name", e.target.value)}
+            <input
+              className="goods_input"
+              value={product.name}
+              onChange={(e) => onChange("name", e.target.value)}
             />
             <label className="goods_label">Цена</label>
-            <input value={product.price +" c"} className="goods_input" 
-            onChange={(e) => onChange("price", e.target.value)}
+            <input
+              value={product.price + " c"}
+              className="goods_input"
+              onChange={(e) => onChange("price", e.target.value)}
             />
             <label className="goods_label">Описание</label>
-
-            <textarea className="goods_description">{product.description}</textarea>
+            <input
+              className="goods_description"
+              value={product.description}
+            ></input>
             <Care />
             {/* <pre>{product.complexity_of_care}</pre> */}
             <Hight />
             <Category />
-            <button className="goods_button" type="submit">СОХРАНИТЬ</button>
+            <button className="goods_button" type="submit">
+              СОХРАНИТЬ
+            </button>
           </form>
         </div>
       </ModalAdd>

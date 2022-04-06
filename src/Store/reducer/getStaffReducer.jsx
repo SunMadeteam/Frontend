@@ -1,5 +1,8 @@
 import {
+  CHANGE_INPUT_ADRESS,
+  DELETE_BRANCH,
   GET_BRANCH,
+  GET_BRANCH_BY_ID,
   GET_ONE_STAFF,
   GET_SALARY,
   GET_STAFF,
@@ -15,12 +18,13 @@ const initialState = {
     results: [],
   },
   branch: {
-    results:[]
+    results: [],
   },
   salary: {
-    results:[]
+    results: [],
   },
-  loading:false
+  getBranch: {},
+  loading: false,
 };
 
 export const getStaffReducer = (state = initialState, action) => {
@@ -36,7 +40,29 @@ export const getStaffReducer = (state = initialState, action) => {
     case IS_ACTIVE:
       return { ...state, staff: action.payload };
     case GET_SALARY:
-      return { ...state, salary: action.payload,loading:true };
+      return { ...state, salary: action.payload, loading: true };
+    case DELETE_BRANCH:
+      return {
+        ...state,
+        branch: {
+          results: state.branch.results.filter(
+            (element) => action.payload !== element.id
+          ),
+        },
+      };
+    case GET_BRANCH_BY_ID:
+      return {
+        ...state,
+        getBranch: action.payload,
+      };
+    case CHANGE_INPUT_ADRESS:
+      return {
+        ...state,
+        branch: {
+          ...state.branch,
+          branch: { ...state.branch.results, adress: action.payload },
+        },
+      };
     default:
       return state;
   }

@@ -9,7 +9,7 @@ export const Category = () => {
   };
   const product = useSelector((state) => state.Goods.product);
   const category = useSelector((state) => state.Goods.category);
-  console.log(category);
+  // console.log(category);
   return (
     <div className="category_position">
       {open === false ? (

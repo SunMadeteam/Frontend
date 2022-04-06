@@ -6,6 +6,7 @@ flex-wrap: wrap;
         background-repeat: no-repeat;
         width: 17px;
         height: 17px;
+        cursor: pointer;
     }
 }
 .contact_whatsapp{
@@ -28,12 +29,18 @@ flex-wrap: wrap;
         height: 22px;
     }
     h3{
-        margin-right: 340px;
+        margin-right: 305px;
         font-weight: 600;
     }
-    p{
+    input{
         margin-top: 15px;
-        margin-right: 280px;
+        border: none;
+        font-size: 18px;
+        margin-right: 180px;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
     }
 }
 .contact_telegram{
@@ -56,12 +63,18 @@ flex-wrap: wrap;
         height: 22px;
     }
     h3{
-        margin-right: 340px;
+        margin-right: 310px;
         font-weight: 600;
     }
-    p{
+    input{
         margin-top: 15px;
-        margin-right: 280px;
+        border: none;
+        font-size: 18px;
+        margin-right: 180px;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
     }
 }
 .contact_instagram{
@@ -83,9 +96,16 @@ flex-wrap: wrap;
         width: 22px;
         height: 22px;
     }
-    h3{
-        margin-right: 320px;
-        font-weight: 600;
+    input{
+        // margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 175px;
+        font-weight: bold;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
     }
 }
 
@@ -108,9 +128,16 @@ flex-wrap: wrap;
         width: 22px;
         height: 22px;
     }
-    h3{
-        margin-right: 250px;
-        font-weight: 600;
+    input{
+        // margin-top: 15px;
+        border: none;
+        font-size: 18px;
+        margin-right: 175px;
+        font-weight: bold;
+    }
+    input::placeholder{
+        font-weight: normal;
+        opacity: 50%;
     }
 }
 .adress{

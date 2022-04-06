@@ -11,12 +11,13 @@ import { Hight } from "../HardCare/Hight";
 import { Pagination } from "../../../Pagination/Pagination";
 import { paginationGoods } from "../../../../../Store/AsyncAction/pagination";
 import { deleteProduct } from "../../../../../Store/AsyncAction/deleteProduct";
+import { changeGoodsInput } from "../../../../../Store/Actions/Action";
 export const GoodsInfo = () => {
 
   const goods = useSelector((state) => state.Goods.goods);
   const product = useSelector((state) => state.Goods.product);
   const category = useSelector(state => state.Goods.category)
-  console.log(goods);
+  console.log(product);
   // console.log(category)
 
   useEffect(() => {
@@ -41,6 +42,8 @@ export const GoodsInfo = () => {
 
   const onChange = (type, value) => {
     // dispatch(clearErr())
+    dispatch(changeGoodsInput(type, value))
+    console.log(type)
     setForm({
       ...form,
       [type]: value,
@@ -65,7 +68,7 @@ export const GoodsInfo = () => {
               <h4>{index + 1}</h4>
             </div>
             <div className="info_img">
-              <img src={element.image} width="84px" height="80px" />
+              {/* <img src={element.image} width="84px" height="80px" /> */}
             </div>
             <div className="info_title">
               <h4>{element.name}</h4>
@@ -99,7 +102,7 @@ export const GoodsInfo = () => {
             />
             <label className="goods_label">Описание</label>
 
-            <div className="goods_description">{product.description}</div>
+            <textarea className="goods_description">{product.description}</textarea>
             <Care />
             {/* <pre>{product.complexity_of_care}</pre> */}
             <Hight />

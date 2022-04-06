@@ -1,44 +1,54 @@
-.goods_info1{
+.goods_info1 {
     display: flex;
     border-bottom: 2px solid #B8D7A9;
     text-align: left;
     font-style: normal;
-    .info_delete{
+
+    .info_delete {
         margin-top: 15px;
     }
 }
-.goods_info1:nth-child(even){
+
+.goods_info1:nth-child(even) {
     background-color: var(--color-two);
 }
-.goods_info{
+
+.goods_info {
     display: flex;
     text-align: left;
     font-style: normal;
-    .info_№{
+
+    .info_№ {
         width: 40px;
         height: 50px;
-        h4{
+
+        h4 {
             margin-left: 14.5px;
         }
     }
-    .info_img{
+
+    .info_img {
         width: 84px;
         height: 80px;
         margin-right: 26px;
     }
-    .info_title{
+
+    .info_title {
         width: 200px;
         height: 50px;
     }
-    .info_data{
+
+    .info_data {
         width: 111px;
         height: 50px;
     }
-    .info_category{
+
+    .info_category {
         width: 200px;
         height: 50px;
     }
-    .info_description{
+
+    .info_description {
         width: 458px;
         height: 60px;
         margin-right: 30px;
@@ -46,7 +56,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    h4{
+
+    h4 {
         margin-top: 15px;
         font-weight: normal;
         font-size: 18px;
@@ -54,10 +65,11 @@
 
 }
 
-.goods_modal{
+.goods_modal {
     display: flex;
     flex-direction: column;
-    .goods_img{
+
+    .goods_img {
         width: 186px;
         height: 175px;
         margin: 0 auto;
@@ -65,40 +77,46 @@
         border-radius: 8px;
         margin-bottom: 20px;
     }
-    .goods_input{
+
+    .goods_input {
         width: 290px;
         height: 50px;
         border-radius: 8px;
-        border:2px solid var(--color-green);
+        border: 2px solid var(--color-green);
         margin: 0 auto;
         margin-bottom: 20px;
         font-size: 18px;
         padding-left: 10px;
         font-weight: bold;
     }
-    .goods_label{
+
+    .goods_label {
         opacity: 50%;
         font-size: 14px;
         text-align: left;
         margin-left: 45px;
         margin-bottom: 5px;
         font-weight: bold;
-        
+
     }
-    .label_margin{
+
+    .label_margin {
         margin-left: 94px;
         width: 120px;
         margin-top: 40px;
     }
-    form{
+
+    form {
         margin-top: 48px;
     }
-    input::placeholder{
+
+    input::placeholder {
         font-weight: 900;
     }
-    
+
 }
-.goods_button{
+
+.goods_button {
     color: #FFFFFF;
     width: 300px;
     height: 50px;
@@ -106,16 +124,16 @@
     border-radius: 8px;
     font-size: 20px;
     font-weight: 700;
-    border:none;
+    border: none;
     margin: 0 auto;
     margin-top: 80px;
 }
-.goods_description{
-        width: 280px;
-        border: 2px solid var(--color-green);
-        border-radius: 8px;
-        margin: 0 auto;
-        padding: 10px;
-        text-align: left;
-}
 
+.goods_description {
+    width: 280px;
+    border: 2px solid var(--color-green);
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+}

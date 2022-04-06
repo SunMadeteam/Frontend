@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import "./AboutUsContact.scss";
 import { NavLink } from "react-router-dom";
@@ -18,6 +18,28 @@ export const AboutUsContact = () => {
   const toggle = () => {
     setOpen(!open);
   };
+  const focusWhatsApp = useRef();
+  const focusTelegram = useRef();
+  const focusPhone = useRef();
+  const focusInstagram = useRef();
+
+  const onFocusWhatsApp = () => {
+    focusWhatsApp.current.focus();
+  };
+  const onFocusTelegram = () => {
+    focusTelegram.current.focus();
+  };
+  const onFocusPhone = () => {
+    focusPhone.current.focus();
+  };
+  const onFocusInstagram = () => {
+    focusInstagram.current.focus();
+  };
+  const [whatsApp, setWhatsApp] = useState("+966 000 111 111");
+  const [telegram, setTelegram] = useState("+966 000 111 111");
+  const [phone, setPhone] = useState("+966 000 111 111");
+  const [instagram, setInstagram] = useState("@SunMade");
+
   return (
     <div>
       <div className="contact">
@@ -25,33 +47,56 @@ export const AboutUsContact = () => {
           <div>
             <div className="whatsapp_img"></div>
             <h3>WhatsApp</h3>
-            <div className="pencil_img" onClick={toggle}></div>
+            <div className="pencil_img" onClick={onFocusWhatsApp}></div>
           </div>
-          <p>+966 000 111 111</p>
+          <input
+            value={whatsApp}
+            ref={focusWhatsApp}
+            onChange={(e) => setWhatsApp(e.target.value)}
+            placeholder="+996 000 111 111"
+          ></input>
         </div>
 
         <div className="contact_telegram">
           <div>
             <div className="telegram_img"></div>
             <h3>Telegram</h3>
-            <div className="pencil_img"></div>
+            <div className="pencil_img" onClick={onFocusTelegram}></div>
           </div>
-          <p>+966 000 111 111</p>
+          <input
+            value={telegram}
+            ref={focusTelegram}
+            onChange={(e) => setTelegram(e.target.value)}
+            placeholder="+996 000 111 111"
+          ></input>
         </div>
 
         <div className="contact_instagram">
           <div>
             <div className="instagram_img"></div>
-            <h3>@SunMade</h3>
-            <div className="pencil_img"></div>
+            <input
+              value={instagram}
+              ref={focusInstagram}
+              onChange={(e) => setInstagram(e.target.value)}
+              placeholder="@SunMade"
+            ></input>
+            <div
+              className="pencil_img"
+              onClick={ onFocusInstagram}
+            ></div>
           </div>
         </div>
 
         <div className="contact_phone">
           <div>
             <div className="phone_img"></div>
-            <h3>+966 000 111 111</h3>
-            <div className="pencil_img"></div>
+            <input
+              value={phone}
+              ref={focusPhone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="+996 000 111 111"
+            ></input>
+            <div className="pencil_img" onClick={onFocusPhone}></div>
           </div>
         </div>
       </div>
@@ -77,9 +122,11 @@ export const AboutUsContact = () => {
                   {open === false ? (
                     <div className="three_dot__img" onClick={toggle}></div>
                   ) : (
-                    <div className="window" >
+                    <div className="window">
                       <p onClick={toggle}>Редактировать</p>
-                      <div><WindowDelete/></div>
+                      <div>
+                        <WindowDelete />
+                      </div>
                     </div>
                   )}
                 </div>

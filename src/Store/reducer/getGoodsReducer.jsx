@@ -1,3 +1,4 @@
+
 import {
   GET_GOODS,
   GET_PRODUCT,
@@ -6,6 +7,7 @@ import {
   GET_CATEGORY,
   GET_CATEGORY_BY_ID,
   GET_GOODS_BY_CATEGORY,
+  CHANGE_GOODS_INPUT,
 } from "../../const";
 
 const initialState = {
@@ -39,6 +41,8 @@ export const getGoodsReducer = (state = initialState, action) => {
       return { ...state, category: action.payload };
     case GET_GOODS_BY_CATEGORY:
       return { ...state, goods: action.payload };
+    case CHANGE_GOODS_INPUT:
+      return {...state, product:state.product}  
     default:
       return state;
   }

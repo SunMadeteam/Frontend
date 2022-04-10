@@ -43,7 +43,7 @@ const Shopping = () => {
           <div className="shopping__subtitle">Итого:</div>
           <div className="price price_big">11660 с</div>
         </div>
-        <Link to={'/ordering'}><WideButton word='ОФОРМИТЬ ЗАКАЗ'/></Link>
+        <Link to={'/order'}><WideButton word='ОФОРМИТЬ ЗАКАЗ'/></Link>
       </div>
     </div>
   )

@@ -14,8 +14,11 @@ const PersonalArea = () => {
   const [number , setNumber] = useState(user.phonenumber)
   const [showModal , setShowModal] = useState(true)
 
+  console.log(auth.currentUser)
 
-  const validateDelete = () => {
+
+  const validateDelete = (e) => {
+    e.preventDefault()
     setShowModal(true)
     deleteUser(auth.currentUser)
    
@@ -44,7 +47,7 @@ const PersonalArea = () => {
       </div>
       <div className='personal_buttons'>
         <div className='history'>
-          <Link to="/registration" onClick={() =>  validateDelete()}>Удалить  профиль</Link>
+          <Link to="/registration" onClick={(e) =>  validateDelete(e)}>Удалить  профиль</Link>
         </div>
       </div>
     </div>

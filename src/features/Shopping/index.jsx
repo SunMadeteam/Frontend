@@ -1,19 +1,21 @@
-import Header from '../../common/components/Header';
 import Hr from '../../common/components/Hr/Hr';
 import ShoppingCart from '../../common/components/Shopping-cart/ShoppingCart';
 import './index.scss';
 import WideButton from './../../common/components/Wide-button/index';
 import { Link } from 'react-router-dom';
+import HelloText from '../../common/components/Hello-text';
+
+let product_sum = 3;
 
 const Shopping = () => {
   return (
     <div >
       <div className='header_cart'>
-          <Header />
+          <HelloText />
       </div>
       <div className="shopping container">
         <div className="shopping__top flex">
-          <h3>Товаров: 3</h3>
+          <h3>Товаров: {product_sum}</h3>
           <button className='button clear'>Очистить</button>
         </div>
         <ShoppingCart/>

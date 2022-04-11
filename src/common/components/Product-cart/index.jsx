@@ -18,7 +18,7 @@ const ProductCart = ({base}) => {
             <p className='title'>{base.name}</p>
         </Link> 
         <div className='price_wrap flex'>
-          <p>{base.price} с</p>
+          <p className='price_product'>{base.price} с</p>
           <PlusMinus plusOrMinus="+" />
         </div>
       </div>

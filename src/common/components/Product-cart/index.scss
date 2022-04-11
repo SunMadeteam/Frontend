@@ -29,15 +29,18 @@
     }
   }
   .cart_body {
-    padding: 20px 8px;
+    padding: 21px 8px 15px 8px;
     .title {
       @include font(20px, 23px);
       margin-bottom: 18px;
     }
     .price_wrap {
+      .price_product {
+        margin-bottom: 5px;
+      }
       @include flex($justify:space-between);
       p {
-        @include font(20px, 23px);
+        @include font(18px, 21px);
       }
     }
   }

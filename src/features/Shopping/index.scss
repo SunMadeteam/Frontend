@@ -12,8 +12,9 @@
         border: none;
         outline: none;
         color:$extra-gray;
-        @include font(18px, 19px);
-        
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 500;    
     }
     .price {
         @include font(16px, 28px);  

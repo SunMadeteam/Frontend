@@ -17,11 +17,11 @@ firebase.initializeApp({
 
 
 ReactDOM.render(
-  <BrowserRouter>
-    <AuthProvider>
+  <AuthProvider>
+    <BrowserRouter>
       <App />
-    </AuthProvider>
-  </BrowserRouter>,
+    </BrowserRouter>
+  </AuthProvider>,
   document.getElementById('root')
 );
 

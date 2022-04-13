@@ -21,11 +21,15 @@ const ShoppingCart = () => {
       <div className="flex shopping__cart-right">
         <div className="shopping__cart-summ">1200 c</div>
         <div className="flex shopping__cart-count ">
-          <PlusMinus plusOrMinus='+' />
+        <div className='plus_mines'>
+          <button> <p> + </p> </button>
+        </div>
           <div className="shopping__cart-thing">
             3
           </div>
-          <PlusMinus plusOrMinus='-' />
+          <div className='plus_mines'>
+            <button> <p> - </p> </button>
+          </div>
 
         </div>
       </div>

@@ -41,12 +41,13 @@ export const GoodsInfo = () => {
 
   const onChange = (type, value) => {
     // dispatch(clearErr())
-    dispatch(changeGoodsInput(value));
     console.log(type);
-    setForm({
-      ...form,
-      [type]: value,
-    });
+    // setForm({
+    //   ...form,
+    //   [type]: value,
+    // });
+    dispatch(changeGoodsInput(value, type));
+    // console.log(form)
   };
   const onSubmit = (e) => {
     e.preventDefault();
@@ -67,7 +68,7 @@ export const GoodsInfo = () => {
               <h4>{index + 1}</h4>
             </div>
             <div className="info_img">
-              {/* <img src={element.image} width="84px" height="80px" /> */}
+              <img src={element.image} width="84px" height="80px" />
             </div>
             <div className="info_title">
               <h4>{element.name}</h4>

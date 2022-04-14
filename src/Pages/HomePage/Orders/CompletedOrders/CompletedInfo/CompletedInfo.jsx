@@ -9,12 +9,17 @@ import { getOrderById } from "../../../../../Store/AsyncAction/getOrderById";
 import { Pagination } from "../../../Pagination/Pagination";
 import { paginationOrder } from "../../../../../Store/AsyncAction/pagination";
 import { deleteOrder } from "../../../../../Store/AsyncAction/deleteOrder";
+import { getOrderDetail } from "../../../../../Store/AsyncAction/getOrderDetail";
 export const CompletedInfo = () => {
   const [modalActive, setModalActive] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getOrderCompleted());
   }, []);
+  const orderDetailById = (id) =>{
+    dispatch(getOrderDetail(id))
+    dispatch(getOrderById(id))
+  }
   const order = useSelector((state) => state.Order.order);
 
   return (
@@ -24,7 +29,7 @@ export const CompletedInfo = () => {
           <div
             className="order_info"
             onClick={() =>
-              setModalActive(true, dispatch(getOrderById(element.id)))
+              setModalActive(true, orderDetailById(element.id))
             }
           >
             <div className="check_№">
@@ -34,10 +39,10 @@ export const CompletedInfo = () => {
               <h4>{element.date}</h4>
             </div>
             <div className="check_number">
-              <h4>{element.number}</h4>
+              <h4>{element.user===null?element.number:element.user.number}</h4>
             </div>
             <div className="check_name">
-              <h4>{element.name}</h4>
+              <h4>{element.user===null?element.name:element.user.name}</h4>
             </div>
             <div className="check_adres">
               <h4>{element.adress}</h4>

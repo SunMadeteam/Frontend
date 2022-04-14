@@ -17,11 +17,12 @@ export const AboutUsContact = () => {
     dispatch(getBranch());
   }, []);
   const branch = useSelector((state) => state.Staff.branch);
-  console.log(branch.results);
-  // const oneBranch = useSelector(state=>state.Staff.getBranch)
-  // console.log(oneBranch)
+  console.log(branch);
+  const oneBranch = useSelector(state=>state.Staff.getBranch)
+  console.log(oneBranch)
   const [disable, setDisable] = useState(true);
-  const toggle = () => {
+  const toggle = (id) => {
+    dispatch(getBranchById(id))
     setDisable(!disable);
   };
   const focusWhatsApp = useRef();

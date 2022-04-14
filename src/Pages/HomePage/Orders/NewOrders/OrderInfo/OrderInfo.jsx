@@ -8,17 +8,74 @@ import { Pagination } from "../../../Pagination/Pagination";
 import { paginationOrder } from "../../../../../Store/AsyncAction/pagination";
 import { deleteOrder } from "../../../../../Store/AsyncAction/deleteOrder";
 import { getOrderById } from "../../../../../Store/AsyncAction/getOrderById";
+import { getOrderDetail } from "../../../../../Store/AsyncAction/getOrderDetail";
+import { useFormik } from "formik";
 
 export const OrderInfo = () => {
   const dispatch = useDispatch();
   const order = useSelector((state) => state.Order.order);
   const oneOrder = useSelector((state) => state.Order.getOrder);
+  const orderDetail = useSelector((state) => state.Order.orderDetail);
   console.log(oneOrder);
-  
+
   // console.log(order);
   useEffect(() => {
     dispatch(getOrder());
   }, []);
+
+  const orderDetailById = (id) => {
+    dispatch(getOrderDetail(id));
+    dispatch(getOrderById(id));
+  };
+
+  const orderDetailnumber = () => {
+    if (oneOrder.user === null) {
+      return oneOrder.number;
+    } else if (oneOrder.number === null) {
+      return oneOrder.user.number;
+    } else {
+      return "неизвестно";
+    }
+  };
+
+  const orderDetailname = () => {
+    if (oneOrder.user === null) {
+      return oneOrder.name;
+    } else if (oneOrder.name === null) {
+      return oneOrder.user.name;
+    } else {
+      return "неизвестно";
+    }
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      // name: () => {
+      //   if (oneOrder.user === null) {
+      //     return oneOrder.name;
+      //   } else if (oneOrder.name === null) {
+      //     return oneOrder.user.name;
+      //   } else {
+      //     return "неизвестно";
+      //   }
+      // },
+      //  name:(oneOrder.user === null?oneOrder.name:oneOrder.user.name),
+      // name:oneOrder.date,
+      number:() => {
+        if (oneOrder.user === null) {
+          return oneOrder.number;
+        } else if (oneOrder.number === null) {
+          return oneOrder.user.number;
+        } else {
+          return "неизвестно";
+        }
+      },
+      adress: oneOrder.adress,
+    },
+  });
+  console.log(formik.values)
+  const onChange = (type, value) => {};
+
   const [modalActive, setModalActive] = useState(false);
   return (
     <div className="order_global">
@@ -26,9 +83,7 @@ export const OrderInfo = () => {
         <div className="order_info" key={element.id}>
           <div
             className="order_info"
-            onClick={() =>
-              setModalActive(true, dispatch(getOrderById(element.id)))
-            }
+            onClick={() => setModalActive(true, orderDetailById(element.id))}
           >
             <div className="check_№">
               <h4>{index + 1}</h4>
@@ -37,10 +92,14 @@ export const OrderInfo = () => {
               <h4>{element.date}</h4>
             </div>
             <div className="check_number">
-              <h4>{element.number}</h4>
+              <h4>
+                {element.user === null ? element.number : element.user.number}
+              </h4>
             </div>
             <div className="check_name">
-              <h4>{element.name}</h4>
+              <h4>
+                {element.user === null ? element.name : element.user.name}
+              </h4>
             </div>
             <div className="check_adres">
               <h4>{element.adress}</h4>
@@ -64,13 +123,22 @@ export const OrderInfo = () => {
         </div>
         <div className="modal_order__flex">
           <label>Имя</label>
-          <input className="modal_order__input" value={oneOrder.name}></input>
+          <input
+            className="modal_order__input"
+            // value={formik.values.name()}
+            onChange={(e) => onChange(formik.handleChange)}
+          ></input>
           <label>Номер</label>
-          <input className="modal_order__input" value={oneOrder.number}></input>
+          <input
+            className="modal_order__input"
+            value={orderDetailnumber()}
+            onChange={(e) => onChange("number", e.target.value)}
+          ></input>
           <label>Адрес</label>
           <input
             className="modal_order__input input_height"
-            value={oneOrder.adress}
+            value={formik.values.adress}
+            onChange={(e) => onChange("adress", e.target.value)}
           ></input>
         </div>
         <div className="modal_goods">

@@ -1,7 +1,3 @@
-export const LOGIN_ROUTE = '/Login'
-export const SHOW_ICON = "SHOW_ICON"
-export const HIDE_ICON = "HIDE_ICON"
-
 export const API_POST_LOGIN = "https://sunmadebackend.herokuapp.com/api1/v1/login/"
 export const API_GET_STAFF_COURIER = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/?is_active=true&usertype=runner'
 export const API_GET_STAFF_FLORIST = 'https://sunmadebackend.herokuapp.com/api1/v1/registerstaff/?is_active=true&usertype=florist'
@@ -50,3 +46,4 @@ export const CHANGE_GOODS_INPUT = "CHANGE_GOODS_INPUT"
 export const DELETE_BRANCH = "DELETE_BRANCH"
 export const CHANGE_INPUT_ADRESS = "CHANGE_INPUT_ADRESS"
 export const GET_BRANCH_BY_ID = "GET_BRANCH_BY_ID"
+export const GET_ORDER_DETAIL = "GET_ORDER_DETAIL"

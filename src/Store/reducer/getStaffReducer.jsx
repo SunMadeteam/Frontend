@@ -58,9 +58,8 @@ export const getStaffReducer = (state = initialState, action) => {
     case CHANGE_INPUT_ADRESS:
       return {
         ...state,
-        branch: {
-          ...state.branch,
-          branch: { ...state.branch.results, adress: action.payload },
+        getBranch: {
+          ...state.getBranch, adress:action.payload
         },
       };
     default:

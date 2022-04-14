@@ -1,4 +1,4 @@
-import { DELETE_ORDER, GET_ORDER, GET_ORDER_BY_ID, PAGINATION_ORDER } from "../../const";
+import { DELETE_ORDER, GET_ORDER, GET_ORDER_BY_ID, GET_ORDER_DETAIL, PAGINATION_ORDER } from "../../const";
 
 const initialState = {
   order: {
@@ -6,7 +6,11 @@ const initialState = {
   },
   getOrder:{
     results:[]
-  }
+  },
+  orderDetail:{
+
+  },
+  loading:false
 };
 
 export const getOrderReducer = (state = initialState, action) => {
@@ -26,6 +30,8 @@ export const getOrderReducer = (state = initialState, action) => {
       };
       case GET_ORDER_BY_ID:
         return { ...state, getOrder: action.payload };
+      case GET_ORDER_DETAIL:
+        return { ...state, orderDetail: action.payload };
     default:
       return state;
   }

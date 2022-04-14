@@ -7,6 +7,7 @@ import { getOrderProcessed } from "../../../../../Store/AsyncAction/getOrder";
 import { getOrderById } from "../../../../../Store/AsyncAction/getOrderById";
 import { paginationOrder } from "../../../../../Store/AsyncAction/pagination";
 import { Pagination } from "../../../Pagination/Pagination";
+import { getOrderDetail } from "../../../../../Store/AsyncAction/getOrderDetail";
 
 const ProcessedInfo = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -14,18 +15,46 @@ const ProcessedInfo = () => {
   useEffect(() => {
     dispatch(getOrderProcessed());
   }, []);
+  const orderDetailById = (id) => {
+    // value()
+    dispatch(getOrderDetail(id));
+    dispatch(getOrderById(id));
+  };
   const order = useSelector((state) => state.Order.order);
   const oneOrder = useSelector((state) => state.Order.getOrder);
+  const orderDetail = useSelector((state) => state.Order.orderDetail);
   console.log(oneOrder);
-  console.log(order);
+  // console.log(order);
+
+  const orderDetailname = () => {
+    if (oneOrder.user === null) {
+      return oneOrder.name;
+    }
+      else if(oneOrder.name === null){
+        return oneOrder.user.name
+      }
+      else{
+        return "неизвестно"
+      }
+  };
+
+  const orderDetailnumber = () => {
+    if (oneOrder.user === null) {
+      return oneOrder.number;
+    }
+      else if(oneOrder.number === null){
+        return oneOrder.user.number
+      }
+      else{
+        return "неизвестно"
+      }
+  };
   return (
     <div>
       {order.results.map((element, index) => (
         <div
           className="processed_info"
-          onClick={() =>
-            setModalActive(true, dispatch(getOrderById(element.id)))
-          }
+          onClick={() => setModalActive(true, orderDetailById(element.id))}
           key={index}
         >
           <div className="check_№">
@@ -35,10 +64,12 @@ const ProcessedInfo = () => {
             <h4>{element.date}</h4>
           </div>
           <div className="check_number">
-            <h4>{element.number}</h4>
+            <h4>
+              {element.user === null ? element.number : element.user.number}
+            </h4>
           </div>
           <div className="check_name">
-            <h4>{element.name!==""?element.name:element.user.name}</h4>
+            <h4>{element.user === null ? element.name : element.user.name}</h4>
           </div>
           <div className="check_adres">
             <h4>{element.adress}</h4>
@@ -59,9 +90,12 @@ const ProcessedInfo = () => {
         </div>
         <div className="modal_order__flex">
           <label>Имя</label>
-          <input className="modal_order__input" value={oneOrder.name}></input>
+          <input
+            className="modal_order__input"
+            value={orderDetailname()}
+          ></input>
           <label>Номер</label>
-          <input className="modal_order__input" value={oneOrder.number}></input>
+          <input className="modal_order__input" value={orderDetailnumber()}></input>
           <label>Адрес</label>
           <input
             className="modal_order__input input_height"

@@ -2,9 +2,10 @@ import ProductCart from '../Product-cart';
 import './index.scss'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Loader from '../Loader/Loader';
 
 const AllProductCarts = () => {
-  const url_base_name = 'https://sunmadebackend.herokuapp.com/api/products'
+  const url_base_name = 'https://sunmadebackend.herokuapp.com/api/products/'
   const [base , setBase] = useState(null)
   useEffect(() => {
     getBase(url_base_name)
@@ -16,6 +17,8 @@ const AllProductCarts = () => {
     .then(res => setBase(res.results))
   }
 
+  
+
   // console.log(base)
   return (
     <div className='all_product_cart'>
@@ -25,7 +28,7 @@ const AllProductCarts = () => {
             <ProductCart key={index}  base={item}/>
           ))
         ) : (base === null) ? (
-          <p>Loading</p>
+          <Loader />
         ) : (
           <>Database undefined</>
         )

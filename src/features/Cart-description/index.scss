@@ -1,6 +1,7 @@
 @import './../../common/helpers/mixins.scss';
 @import './../../common/helpers/variables.scss';
 
+
 .header_cart {
   padding-top: 12px;
 }
@@ -22,7 +23,15 @@
     @include flex(block)
   }
   .big_description{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 4px;
   }
- 
+  .title_eighteen {
+    font-weight: 500 !important;
+    margin-bottom: 6px !important;
+  }
+
 }

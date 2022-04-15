@@ -6,13 +6,13 @@ const WideWhiteButton = ({word , disabled , verify ,text}) => {
     return (
       <>
         {
-          word === 'Продолжить' ? (
+          (word === 'Продолжить')  ? (
             <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
-              <button  disabled={disabled} onClick={verify}> {text} </button>
+              <button  disabled={disabled} onClick={verify}> {word} </button>
             </div>
           ) : (
             <div className={disabled ?'wideWhiteButton wideWhiteButton_disabled':'wideWhiteButton'}>
-              <button  disabled={disabled} onClick={verify}> {text} </button>
+              <button  disabled={disabled} onClick={verify}> {word} </button>
             </div>
           )
         }

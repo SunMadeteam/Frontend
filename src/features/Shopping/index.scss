@@ -5,7 +5,7 @@
     margin-top: 70px;
     .shopping__top{
         justify-content: space-between;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
     .clear{
         background: transparent;
@@ -14,7 +14,8 @@
         color:$extra-gray;
         font-size: 18px;
         line-height: 21px;
-        font-weight: 500;    
+        font-weight: 500;
+        padding: 0;    
     }
     .price {
         @include font(16px, 28px);  

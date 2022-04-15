@@ -5,27 +5,30 @@ import { Link } from 'react-router-dom';
 import { getAuth } from 'firebase/auth';
 
 const ProductCart = ({base}) => {
-  console.log(base)
 
   const auth = getAuth()
   
-
   const handleAddToCart = (id) =>{
-    fetch(`https://sunmadebackend.herokuapp.com/api/cart/`, {
+    fetch('https://sunmadebackend.herokuapp.com/api/cart_detail/', {
       method:'POST',
       headers:{
         'Content-type':'application/json'
       },
       body:JSON.stringify({
-        user:String(auth.currentUser.uid)
+        cart_detail:{
+          cart:'124',
+          quantity:'normal',
+          product:id,
+        }
       })
-
     })
     .then(res => res.json())
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
-
+  .then(res => console.log(res))
   }
+
+  fetch('https://sunmadebackend.herokuapp.com/api/cart/' )
+   .then(res => res.json())
+  .then(res => console.log(res))
   return (
     <div className='product_cart'>
       <div className='cart_img'>

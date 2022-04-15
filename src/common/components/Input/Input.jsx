@@ -8,7 +8,7 @@ import { getAuth } from 'firebase/auth';
 
 const Input = ({placeholder,onBlur,value,direct,number }) => {
   
-
+  const names = JSON.parse(localStorage.getItem('user'))
 
 
   return (
@@ -19,6 +19,7 @@ const Input = ({placeholder,onBlur,value,direct,number }) => {
             placeholder={placeholder} 
             value={value}
             onBlur={onBlur}
+            defaultValue={names.name}
             />
           )
           : (

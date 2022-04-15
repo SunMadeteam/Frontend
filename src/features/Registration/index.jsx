@@ -31,7 +31,7 @@ const Registration = () => {
     }, auth);
   }
 
-
+  
   const handleLogin = (e) => {
      if(telefone.length >= 12){
       generateRecatcha()    
@@ -40,7 +40,16 @@ const Registration = () => {
       .then(confirms =>{
         console.log(confirms)
         window.confirmationResult = confirms 
+        window.alert('Message sent')
         navigate('/registration/confirmation')
+        localStorage.setItem('user' , JSON.stringify({
+          name:name,
+          number:telefone,
+          password:password
+        }))
+
+
+      
       }).catch((error) => {
         console.log(error)
       });
@@ -48,7 +57,6 @@ const Registration = () => {
     localStorage.setItem('phone' , telefone)
   }
 
-  console.log(name);
   
   return (
     <div className='registration container'>

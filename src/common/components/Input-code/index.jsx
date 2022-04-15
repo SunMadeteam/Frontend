@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import './index.scss';
 import WideWhiteButton from './../Wide-white-button/index';
 import { RecaptchaVerifier } from 'firebase/auth';
@@ -13,6 +13,7 @@ const InputCode = ({ length, loading, onComplete }) => {
   const [value , setValue] = useState('')
   const [numbers , setNumbers] = useState('')
   const [btnType , setBtnType] = useState('')
+
   const auth = getAuth()
   const navigate = useNavigate()
   function generateRecatcha(){
@@ -37,8 +38,8 @@ const InputCode = ({ length, loading, onComplete }) => {
   //     onComplete(newCode.join(""));
   //   }
   // };
- 
 
+  
   const verifyCode = (e) =>{
       e.preventDefault()
       if(numbers.length === 6){
@@ -46,6 +47,8 @@ const InputCode = ({ length, loading, onComplete }) => {
         confirmationResult.confirm(numbers).then((results) => {
           const user = results.user
           console.log(user)
+       
+          
           navigate('/personalArea')
         })
       }
@@ -64,6 +67,7 @@ const InputCode = ({ length, loading, onComplete }) => {
       .then(confirms =>{
         console.log(confirms)
         window.confirmationResult = confirms 
+        
       }).catch((error) => {
         console.log(error)
       });

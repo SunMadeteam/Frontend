@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import FooterMenu from './common/components/Footer-menu';
 import { useAuth } from './useAuth';
@@ -6,6 +7,44 @@ import { Routelist } from './utils/Routelist';
 
 function App() {
   const {user} = useAuth()
+  // const { number , name , password } = JSON.parse(localStorage.getItem('user'))
+
+  // const ask = window.confirm('')
+  // useEffect(() => {
+  //   if(ask){
+  //     fetch(`https://sunmadebackend.herokuapp.com/api1/v1/register/`, {
+  //       method:'POST',
+  //       headers:{
+  //         'Content-type':'application/json'
+  //       },
+  //       body:JSON.stringify({
+  //         number:'+99655389023',
+  //         name:'Aza',
+  //         password:'12345',
+  //       })
+
+  //     })
+  //     .then(res => res.json())
+  //     .then(res => {
+  //       console.log(res)
+  //     })
+  //     .catch(err => console.log(err))
+
+
+
+        // fetch('https://sunmadebackend.herokuapp.com/api/cart/', {
+        //   method:'POST',
+        //   headers:{
+        //     'Content-type':'application/json'
+        //   },
+        //   body:JSON.stringify({
+        //     user:'124'
+        //   })
+        // })
+        // .then(res => res.json())
+        // .then(res => console.log(res))
+  //    }
+  // }, [])
 
   console.log(user)
   return (

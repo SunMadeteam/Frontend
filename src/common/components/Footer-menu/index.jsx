@@ -6,19 +6,23 @@ import ShoppingButton from '../Shopping-button';
 import './index.scss';
 import { useState } from 'react';
 import { useAuth } from './../../../useAuth';
+import { getAuth } from 'firebase/auth';
 
 const FooterMenu = () => {
-  const {user} = useAuth()
+  const auth = getAuth()
 
+  console.log(auth)
   
-  console.log(user)
   return (
     <div className='footer'>
       <div className='footer_menu'>
         <Link to='/'> {<HomeButton />} </Link>
         <Link to='/catalogs'> {<CatalogButton />} </Link>
         <Link to='/cart'> {<ShoppingButton />} </Link>
-        {user ? <Link to='/personalArea'> {<PersonalButton />} </Link> :  <Link to='/registration'> {<PersonalButton />} </Link>}
+        {/* {auth.currentUser?.emailVerified ? <Link to='/personalArea'> {<PersonalButton />} </Link> : !auth.currentUser !== null ? <Link to='/auth'> {<PersonalButton />} </Link> : auth.currentUser ===  null ? <Link to='/registration'> {<PersonalButton /> } </Link> : '/'} */}
+        {
+          auth.currentUser === null ? <Link to='/registration'> {<PersonalButton />} </Link> : auth.currentUser && <Link to='/personalArea'> {<PersonalButton />} </Link> 
+        }
       </div>
     </div>
   )

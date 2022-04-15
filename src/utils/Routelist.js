@@ -89,7 +89,7 @@ export const Routelist = [
     path:'/personalArea',
     exact:true,
     element:PersonalArea,
-    auth:false,
+    auth:true,
   },
 
 ]

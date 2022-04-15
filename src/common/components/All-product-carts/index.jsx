@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Loader from '../Loader/Loader';
 
 const AllProductCarts = () => {
-  const url_base_name = 'https://sunmadebackend.herokuapp.com/api/products/'
+  const url_base_name = 'https://sunmadebackend.herokuapp.com/api/popular/'
   const [base , setBase] = useState(null)
   useEffect(() => {
     getBase(url_base_name)
@@ -17,7 +17,11 @@ const AllProductCarts = () => {
     .then(res => setBase(res.results))
   }
 
-  
+  console.log(setBase)
+
+  fetch('https://sunmadebackend.herokuapp.com/api/popular/')
+  .then(response => response.json())
+  .then(json => alert(json))
 
   // console.log(base)
   return (

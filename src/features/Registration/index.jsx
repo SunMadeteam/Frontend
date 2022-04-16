@@ -30,7 +30,11 @@ const Registration = () => {
       }
     }, auth);
   }
-
+  window.addEventListener('load', () => {
+    if(localStorage.getItem('user')) {
+      localStorage.setItem('user', JSON.stringify({}))
+    }
+  })
   
   const handleLogin = (e) => {
      if(telefone.length >= 12){

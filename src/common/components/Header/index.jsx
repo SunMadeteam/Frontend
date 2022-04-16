@@ -5,12 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Header = ({position}) => {
   return (
-   <Link to="/catalogs">
+   <div className='fix_header'>
+     <Link to="/catalogs">
      <div className={position ?'container header  header_position ':'container header  '}>
         <img src={back} alt="" />
         <BlackHeart />
     </div>
    </Link>
+   </div>
   )
 }
 

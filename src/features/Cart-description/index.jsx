@@ -23,7 +23,10 @@ const CartDescription = () => {
   };
 
   return (
-    <div>
+    <div className='wrap_description'>
+      <div className='fix_header'>
+        <Header />
+      </div>
       {
         flower ?
           <div className='cart_description'>
@@ -32,7 +35,6 @@ const CartDescription = () => {
                 src={flower.image}
                 alt="" />
               <div className='header_cart'>
-                <Header />
               </div>
             </div>
 

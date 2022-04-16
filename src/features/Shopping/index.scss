@@ -21,11 +21,17 @@
         @include font(16px, 28px);  
     }
     .shopping__subtitle{
-        @include font(18px, 20px);
+        @include font(18px, 21px);
+        font-weight: bold !important;
         div{
             @include font(16px, 19px);
             margin-top: 7px;
             color: $main-green;
+        }
+        p {
+            font-weight:  400 !important;
+            @include font(14px, 16px);
+            margin-top: 14px;
         }
     }
     .shopping__subtitle-normal{
@@ -39,12 +45,20 @@
     }
     .shopping__block{
     justify-content: space-between;
+    .total_sum {
+        @include font(24px, 28px);
+    }
     }
     .price_big{
         font-size: 24px;
     }
     .shopping__block_mb{
         margin-bottom: 30px;
+        margin-top: 44px;
     }
     
+}
+
+.order_product {
+    margin-top: 80px;
 }

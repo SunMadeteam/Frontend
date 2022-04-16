@@ -4,9 +4,13 @@ body {
   position: relative;
 }
 
+.fix_header {
+  position: fixed;
+  width: 100%;
+}
 .header {
   @include flex($justify:space-between);
-  position: relative;
+
   top: -4px;
   padding-top: 16px;
   padding-bottom: 16px;

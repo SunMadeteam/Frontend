@@ -46,10 +46,12 @@ const PersonalArea = () => {
               </div>
             </div>
             <div className='personal_buttons'>
-              <div className='history'>
-                <p>О нас</p>
-                <img src={right} alt='' />
-              </div>
+              <Link to="/about">
+                <div className='history'>
+                  <p>О нас</p>
+                  <img src={right} alt='' />
+                </div>
+              </Link>
             </div>
             <div className='personal_buttons'>
               <div className='history'>

@@ -10,6 +10,7 @@ import RegistrationConfirmationCode from './../features/Registration-confirmatio
 import Authorization from './../features/Authorization/index';
 import CartDescription from './../features/Cart-description/index';
 import PersonalArea from './../features/Personal-area/index';
+import Favorite from './../features/Favorite/index';
 
 
 export const Routelist = [
@@ -91,6 +92,12 @@ export const Routelist = [
     element:PersonalArea,
     auth:true,
   },
+  {
+    path: '/favorite',
+    exact: true,
+    element: Favorite,
+    auth: true,
+  }
 
 ]
 

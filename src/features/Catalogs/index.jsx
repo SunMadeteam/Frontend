@@ -5,8 +5,6 @@ import './index.scss';
 import CatalogBlock from './../../common/components/Catalog-block/index';
 import Loader from '../../common/components/Loader/Loader';
 
-
-
 const Catalogs = () => {
   const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
   const [catalog, setCatalog] = useState(null)

@@ -11,13 +11,8 @@ import Loader from '../../common/components/Loader/Loader';
 const Catalog = (props) => {
   const {id} = useParams()
   const url_catalog_name = `https://sunmadebackend.herokuapp.com/api/products/?category=${id}`
-
   const [catalog, setCatalog] = useState(null);
-
   const catalogIndex = useLocation().pathname.substring(9)
-
-  // console.log(id)
-
 
   useEffect(() => {
     getDetail(url_catalog_name);
@@ -26,17 +21,15 @@ const Catalog = (props) => {
     fetch(url)
     .then(res => res.json())
     .then(r => setCatalog(r.results))
+    
   };
-
-  // console.log(catalog)
+  
 
   return (
     <div className='catalog-wrap'>
-    <Header />
+    <Header position={true}/>
     <Slider catalogIndex={catalogIndex}/>
-
       <div className='container catalog-wrapper '>
-
       {
         (catalog && catalog?.length !== 0) ? (
           catalog?.map((catalog , index) => (

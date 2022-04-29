@@ -49,7 +49,7 @@ function App() {
   // .then (res => console.log(res))
 }, [])
 
-  console.log(user)
+  
   return (
     <div>
       <Routes>

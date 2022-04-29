@@ -1,0 +1,28 @@
+.modal__wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:rgba(91, 89, 89, 0.574);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .modal__content{
+  background: rgb(255, 252, 252);
+  width: 200px;
+  border-radius:10px;
+  padding: 10px;
+  text-align: center;
+  }
+  .modal__content button{
+    background: rgb(5, 212, 56);
+    border:none;
+    border-radius:5px;
+    padding: 3px 15px;
+  }
+  .modal__wrapper_none{
+    display: none;
+  }

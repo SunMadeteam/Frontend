@@ -13,9 +13,7 @@ const Slider = ({ slideIndex }) => {
     const [touchPosition, setTouchPosition] = useState(null)
     const [sliderLength, setSliderLength] = useState(0)
 
-
     const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
-
 
     useEffect(() => {
         getDetail();
@@ -24,7 +22,7 @@ const Slider = ({ slideIndex }) => {
         const req = await fetch(URL_CATALOG);
         const res = await req.json();
         setCatalog(res.categories);
-        setSliderLength(res.categories.length)
+        setSliderLength(res.categories)
 
     };
 
@@ -63,8 +61,6 @@ const Slider = ({ slideIndex }) => {
         }
         setTouchPosition(null)
     }
-
-
 
     return (
         <div className="carousel-container">

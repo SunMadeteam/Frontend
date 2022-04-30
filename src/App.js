@@ -11,24 +11,25 @@ function App() {
 
   // const ask = window.confirm('')
   useEffect(() => {
-    // if(ask){
-      // fetch(`https://sunmadebackend.herokuapp.com/api1/v1/register/`, {
-      //   method:'POST',
-      //   headers:{
-      //     'Content-type':'application/json'
-      //   },
-      //   body:JSON.stringify({
-      //     number:number,
-      //     name: name,
-      //     password: password,
-      //   })
+    //  if(ask){
+    //   fetch(`https://sunmadebackend.herokuapp.com/api1/v1/register/`, {
+    //     method:'POST',
+    //     headers:{
+    //       'Content-type':'application/json'
+    //     },
+    //     body:JSON.stringify({
+    //       number:number,
+    //       name: name,
+    //       password: password,
+    //     })
 
-      // })
-      // .then(res => res.json())
-      // .then(res => {
-      //   console.log(res)
-      // })
-      // .catch(err => console.log(err))
+    //   })
+    //   .then(res => res.json())
+    //   .then(res => {
+    //     console.log(res)
+    //   })
+    //   .catch(err => console.log(err))
+
 
     // }
         // fetch('https://sunmadebackend.herokuapp.com/api/cart/', {
@@ -54,9 +55,9 @@ function App() {
     <div>
       <Routes>
         {Routelist.map(route => {
-          if(!route.auth && !user){
-            return false
-          }
+          // if(!route.auth && !user){
+          //   return false
+          // }
 
           return (
             <Route path={route.path} element={<route.element />}  key={route.path}/>

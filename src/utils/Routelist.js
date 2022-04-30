@@ -36,13 +36,13 @@ export const Routelist = [
     path:'/catalog/:id',
     exact:true,
     element:Catalog,
-    auth:false,
+    auth:true,
   },
   {
     path:'/cart',
     exact:true,
     element:Shopping,
-    auth:false,
+    auth:true,
   },
   {
     path:'/cartDescription/:flowersName',
@@ -66,7 +66,7 @@ export const Routelist = [
     path:'/setDate',
     exact:true,
     element:SelectDateTime,
-    auth:false,
+    auth:true,
   },
   {
     path:'/registration',

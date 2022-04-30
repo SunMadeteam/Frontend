@@ -7,28 +7,28 @@ import { Routelist } from './utils/Routelist';
 
 function App() {
   const {user} = useAuth()
-  const { number , name , password } = JSON.parse(localStorage.getItem('user'))
+  // const { number , name , password } = JSON.parse(localStorage.getItem('user'))
 
   // const ask = window.confirm('')
   useEffect(() => {
     // if(ask){
-      fetch(`https://sunmadebackend.herokuapp.com/api1/v1/register/`, {
-        method:'POST',
-        headers:{
-          'Content-type':'application/json'
-        },
-        body:JSON.stringify({
-          number:number,
-          name: name,
-          password: password,
-        })
+      // fetch(`https://sunmadebackend.herokuapp.com/api1/v1/register/`, {
+      //   method:'POST',
+      //   headers:{
+      //     'Content-type':'application/json'
+      //   },
+      //   body:JSON.stringify({
+      //     number:number,
+      //     name: name,
+      //     password: password,
+      //   })
 
-      })
-      .then(res => res.json())
-      .then(res => {
-        console.log(res)
-      })
-      .catch(err => console.log(err))
+      // })
+      // .then(res => res.json())
+      // .then(res => {
+      //   console.log(res)
+      // })
+      // .catch(err => console.log(err))
 
     // }
         // fetch('https://sunmadebackend.herokuapp.com/api/cart/', {

@@ -6,7 +6,7 @@ import { getAuth } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { addProductAction } from "../../../redux/busket/busketRuduser";
 
-const ProductCart = ({ base , like }) => {
+const ProductCart = ({ base , like , setModal }) => {
   const dispatch = useDispatch();
 
   return (
@@ -25,7 +25,8 @@ const ProductCart = ({ base , like }) => {
           <p className="price_product">{base.price} с</p>
           <div className="plus_mines">
             <button
-              onClick={() =>
+              onClick={() =>{
+                
                 dispatch(
                   addProductAction({
                     id: base.id,
@@ -34,6 +35,11 @@ const ProductCart = ({ base , like }) => {
                     price:base.price
                   })
                 )
+                setModal(true)
+                setTimeout(()=>{
+                  setModal(false)
+                }, 1000)
+              }
               }
             >
               {" "}

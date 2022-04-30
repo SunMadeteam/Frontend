@@ -12,8 +12,7 @@ const Catalog = (props) => {
   const {id} = useParams()
   const url_catalog_name = `https://sunmadebackend.herokuapp.com/api/products/?category=${id}`
   const [catalog, setCatalog] = useState(null);
-  const catalogIndex = useLocation().pathname.substring(9)
-
+  const [modal , setModal] = useState(false)
   useEffect(() => {
     getDetail(url_catalog_name);
   }, []);
@@ -29,11 +28,14 @@ const Catalog = (props) => {
     <div className='catalog-wrap'>
     <Header position={true}/>
     <Slider />
+    <div className ={modal?'modal-basket ':'modal-basket modal-basket_none'}>
+      Товар добавлен в корзину
+    </div>
       <div className='container catalog-wrapper '>
       {
         (catalog && catalog?.length !== 0) ? (
           catalog?.map((catalog , index) => (
-            <ProductCart key={index}  base={catalog}/>
+            <ProductCart key={index}  base={catalog} setModal={setModal}/>
           ))
         ) : (catalog === null) ? (
             <div className='loader'>

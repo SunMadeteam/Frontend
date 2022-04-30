@@ -24,7 +24,6 @@ const Slider = ({ }) => {
         console.log(res);
         setCatalog(res.results);
         setSliderLength(res.results.length)
-console.log(res.categories);
     };
 
     const handleTouchStart = (e) => {

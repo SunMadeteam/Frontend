@@ -7,6 +7,8 @@ import Loader from '../Loader/Loader';
 const AllProductCarts = () => {
   const url_base_name = 'https://sunmadebackend.herokuapp.com/api/products/'
   const [base , setBase] = useState(null)
+  const [modal , setModal] = useState(false)
+  
   useEffect(() => {
     getBase(url_base_name)
   }, [])
@@ -22,10 +24,13 @@ const AllProductCarts = () => {
   // console.log(base)
   return (
     <div className='all_product_cart'>
+     <div className ={modal?'modal-basket ':'modal-basket modal-basket_none'}>
+      Товар добавлен в корзину
+    </div>
        {
         (base && base?.length !== 0) ? (
           base?.map((item , index) => (
-            <ProductCart key={index}  base={item}/>
+            <ProductCart key={index}  base={item} setModal={setModal}/>
           ))
         ) : (base === null) ? (
           <Loader />

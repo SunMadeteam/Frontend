@@ -28,7 +28,7 @@ const Catalog = (props) => {
   return (
     <div className='catalog-wrap'>
     <Header position={true}/>
-    <Slider catalogIndex={catalogIndex}/>
+    <Slider />
       <div className='container catalog-wrapper '>
       {
         (catalog && catalog?.length !== 0) ? (

@@ -16,10 +16,13 @@ const FavoriteHeart = ({base, like}) => {
     }
   }, [])
   
-  
   const onFavorite = (id) => {
+    setState(!state)
     if(state){
       dispatch(removeFavoriteAction(id))
+    }
+    if(!state){
+      dispatch(addFavoriteAction(base))
     }
   }
   return (

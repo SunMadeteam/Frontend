@@ -30,7 +30,7 @@ const ordering=()=>{
       window.location.href = '/order'
     }
     if(basket.length===0){
-      
+      setModal(true)
     }
 }
 

@@ -17,6 +17,9 @@ const Catalogs = () => {
     .then(res => res.json())
     .then(r => setCatalog(r.results))
   }
+  const saveIndexCatalog =(index)=>{
+    localStorage.setItem('catalogIndex', index)
+  }
 
   return (
     <div className='container'>
@@ -25,7 +28,7 @@ const Catalogs = () => {
         {
         (catalog && catalog?.length !== 0) ? (
           catalog?.map((item , index) => (
-            <Link to={`/catalog/${item.id}`} key={item.id}>
+            <Link to={`/catalog/${item.id}`} key={item.id} onClick={()=>saveIndexCatalog(index)}>
               <CatalogBlock text={item.name} img={item.image}/>
             </Link>
           ))

@@ -5,6 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as firebase from 'firebase/app'
 import AuthProvider from './AuthProvider';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store,persistore } from './redux/index';
 
 firebase.initializeApp({
   apiKey: "AIzaSyDc3DnkafD8lGVFXNBu7L0RKF3WVnBfsZI",
@@ -19,7 +22,11 @@ firebase.initializeApp({
 ReactDOM.render(
   <AuthProvider>
     <BrowserRouter>
-      <App />
+    <Provider store={store}>
+        <PersistGate persistor={persistore}>
+          <App />
+        </PersistGate>
+      </Provider>
     </BrowserRouter>
   </AuthProvider>,
   document.getElementById('root')

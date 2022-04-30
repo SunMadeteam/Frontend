@@ -2,15 +2,31 @@ import './index.scss';
 import { useState } from 'react';
 import heart from "./img/favorite-heart.svg";
 import redheart from "./img/red-heart.svg";
+import { useDispatch } from 'react-redux';
+import { addFavoriteAction } from '../../../redux/favorite/favoriteReduce';
+import { useEffect } from 'react';
+import { removeFavoriteAction } from './../../../redux/favorite/favoriteReduce';
 
-const FavoriteHeart = () => {
+const FavoriteHeart = ({base, like}) => {
   const [state, setState] = useState(false);
-
-  const onFavorite = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    if(like){
+      setState(true)
+    }
+  }, [])
+  
+  const onFavorite = (id) => {
     setState(!state)
+    if(state){
+      dispatch(removeFavoriteAction(id))
+    }
+    if(!state){
+      dispatch(addFavoriteAction(base))
+    }
   }
   return (
-    <div className='favorite_heart' onClick={onFavorite}>
+    <div className='favorite_heart' onClick={()=>onFavorite(base.id)}>
       <img src={state ? redheart : heart} alt="" />
     </div>
   )

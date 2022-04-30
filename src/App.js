@@ -30,6 +30,7 @@ function App() {
     //   })
     //   .catch(err => console.log(err))
 
+
     // }
         // fetch('https://sunmadebackend.herokuapp.com/api/cart/', {
         //   method:'POST',
@@ -49,7 +50,7 @@ function App() {
   // .then (res => console.log(res))
 }, [])
 
-  console.log(user)
+  
   return (
     <div>
       <Routes>

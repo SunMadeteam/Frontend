@@ -55,7 +55,7 @@ const ordering=()=>{
                  <ShoppingCart product={product} setTotal={setTotal} total={total}/>
                   <Hr/>
               </div>
-            )}):<div>basket no</div>
+            )}):<div>basket is empty!</div>
         }
         <div className="flex shopping__block">
           <Link to = {'/selectDate'}><div className="shopping__subtitle shopping__subtitle-normal">Выбрать дату и время

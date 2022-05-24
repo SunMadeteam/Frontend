@@ -2,7 +2,7 @@
 @import './../../helpers/mixins.scss';
 
 .category_title {
-  margin-bottom: 4px;
+  margin-bottom: 20px;
   @include font(24px, 28px);
   letter-spacing: 0em;
 }

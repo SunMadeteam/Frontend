@@ -1,17 +1,25 @@
 import './index.scss';
 import RegistrationTitle from "../../common/components/Registration-title";
 import WideWhiteButton from '../../common/components/Wide-white-button';
+import { Link } from 'react-router-dom';
 
 const Authorization = () => {
   return (
     <div className="registration container">
       <RegistrationTitle 
       title = "Вход" 
-      underTitle = "Добро пожаловать!"
+      underTitle = " "
       />
       <input placeholder='Номер*' type='number' />
       <input placeholder='Пароль*' type='password' />
-      <WideWhiteButton word="ВОЙТИ"/>
+      
+      <div className='enter'>
+        <Link to="/">
+          <WideWhiteButton word="ВОЙТИ"/>
+        </Link>
+      </div>
+      
+      
     </div>
   )
 }

@@ -10,7 +10,7 @@ const MainPage = () => {
     <div className='container'>
       <HelloText />
       <Banner />
-      <CategoryTitle title="Все товары" />
+      <CategoryTitle title="Популярные товары" />
       <AllProductCarts />
       <hr />
     </div>

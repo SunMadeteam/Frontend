@@ -5,27 +5,25 @@ import home from './home.png';
 
 import { useState } from 'react';
 
-const Slider = ({ slideIndex }) => {
-
-    slideIndex = Number(slideIndex)
+const Slider = ({ }) => {
+    const slideIndex = Number(localStorage.getItem('catalogIndex'))
+ 
     const [catalogeMore, setCatalog] = useState('');
     const [currentIndex, setCurrentIndex] = useState(slideIndex)
     const [touchPosition, setTouchPosition] = useState(null)
     const [sliderLength, setSliderLength] = useState(0)
 
-
     const URL_CATALOG = 'https://sunmadebackend.herokuapp.com/api/categories/'
-
-
+    
     useEffect(() => {
         getDetail();
     }, []);
     const getDetail = async () => {
         const req = await fetch(URL_CATALOG);
         const res = await req.json();
-        setCatalog(res.categories);
-        setSliderLength(res.categories.length)
-
+        console.log(res);
+        setCatalog(res.results);
+        setSliderLength(res.results.length)
     };
 
     const handleTouchStart = (e) => {
@@ -63,8 +61,6 @@ const Slider = ({ slideIndex }) => {
         }
         setTouchPosition(null)
     }
-
-
 
     return (
         <div className="carousel-container">

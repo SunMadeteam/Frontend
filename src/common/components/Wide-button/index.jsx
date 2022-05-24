@@ -1,6 +1,6 @@
 import './index.scss';
 
-const WideButton = ({word}) => {
+const WideButton = ({word,formValid}) => {
   const state = true;
   
     return (

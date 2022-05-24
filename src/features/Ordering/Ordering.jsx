@@ -5,6 +5,7 @@ import './index.scss'
 
 import WideWhiteButton from '../../common/components/Wide-white-button';
 import WideButton from '../../common/components/Wide-button';
+import Modal from '../../common/components/Modal/Modal';
 
 const Ordering = () => {
   const [name, setName] = useState('')
@@ -17,6 +18,8 @@ const Ordering = () => {
   const [errorName, setErrorName] = useState('Имя не может быть пустым')
   const [errorTel, setErrorTelefone] = useState('введите номер телефона')
   const [formValid, setFormValid] = useState(false)
+  const [modal, setModal] = useState(false)
+  
 
   useEffect(() => {
     if (errorName || errorTel || errorAddres) {
@@ -71,9 +74,19 @@ const Ordering = () => {
     }
   }
 
+  const ordering =()=>{
+    if(formValid){
+      console.log('ok');
+      setModal(true)
+    }
+    if(!formValid){
+      alert('Не валидная форма')
+    }
+  }
   return (
     <div className=' '>
       <Header position={true} />
+      <Modal modal={modal} setModal={setModal} text='ЗАКАЗ ОФОРМЛЕН УСПЕШНО!'/>
       <div className="container ordering">
         {(errorName && nameDirty) && <div className='errorTelefone' >{errorName}</div>}
         <input
@@ -109,7 +122,7 @@ const Ordering = () => {
         />
         <div className='ordering__payment'>Опата наличными при получении</div>
 
-        <WideButton word='ОФОРМИТЬ ЗАКАЗ' />
+        <div onClick={()=>ordering()}><WideButton word='ОФОРМИТЬ ЗАКАЗ' /></div> 
         {/* <WideWhiteButton word='ОФОРМИТЬ ЗАКАЗ' disabled={!formValid} /> */}
       </div>
     </div>

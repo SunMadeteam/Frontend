@@ -3,9 +3,18 @@
 
 .personal_area {
   .hello_text {
-    margin-bottom: 17px;
+    margin-bottom: 31px;
   }
 
+  .loop {
+    margin-bottom: 19px;
+    input {
+      border: 2px solid #4FB61E;
+      outline: none;
+      color: #000;
+      
+    }
+  }
   .personal_buttons {
     margin-top: 51px;
     margin-bottom: 35px;

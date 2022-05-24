@@ -1,10 +1,20 @@
 .catalog-wrap {
-    .header {
-        padding-bottom: 40px;
-        position: relative;
-    }
+    
 }
-
+.modal-basket{
+    width: 220px;
+    padding: 10px 4px;
+    background: rgb(119, 118, 118);
+    border-radius:10px;
+    position: fixed;
+    top: 20%;
+    z-index: 4;
+    right: 5%;
+    color: white;
+}
+.modal-basket_none{
+    display: none;
+}
 .catalog-wrapper{
     // display: grid;
     // grid-template-columns: 1fr 50%;

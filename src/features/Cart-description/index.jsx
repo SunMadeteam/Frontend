@@ -23,16 +23,18 @@ const CartDescription = () => {
   };
 
   return (
-    <div>
+    <div className='wrap_description'>
+      <div className='fix_header'>
+        <Header />
+      </div>
       {
         flower ?
-          <div>
+          <div className='cart_description'>
             <div>
               <img
                 src={flower.image}
                 alt="" />
               <div className='header_cart'>
-                <Header />
               </div>
             </div>
 
@@ -41,10 +43,11 @@ const CartDescription = () => {
               <p className='price'>{flower.price} c</p>
               <span>Описание</span>
               <TitleEighteen title={
-                (flower.complexity_of_care === 1) ? 'Сложность ухода - легкая' :
-                (flower.complexity_of_care === 2) ? 'Сложность ухода - средняя' :
-                (flower.complexity_of_care === 3) ? 'Сложность ухода - сложная' : ''
+                (flower.complexity_of_care === 'easy') ? 'Сложность ухода - легкая' :
+                (flower.complexity_of_care === 'middle') ? 'Сложность ухода - средняя' :
+                (flower.complexity_of_care === 'hard') ? 'Сложность ухода - сложная' : ''
               } />
+              <TitleEighteen title={flower.hight} />
               <p className='big_description'>
                 {flower.description ? flower.description : 'описание отсутствует'}
               </p>

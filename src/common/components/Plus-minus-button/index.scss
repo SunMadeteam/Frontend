@@ -3,17 +3,21 @@
 @import './../../helpers/variables.scss';
 .plus_mines {
   button {
+    padding: 15px;
     width: 30px;
     height: 30px;
     background-color: $main-green;
     border-radius: 8px;
     outline: none;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include flex();
      p {
-      font-size: 30px;
-      text-align: center;
+      font-size: 26px !important;
       color: $fff-color;
+      font-weight: 400 !important;
      }
   }
  

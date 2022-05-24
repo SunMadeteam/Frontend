@@ -11,14 +11,8 @@ import Loader from '../../common/components/Loader/Loader';
 const Catalog = (props) => {
   const {id} = useParams()
   const url_catalog_name = `https://sunmadebackend.herokuapp.com/api/products/?category=${id}`
-
   const [catalog, setCatalog] = useState(null);
-
-  const catalogIndex = useLocation().pathname.substring(9)
-
-  // console.log(id)
-
-
+  const [modal , setModal] = useState(false)
   useEffect(() => {
     getDetail(url_catalog_name);
   }, []);
@@ -26,21 +20,22 @@ const Catalog = (props) => {
     fetch(url)
     .then(res => res.json())
     .then(r => setCatalog(r.results))
+    
   };
-
-  // console.log(catalog)
+  
 
   return (
     <div className='catalog-wrap'>
-    <Header />
-    <Slider catalogIndex={catalogIndex}/>
-
+    <Header position={true}/>
+    <Slider />
+    <div className ={modal?'modal-basket ':'modal-basket modal-basket_none'}>
+      Товар добавлен в корзину
+    </div>
       <div className='container catalog-wrapper '>
-
       {
         (catalog && catalog?.length !== 0) ? (
           catalog?.map((catalog , index) => (
-            <ProductCart key={index}  base={catalog}/>
+            <ProductCart key={index}  base={catalog} setModal={setModal}/>
           ))
         ) : (catalog === null) ? (
             <div className='loader'>
